@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+streamlit
+pandas
+requests
+redis
+kafka-python
+scikit-learn
+numpy
+streamlit-autorefresh
+

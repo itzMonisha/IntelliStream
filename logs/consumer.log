@@ -1,0 +1,900 @@
+2026-06-18 22:13:10,415 - WARNING - socks5_proxy is deprecated, use proxy_url instead
+2026-06-18 22:13:10,416 - INFO - IO loop starting (client_id=kafka-python-3.0.0)
+2026-06-18 22:13:10,437 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-60708] broker_version=unknown (initializing)>: Broker version identified as 3.5
+2026-06-18 22:13:10,438 - INFO - Metadata refresh (node_id=bootstrap-0)
+2026-06-18 22:13:10,473 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-18 22:13:10,474 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-18 22:13:10,474 - INFO - <KafkaTCPTransport [::1:9092<-60708]>: Closing transport
+2026-06-18 22:13:10,474 - INFO - Starting metadata refresh loop
+2026-06-18 22:13:10,476 - INFO - Updating subscribed topics to: ('sensor-events',)
+2026-06-18 22:13:10,492 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-60709] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-18 22:13:10,492 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-60709] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-18 22:13:10,582 - INFO - Metadata refresh (node_id=1)
+2026-06-18 22:13:10,587 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 0)
+2026-06-18 22:13:12,015 - INFO - Coordinator for GROUP/sensor-group is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-06-18 22:13:12,016 - INFO - Discovered coordinator coordinator-1 for group sensor-group
+2026-06-18 22:13:12,018 - INFO - Revoking previously assigned partitions set() for group sensor-group
+2026-06-18 22:13:12,019 - INFO - (Re-)joining group sensor-group
+2026-06-18 22:13:12,024 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-60710] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-18 22:13:12,024 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-60710] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-18 22:13:12,069 - INFO - Received member id kafka-python-3.0.0-efb05af7-9b0e-4b12-bdab-07a701501ae1 for group sensor-group; will retry join-group
+2026-06-18 22:13:12,069 - INFO - (Re-)joining group sensor-group
+2026-06-18 22:13:15,145 - INFO - Successfully joined group sensor-group <Generation 1 (member_id: kafka-python-3.0.0-efb05af7-9b0e-4b12-bdab-07a701501ae1, protocol: range)>
+2026-06-18 22:13:15,146 - INFO - Elected group leader -- performing partition assignments using range
+2026-06-18 22:13:15,149 - INFO - Metadata refresh (node_id=1)
+2026-06-18 22:13:15,154 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-18 22:13:15,195 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-events', partition=0)]
+2026-06-18 22:13:15,195 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-events', partition=0)} for group sensor-group
+2026-06-18 22:13:15,234 - INFO - Resetting offset for partition TopicPartition(topic='sensor-events', partition=0) to offset 0.
+2026-06-19 17:49:20,473 - WARNING - socks5_proxy is deprecated, use proxy_url instead
+2026-06-19 17:49:20,475 - INFO - IO loop starting (client_id=kafka-python-3.0.0)
+2026-06-19 17:49:20,496 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-51100] broker_version=unknown (initializing)>: Broker version identified as 3.5
+2026-06-19 17:49:20,496 - INFO - Metadata refresh (node_id=bootstrap-0)
+2026-06-19 17:49:20,502 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-19 17:49:20,502 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-19 17:49:20,503 - INFO - <KafkaTCPTransport [::1:9092<-51100]>: Closing transport
+2026-06-19 17:49:20,503 - INFO - Starting metadata refresh loop
+2026-06-19 17:49:20,504 - INFO - Updating subscribed topics to: ('sensor-events',)
+2026-06-19 17:49:20,525 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-51101] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-19 17:49:20,525 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-51101] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-19 17:49:20,614 - INFO - Metadata refresh (node_id=1)
+2026-06-19 17:49:20,618 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 0)
+2026-06-19 17:49:21,750 - INFO - Coordinator for GROUP/sensor-group is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-06-19 17:49:21,750 - INFO - Discovered coordinator coordinator-1 for group sensor-group
+2026-06-19 17:49:21,775 - INFO - Revoking previously assigned partitions set() for group sensor-group
+2026-06-19 17:49:21,776 - INFO - (Re-)joining group sensor-group
+2026-06-19 17:49:21,781 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-51102] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-19 17:49:21,781 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-51102] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-19 17:49:21,798 - INFO - Received member id kafka-python-3.0.0-9ff375a5-93c7-4fa4-9c6d-78673e8c7511 for group sensor-group; will retry join-group
+2026-06-19 17:49:21,798 - INFO - (Re-)joining group sensor-group
+2026-06-19 17:49:24,823 - INFO - Successfully joined group sensor-group <Generation 1 (member_id: kafka-python-3.0.0-9ff375a5-93c7-4fa4-9c6d-78673e8c7511, protocol: range)>
+2026-06-19 17:49:24,823 - INFO - Elected group leader -- performing partition assignments using range
+2026-06-19 17:49:24,825 - INFO - Metadata refresh (node_id=1)
+2026-06-19 17:49:24,829 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-19 17:49:24,849 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-events', partition=0)]
+2026-06-19 17:49:24,849 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-events', partition=0)} for group sensor-group
+2026-06-19 17:49:24,873 - INFO - Resetting offset for partition TopicPartition(topic='sensor-events', partition=0) to offset 0.
+2026-06-19 18:06:31,175 - WARNING - socks5_proxy is deprecated, use proxy_url instead
+2026-06-19 18:06:31,176 - INFO - IO loop starting (client_id=kafka-python-3.0.0)
+2026-06-19 18:06:31,193 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-52787] broker_version=unknown (initializing)>: Broker version identified as 3.5
+2026-06-19 18:06:31,194 - INFO - Metadata refresh (node_id=bootstrap-0)
+2026-06-19 18:06:31,200 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-19 18:06:31,200 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-19 18:06:31,200 - INFO - <KafkaTCPTransport [::1:9092<-52787]>: Closing transport
+2026-06-19 18:06:31,201 - INFO - Starting metadata refresh loop
+2026-06-19 18:06:31,202 - INFO - Updating subscribed topics to: ('sensor-events',)
+2026-06-19 18:06:31,209 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-52788] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-19 18:06:31,210 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-52788] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-19 18:06:31,315 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:06:31,319 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 0)
+2026-06-19 18:06:32,243 - INFO - Coordinator for GROUP/sensor-group is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-06-19 18:06:32,243 - INFO - Discovered coordinator coordinator-1 for group sensor-group
+2026-06-19 18:06:32,246 - INFO - Revoking previously assigned partitions set() for group sensor-group
+2026-06-19 18:06:32,246 - INFO - (Re-)joining group sensor-group
+2026-06-19 18:06:32,252 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-52789] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-19 18:06:32,252 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-52789] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-19 18:06:32,268 - INFO - Received member id kafka-python-3.0.0-b2489a50-c531-4958-a233-824b91f396ef for group sensor-group; will retry join-group
+2026-06-19 18:06:32,268 - INFO - (Re-)joining group sensor-group
+2026-06-19 18:06:35,295 - INFO - Successfully joined group sensor-group <Generation 1 (member_id: kafka-python-3.0.0-b2489a50-c531-4958-a233-824b91f396ef, protocol: range)>
+2026-06-19 18:06:35,295 - INFO - Elected group leader -- performing partition assignments using range
+2026-06-19 18:06:35,297 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:06:35,300 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-19 18:06:35,312 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-events', partition=0)]
+2026-06-19 18:06:35,313 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-events', partition=0)} for group sensor-group
+2026-06-19 18:06:35,340 - INFO - Resetting offset for partition TopicPartition(topic='sensor-events', partition=0) to offset 0.
+2026-06-19 18:06:35,456 - INFO - Animal=68 Temp=40.13 HeartRate=68 Risk=HIGH
+2026-06-19 18:06:35,472 - INFO - Animal=14 Temp=40.61 HeartRate=112 Risk=HIGH
+2026-06-19 18:06:35,486 - INFO - Animal=18 Temp=40.13 HeartRate=101 Risk=NORMAL
+2026-06-19 18:06:35,503 - INFO - Animal=54 Temp=41.42 HeartRate=119 Risk=HIGH
+2026-06-19 18:06:35,520 - INFO - Animal=80 Temp=41.85 HeartRate=107 Risk=HIGH
+2026-06-19 18:06:37,048 - INFO - Animal=95 Temp=38.29 HeartRate=87 Risk=NORMAL
+2026-06-19 18:06:39,092 - INFO - Animal=18 Temp=37.62 HeartRate=67 Risk=NORMAL
+2026-06-19 18:06:41,070 - INFO - Animal=46 Temp=38.27 HeartRate=104 Risk=NORMAL
+2026-06-19 18:06:43,068 - INFO - Animal=83 Temp=40.8 HeartRate=120 Risk=HIGH
+2026-06-19 18:06:45,070 - INFO - Animal=45 Temp=38.03 HeartRate=71 Risk=NORMAL
+2026-06-19 18:06:47,110 - INFO - Animal=63 Temp=41.03 HeartRate=100 Risk=HIGH
+2026-06-19 18:06:49,080 - INFO - Animal=87 Temp=38.27 HeartRate=87 Risk=NORMAL
+2026-06-19 18:06:51,117 - INFO - Animal=67 Temp=38.59 HeartRate=133 Risk=HIGH
+2026-06-19 18:06:53,140 - INFO - Animal=57 Temp=37.12 HeartRate=132 Risk=HIGH
+2026-06-19 18:06:55,120 - INFO - Animal=41 Temp=39.46 HeartRate=93 Risk=NORMAL
+2026-06-19 18:06:57,114 - INFO - Animal=20 Temp=39.76 HeartRate=100 Risk=NORMAL
+2026-06-19 18:06:59,111 - INFO - Animal=1 Temp=40.42 HeartRate=70 Risk=HIGH
+2026-06-19 18:07:01,148 - INFO - Animal=78 Temp=38.76 HeartRate=127 Risk=HIGH
+2026-06-19 18:07:03,122 - INFO - Animal=6 Temp=40.49 HeartRate=105 Risk=HIGH
+2026-06-19 18:07:05,159 - INFO - Animal=89 Temp=39.52 HeartRate=123 Risk=HIGH
+2026-06-19 18:07:07,135 - INFO - Animal=21 Temp=38.91 HeartRate=97 Risk=NORMAL
+2026-06-19 18:07:09,176 - INFO - Animal=14 Temp=40.05 HeartRate=96 Risk=NORMAL
+2026-06-19 18:07:11,176 - INFO - Animal=73 Temp=37.75 HeartRate=126 Risk=HIGH
+2026-06-19 18:07:13,157 - INFO - Animal=45 Temp=39.28 HeartRate=60 Risk=NORMAL
+2026-06-19 18:07:15,188 - INFO - Animal=79 Temp=38.98 HeartRate=139 Risk=HIGH
+2026-06-19 18:07:17,207 - INFO - Animal=29 Temp=41.69 HeartRate=112 Risk=HIGH
+2026-06-19 18:07:19,250 - INFO - Animal=100 Temp=37.94 HeartRate=119 Risk=NORMAL
+2026-06-19 18:07:21,214 - INFO - Animal=40 Temp=38.5 HeartRate=118 Risk=NORMAL
+2026-06-19 18:07:23,190 - INFO - Animal=70 Temp=40.38 HeartRate=65 Risk=HIGH
+2026-06-19 18:07:25,269 - INFO - Animal=45 Temp=40.92 HeartRate=124 Risk=HIGH
+2026-06-19 18:07:27,196 - INFO - Animal=36 Temp=38.36 HeartRate=90 Risk=NORMAL
+2026-06-19 18:10:40,013 - WARNING - socks5_proxy is deprecated, use proxy_url instead
+2026-06-19 18:10:40,015 - INFO - IO loop starting (client_id=kafka-python-3.0.0)
+2026-06-19 18:10:40,036 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-60691] broker_version=unknown (initializing)>: Broker version identified as 3.5
+2026-06-19 18:10:40,037 - INFO - Metadata refresh (node_id=bootstrap-0)
+2026-06-19 18:10:40,044 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-19 18:10:40,045 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-19 18:10:40,045 - INFO - <KafkaTCPTransport [::1:9092<-60691]>: Closing transport
+2026-06-19 18:10:40,045 - INFO - Starting metadata refresh loop
+2026-06-19 18:10:40,047 - INFO - Updating subscribed topics to: ('sensor-events',)
+2026-06-19 18:10:40,054 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-60692] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-19 18:10:40,054 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-60692] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-19 18:10:40,060 - INFO - Coordinator for GROUP/sensor-group is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-06-19 18:10:40,060 - INFO - Discovered coordinator coordinator-1 for group sensor-group
+2026-06-19 18:10:40,063 - INFO - Revoking previously assigned partitions set() for group sensor-group
+2026-06-19 18:10:40,063 - INFO - (Re-)joining group sensor-group
+2026-06-19 18:10:40,067 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-60693] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-19 18:10:40,067 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-60693] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-19 18:10:40,074 - INFO - Received member id kafka-python-3.0.0-d298d1e2-df74-44d4-b0f1-3d22a3312c99 for group sensor-group; will retry join-group
+2026-06-19 18:10:40,075 - INFO - (Re-)joining group sensor-group
+2026-06-19 18:10:40,149 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:10:40,153 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-19 18:11:05,960 - INFO - Successfully joined group sensor-group <Generation 2 (member_id: kafka-python-3.0.0-d298d1e2-df74-44d4-b0f1-3d22a3312c99, protocol: range)>
+2026-06-19 18:11:05,960 - INFO - Elected group leader -- performing partition assignments using range
+2026-06-19 18:11:05,979 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:11:05,986 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-19 18:11:05,992 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-events', partition=0)]
+2026-06-19 18:11:05,992 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-events', partition=0)} for group sensor-group
+2026-06-19 18:11:06,266 - INFO - Animal=67 Temp=39.05 HeartRate=103 Risk=NORMAL
+2026-06-19 18:11:06,317 - INFO - Animal=42 Temp=38.91 HeartRate=68 Risk=NORMAL
+2026-06-19 18:11:06,367 - INFO - Animal=16 Temp=38.37 HeartRate=99 Risk=NORMAL
+2026-06-19 18:11:06,416 - INFO - Animal=21 Temp=41.43 HeartRate=72 Risk=HIGH
+2026-06-19 18:11:06,460 - INFO - Animal=41 Temp=37.87 HeartRate=71 Risk=NORMAL
+2026-06-19 18:11:06,507 - INFO - Animal=65 Temp=41.9 HeartRate=109 Risk=HIGH
+2026-06-19 18:11:06,559 - INFO - Animal=2 Temp=38.34 HeartRate=122 Risk=NORMAL
+2026-06-19 18:11:06,609 - INFO - Animal=54 Temp=37.85 HeartRate=61 Risk=NORMAL
+2026-06-19 18:11:06,660 - INFO - Animal=87 Temp=38.98 HeartRate=74 Risk=NORMAL
+2026-06-19 18:11:06,709 - INFO - Animal=40 Temp=37.99 HeartRate=98 Risk=NORMAL
+2026-06-19 18:11:06,762 - INFO - Animal=92 Temp=39.23 HeartRate=71 Risk=NORMAL
+2026-06-19 18:11:06,812 - INFO - Animal=25 Temp=37.85 HeartRate=85 Risk=NORMAL
+2026-06-19 18:11:06,861 - INFO - Animal=72 Temp=40.19 HeartRate=134 Risk=HIGH
+2026-06-19 18:11:06,906 - INFO - Animal=68 Temp=37.02 HeartRate=118 Risk=HIGH
+2026-06-19 18:11:06,955 - INFO - Animal=93 Temp=37.12 HeartRate=88 Risk=NORMAL
+2026-06-19 18:11:07,007 - INFO - Animal=57 Temp=38.72 HeartRate=105 Risk=NORMAL
+2026-06-19 18:11:07,663 - INFO - Animal=91 Temp=39.98 HeartRate=75 Risk=NORMAL
+2026-06-19 18:11:09,671 - INFO - Animal=22 Temp=40.19 HeartRate=113 Risk=NORMAL
+2026-06-19 18:11:11,648 - INFO - Animal=96 Temp=41.83 HeartRate=105 Risk=HIGH
+2026-06-19 18:11:13,684 - INFO - Animal=18 Temp=37.98 HeartRate=74 Risk=NORMAL
+2026-06-19 18:11:15,694 - INFO - Animal=87 Temp=40.8 HeartRate=112 Risk=HIGH
+2026-06-19 18:11:17,666 - INFO - Animal=86 Temp=37.24 HeartRate=103 Risk=NORMAL
+2026-06-19 18:11:19,699 - INFO - Animal=9 Temp=39.02 HeartRate=103 Risk=NORMAL
+2026-06-19 18:11:21,695 - INFO - Animal=98 Temp=39.92 HeartRate=66 Risk=NORMAL
+2026-06-19 18:11:23,726 - INFO - Animal=49 Temp=38.92 HeartRate=133 Risk=HIGH
+2026-06-19 18:11:25,735 - INFO - Animal=88 Temp=38.27 HeartRate=110 Risk=NORMAL
+2026-06-19 18:11:27,747 - INFO - Animal=96 Temp=39.66 HeartRate=95 Risk=NORMAL
+2026-06-19 18:11:29,756 - INFO - Animal=73 Temp=37.31 HeartRate=65 Risk=NORMAL
+2026-06-19 18:11:31,766 - INFO - Animal=46 Temp=40.28 HeartRate=122 Risk=HIGH
+2026-06-19 18:11:33,771 - INFO - Animal=75 Temp=40.08 HeartRate=68 Risk=NORMAL
+2026-06-19 18:11:35,777 - INFO - Animal=98 Temp=41.89 HeartRate=133 Risk=HIGH
+2026-06-19 18:11:37,792 - INFO - Animal=22 Temp=41.41 HeartRate=102 Risk=HIGH
+2026-06-19 18:11:39,801 - INFO - Animal=16 Temp=38.08 HeartRate=117 Risk=NORMAL
+2026-06-19 18:11:41,806 - INFO - Animal=23 Temp=41.48 HeartRate=72 Risk=HIGH
+2026-06-19 18:11:43,815 - INFO - Animal=58 Temp=38.13 HeartRate=116 Risk=NORMAL
+2026-06-19 18:11:45,790 - INFO - Animal=64 Temp=41.15 HeartRate=70 Risk=HIGH
+2026-06-19 18:11:47,832 - INFO - Animal=3 Temp=37.82 HeartRate=115 Risk=NORMAL
+2026-06-19 18:11:49,841 - INFO - Animal=26 Temp=41.0 HeartRate=138 Risk=HIGH
+2026-06-19 18:11:51,851 - INFO - Animal=19 Temp=37.27 HeartRate=68 Risk=NORMAL
+2026-06-19 18:11:53,855 - INFO - Animal=35 Temp=37.9 HeartRate=138 Risk=HIGH
+2026-06-19 18:11:55,829 - INFO - Animal=21 Temp=40.9 HeartRate=81 Risk=HIGH
+2026-06-19 18:11:57,869 - INFO - Animal=4 Temp=39.25 HeartRate=126 Risk=HIGH
+2026-06-19 18:11:59,860 - INFO - Animal=58 Temp=37.99 HeartRate=99 Risk=NORMAL
+2026-06-19 18:12:01,886 - INFO - Animal=42 Temp=41.44 HeartRate=111 Risk=HIGH
+2026-06-19 18:12:03,905 - INFO - Animal=43 Temp=39.0 HeartRate=94 Risk=NORMAL
+2026-06-19 18:12:05,911 - INFO - Animal=11 Temp=41.35 HeartRate=136 Risk=HIGH
+2026-06-19 18:12:07,922 - INFO - Animal=74 Temp=41.6 HeartRate=67 Risk=HIGH
+2026-06-19 18:12:09,926 - INFO - Animal=99 Temp=41.33 HeartRate=72 Risk=HIGH
+2026-06-19 18:12:11,911 - INFO - Animal=57 Temp=41.08 HeartRate=133 Risk=HIGH
+2026-06-19 18:12:13,943 - INFO - Animal=66 Temp=39.88 HeartRate=120 Risk=HIGH
+2026-06-19 18:12:15,952 - INFO - Animal=70 Temp=38.91 HeartRate=140 Risk=HIGH
+2026-06-19 18:12:17,957 - INFO - Animal=91 Temp=41.15 HeartRate=100 Risk=HIGH
+2026-06-19 18:12:19,972 - INFO - Animal=45 Temp=41.24 HeartRate=97 Risk=HIGH
+2026-06-19 18:12:21,953 - INFO - Animal=24 Temp=39.77 HeartRate=96 Risk=NORMAL
+2026-06-19 18:12:23,993 - INFO - Animal=24 Temp=38.6 HeartRate=68 Risk=NORMAL
+2026-06-19 18:12:25,998 - INFO - Animal=25 Temp=40.1 HeartRate=105 Risk=NORMAL
+2026-06-19 18:12:28,021 - INFO - Animal=81 Temp=37.98 HeartRate=115 Risk=NORMAL
+2026-06-19 18:12:29,987 - INFO - Animal=11 Temp=41.99 HeartRate=115 Risk=HIGH
+2026-06-19 18:12:32,004 - INFO - Animal=22 Temp=41.93 HeartRate=96 Risk=HIGH
+2026-06-19 18:12:34,032 - INFO - Animal=57 Temp=37.26 HeartRate=112 Risk=NORMAL
+2026-06-19 18:12:36,046 - INFO - Animal=5 Temp=38.33 HeartRate=70 Risk=NORMAL
+2026-06-19 18:12:38,033 - INFO - Animal=50 Temp=37.31 HeartRate=133 Risk=HIGH
+2026-06-19 18:12:40,062 - INFO - Animal=57 Temp=37.85 HeartRate=103 Risk=NORMAL
+2026-06-19 18:12:42,076 - INFO - Animal=90 Temp=38.86 HeartRate=84 Risk=NORMAL
+2026-06-19 18:12:44,082 - INFO - Animal=15 Temp=40.27 HeartRate=129 Risk=HIGH
+2026-06-19 18:12:46,096 - INFO - Animal=11 Temp=40.73 HeartRate=61 Risk=HIGH
+2026-06-19 18:12:48,041 - INFO - Animal=95 Temp=40.83 HeartRate=69 Risk=HIGH
+2026-06-19 18:12:50,069 - INFO - Animal=50 Temp=37.82 HeartRate=67 Risk=NORMAL
+2026-06-19 18:12:52,075 - INFO - Animal=63 Temp=39.8 HeartRate=67 Risk=NORMAL
+2026-06-19 18:12:54,119 - INFO - Animal=41 Temp=40.13 HeartRate=94 Risk=NORMAL
+2026-06-19 18:12:56,095 - INFO - Animal=70 Temp=37.52 HeartRate=131 Risk=HIGH
+2026-06-19 18:12:58,107 - INFO - Animal=51 Temp=39.76 HeartRate=114 Risk=NORMAL
+2026-06-19 18:13:00,139 - INFO - Animal=86 Temp=39.47 HeartRate=116 Risk=NORMAL
+2026-06-19 18:13:02,149 - INFO - Animal=73 Temp=41.64 HeartRate=67 Risk=HIGH
+2026-06-19 18:13:04,133 - INFO - Animal=5 Temp=40.12 HeartRate=72 Risk=NORMAL
+2026-06-19 18:13:06,172 - INFO - Animal=92 Temp=37.01 HeartRate=78 Risk=NORMAL
+2026-06-19 18:13:08,158 - INFO - Animal=19 Temp=41.8 HeartRate=136 Risk=HIGH
+2026-06-19 18:13:10,176 - INFO - Animal=61 Temp=40.01 HeartRate=99 Risk=NORMAL
+2026-06-19 18:13:12,165 - INFO - Animal=24 Temp=38.06 HeartRate=67 Risk=NORMAL
+2026-06-19 18:13:14,202 - INFO - Animal=65 Temp=38.05 HeartRate=125 Risk=NORMAL
+2026-06-19 18:13:16,193 - INFO - Animal=22 Temp=37.91 HeartRate=130 Risk=HIGH
+2026-06-19 18:13:18,187 - INFO - Animal=16 Temp=41.91 HeartRate=116 Risk=HIGH
+2026-06-19 18:13:20,210 - INFO - Animal=94 Temp=39.92 HeartRate=74 Risk=NORMAL
+2026-06-19 18:13:22,202 - INFO - Animal=53 Temp=40.41 HeartRate=77 Risk=HIGH
+2026-06-19 18:13:24,242 - INFO - Animal=3 Temp=37.06 HeartRate=65 Risk=HIGH
+2026-06-19 18:13:26,243 - INFO - Animal=78 Temp=40.22 HeartRate=111 Risk=NORMAL
+2026-06-19 18:13:28,204 - INFO - Animal=63 Temp=41.28 HeartRate=74 Risk=HIGH
+2026-06-19 18:13:30,266 - INFO - Animal=35 Temp=41.44 HeartRate=120 Risk=HIGH
+2026-06-19 18:13:32,272 - INFO - Animal=79 Temp=41.93 HeartRate=140 Risk=HIGH
+2026-06-19 18:13:34,279 - INFO - Animal=27 Temp=39.21 HeartRate=109 Risk=NORMAL
+2026-06-19 18:13:36,293 - INFO - Animal=24 Temp=40.52 HeartRate=129 Risk=HIGH
+2026-06-19 18:13:38,287 - INFO - Animal=93 Temp=38.41 HeartRate=130 Risk=HIGH
+2026-06-19 18:13:40,318 - INFO - Animal=92 Temp=38.66 HeartRate=104 Risk=NORMAL
+2026-06-19 18:13:42,312 - INFO - Animal=100 Temp=37.18 HeartRate=102 Risk=NORMAL
+2026-06-19 18:13:44,321 - INFO - Animal=99 Temp=40.0 HeartRate=72 Risk=NORMAL
+2026-06-19 18:13:46,332 - INFO - Animal=49 Temp=39.13 HeartRate=68 Risk=NORMAL
+2026-06-19 18:13:48,327 - INFO - Animal=2 Temp=38.67 HeartRate=130 Risk=HIGH
+2026-06-19 18:13:50,311 - INFO - Animal=17 Temp=39.28 HeartRate=104 Risk=NORMAL
+2026-06-19 18:13:52,355 - INFO - Animal=24 Temp=41.12 HeartRate=117 Risk=HIGH
+2026-06-19 18:13:54,367 - INFO - Animal=73 Temp=38.43 HeartRate=64 Risk=NORMAL
+2026-06-19 18:13:56,375 - INFO - Animal=92 Temp=40.57 HeartRate=138 Risk=HIGH
+2026-06-19 18:13:58,339 - INFO - Animal=67 Temp=39.55 HeartRate=88 Risk=NORMAL
+2026-06-19 18:14:00,357 - INFO - Animal=60 Temp=40.55 HeartRate=133 Risk=HIGH
+2026-06-19 18:14:02,360 - INFO - Animal=35 Temp=40.69 HeartRate=62 Risk=HIGH
+2026-06-19 18:14:04,401 - INFO - Animal=48 Temp=37.91 HeartRate=95 Risk=NORMAL
+2026-06-19 18:14:06,413 - INFO - Animal=83 Temp=40.14 HeartRate=80 Risk=NORMAL
+2026-06-19 18:14:08,416 - INFO - Animal=100 Temp=39.43 HeartRate=81 Risk=NORMAL
+2026-06-19 18:14:10,423 - INFO - Animal=78 Temp=40.27 HeartRate=122 Risk=HIGH
+2026-06-19 18:14:12,407 - INFO - Animal=35 Temp=39.39 HeartRate=116 Risk=NORMAL
+2026-06-19 18:14:14,435 - INFO - Animal=8 Temp=38.11 HeartRate=75 Risk=NORMAL
+2026-06-19 18:14:16,440 - INFO - Animal=2 Temp=40.57 HeartRate=89 Risk=HIGH
+2026-06-19 18:14:18,454 - INFO - Animal=46 Temp=39.67 HeartRate=132 Risk=HIGH
+2026-06-19 18:14:20,467 - INFO - Animal=82 Temp=39.29 HeartRate=103 Risk=NORMAL
+2026-06-19 18:14:22,474 - INFO - Animal=28 Temp=40.14 HeartRate=114 Risk=NORMAL
+2026-06-19 18:14:31,094 - INFO - Animal=12 Temp=41.18 HeartRate=102 Risk=HIGH
+2026-06-19 18:14:32,677 - INFO - Animal=30 Temp=40.7 HeartRate=120 Risk=HIGH
+2026-06-19 18:14:34,678 - INFO - Animal=90 Temp=40.1 HeartRate=90 Risk=NORMAL
+2026-06-19 18:14:36,724 - INFO - Animal=23 Temp=39.35 HeartRate=88 Risk=NORMAL
+2026-06-19 18:14:38,754 - INFO - Animal=91 Temp=40.13 HeartRate=94 Risk=NORMAL
+2026-06-19 18:14:40,713 - INFO - Animal=70 Temp=37.54 HeartRate=62 Risk=NORMAL
+2026-06-19 18:14:42,718 - INFO - Animal=16 Temp=41.59 HeartRate=101 Risk=HIGH
+2026-06-19 18:14:44,735 - INFO - Animal=29 Temp=41.79 HeartRate=81 Risk=HIGH
+2026-06-19 18:14:46,749 - INFO - Animal=54 Temp=38.61 HeartRate=139 Risk=HIGH
+2026-06-19 18:14:48,786 - INFO - Animal=37 Temp=39.57 HeartRate=112 Risk=NORMAL
+2026-06-19 18:14:50,745 - INFO - Animal=67 Temp=40.79 HeartRate=97 Risk=HIGH
+2026-06-19 18:14:52,802 - INFO - Animal=73 Temp=38.11 HeartRate=96 Risk=NORMAL
+2026-06-19 18:14:54,759 - INFO - Animal=75 Temp=39.42 HeartRate=84 Risk=NORMAL
+2026-06-19 18:14:56,818 - INFO - Animal=86 Temp=37.19 HeartRate=60 Risk=HIGH
+2026-06-19 18:14:58,784 - INFO - Animal=95 Temp=40.95 HeartRate=118 Risk=HIGH
+2026-06-19 18:15:00,785 - INFO - Animal=79 Temp=38.31 HeartRate=88 Risk=NORMAL
+2026-06-19 18:15:02,811 - INFO - Animal=41 Temp=37.32 HeartRate=71 Risk=NORMAL
+2026-06-19 18:15:04,872 - INFO - Animal=9 Temp=40.71 HeartRate=138 Risk=HIGH
+2026-06-19 18:15:06,854 - INFO - Animal=80 Temp=41.79 HeartRate=83 Risk=HIGH
+2026-06-19 18:15:08,827 - INFO - Animal=100 Temp=39.45 HeartRate=69 Risk=NORMAL
+2026-06-19 18:15:10,843 - INFO - Animal=47 Temp=40.66 HeartRate=124 Risk=HIGH
+2026-06-19 18:15:12,878 - INFO - Animal=77 Temp=40.79 HeartRate=121 Risk=HIGH
+2026-06-19 18:15:14,856 - INFO - Animal=52 Temp=37.62 HeartRate=77 Risk=NORMAL
+2026-06-19 18:15:16,863 - INFO - Animal=25 Temp=39.78 HeartRate=134 Risk=HIGH
+2026-06-19 18:15:18,893 - INFO - Animal=55 Temp=39.13 HeartRate=127 Risk=HIGH
+2026-06-19 18:15:20,881 - INFO - Animal=48 Temp=40.62 HeartRate=98 Risk=HIGH
+2026-06-19 18:15:22,885 - INFO - Animal=12 Temp=38.53 HeartRate=71 Risk=NORMAL
+2026-06-19 18:15:24,894 - INFO - Animal=94 Temp=40.25 HeartRate=61 Risk=HIGH
+2026-06-19 18:15:26,929 - INFO - Animal=93 Temp=37.97 HeartRate=122 Risk=NORMAL
+2026-06-19 18:15:28,872 - INFO - Animal=74 Temp=38.53 HeartRate=118 Risk=NORMAL
+2026-06-19 18:15:30,909 - INFO - Animal=36 Temp=39.06 HeartRate=72 Risk=NORMAL
+2026-06-19 18:15:32,873 - INFO - Animal=17 Temp=39.17 HeartRate=91 Risk=NORMAL
+2026-06-19 18:15:34,879 - INFO - Animal=52 Temp=39.77 HeartRate=118 Risk=NORMAL
+2026-06-19 18:15:36,911 - INFO - Animal=35 Temp=38.27 HeartRate=82 Risk=NORMAL
+2026-06-19 18:15:38,883 - INFO - Animal=81 Temp=38.7 HeartRate=111 Risk=NORMAL
+2026-06-19 18:15:40,896 - INFO - Animal=95 Temp=37.67 HeartRate=98 Risk=NORMAL
+2026-06-19 18:15:42,901 - INFO - Animal=21 Temp=40.61 HeartRate=83 Risk=HIGH
+2026-06-19 18:15:44,900 - INFO - Animal=40 Temp=40.44 HeartRate=106 Risk=HIGH
+2026-06-19 18:15:46,899 - INFO - Animal=75 Temp=38.77 HeartRate=128 Risk=HIGH
+2026-06-19 18:15:48,903 - INFO - Animal=88 Temp=40.61 HeartRate=73 Risk=HIGH
+2026-06-19 18:15:50,942 - INFO - Animal=33 Temp=37.63 HeartRate=99 Risk=NORMAL
+2026-06-19 18:15:52,950 - INFO - Animal=85 Temp=37.38 HeartRate=93 Risk=NORMAL
+2026-06-19 18:15:54,919 - INFO - Animal=95 Temp=37.46 HeartRate=122 Risk=NORMAL
+2026-06-19 18:15:56,929 - INFO - Animal=22 Temp=41.05 HeartRate=62 Risk=HIGH
+2026-06-19 18:15:58,963 - INFO - Animal=63 Temp=39.66 HeartRate=135 Risk=HIGH
+2026-06-19 18:16:00,967 - INFO - Animal=26 Temp=40.37 HeartRate=134 Risk=HIGH
+2026-06-19 18:16:02,974 - INFO - Animal=70 Temp=39.6 HeartRate=62 Risk=NORMAL
+2026-06-19 18:16:05,012 - INFO - Animal=81 Temp=38.5 HeartRate=139 Risk=HIGH
+2026-06-19 18:16:05,990 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:16:06,026 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-19 18:16:07,031 - INFO - Animal=47 Temp=40.91 HeartRate=118 Risk=HIGH
+2026-06-19 18:16:09,019 - INFO - Animal=3 Temp=39.78 HeartRate=133 Risk=HIGH
+2026-06-19 18:16:11,017 - INFO - Animal=79 Temp=39.75 HeartRate=118 Risk=NORMAL
+2026-06-19 18:16:12,991 - INFO - Animal=66 Temp=37.38 HeartRate=63 Risk=NORMAL
+2026-06-19 18:16:15,038 - INFO - Animal=85 Temp=41.58 HeartRate=133 Risk=HIGH
+2026-06-19 18:16:17,074 - INFO - Animal=74 Temp=38.09 HeartRate=100 Risk=NORMAL
+2026-06-19 18:16:19,082 - INFO - Animal=55 Temp=38.88 HeartRate=93 Risk=NORMAL
+2026-06-19 18:16:21,057 - INFO - Animal=73 Temp=40.88 HeartRate=80 Risk=HIGH
+2026-06-19 18:16:23,097 - INFO - Animal=76 Temp=41.15 HeartRate=122 Risk=HIGH
+2026-06-19 18:16:25,110 - INFO - Animal=69 Temp=39.93 HeartRate=96 Risk=NORMAL
+2026-06-19 18:16:27,086 - INFO - Animal=90 Temp=41.81 HeartRate=132 Risk=HIGH
+2026-06-19 18:16:29,122 - INFO - Animal=52 Temp=37.7 HeartRate=88 Risk=NORMAL
+2026-06-19 18:16:31,127 - INFO - Animal=11 Temp=40.2 HeartRate=92 Risk=NORMAL
+2026-06-19 18:16:33,129 - INFO - Animal=50 Temp=37.51 HeartRate=108 Risk=NORMAL
+2026-06-19 18:16:35,320 - INFO - Animal=71 Temp=41.25 HeartRate=73 Risk=HIGH
+2026-06-19 18:16:37,123 - INFO - Animal=40 Temp=40.79 HeartRate=106 Risk=HIGH
+2026-06-19 18:16:39,156 - INFO - Animal=88 Temp=40.59 HeartRate=69 Risk=HIGH
+2026-06-19 18:16:41,158 - INFO - Animal=22 Temp=38.58 HeartRate=64 Risk=NORMAL
+2026-06-19 18:16:43,178 - INFO - Animal=57 Temp=37.96 HeartRate=89 Risk=NORMAL
+2026-06-19 18:16:45,190 - INFO - Animal=75 Temp=37.35 HeartRate=68 Risk=NORMAL
+2026-06-19 18:16:47,149 - INFO - Animal=24 Temp=39.4 HeartRate=98 Risk=NORMAL
+2026-06-19 18:16:49,128 - INFO - Animal=20 Temp=38.0 HeartRate=82 Risk=NORMAL
+2026-06-19 18:16:51,138 - INFO - Animal=34 Temp=39.83 HeartRate=122 Risk=HIGH
+2026-06-19 18:16:53,142 - INFO - Animal=79 Temp=40.14 HeartRate=98 Risk=NORMAL
+2026-06-19 18:16:55,156 - INFO - Animal=87 Temp=40.1 HeartRate=60 Risk=HIGH
+2026-06-19 18:16:57,221 - INFO - Animal=75 Temp=41.28 HeartRate=138 Risk=HIGH
+2026-06-19 18:16:59,201 - INFO - Animal=8 Temp=41.34 HeartRate=124 Risk=HIGH
+2026-06-19 18:17:01,236 - INFO - Animal=25 Temp=37.96 HeartRate=84 Risk=NORMAL
+2026-06-19 18:17:03,180 - INFO - Animal=27 Temp=37.64 HeartRate=89 Risk=NORMAL
+2026-06-19 18:17:05,210 - INFO - Animal=77 Temp=41.4 HeartRate=119 Risk=HIGH
+2026-06-19 18:17:06,179 - ERROR - <KafkaTCPTransport [::1:9092<-60692]>: socket disconnected
+2026-06-19 18:17:06,179 - ERROR - <KafkaTCPTransport [::1:9092<-60692]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,179 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,180 - ERROR - <KafkaTCPTransport [::1:9092<-60693]>: socket disconnected
+2026-06-19 18:17:06,180 - ERROR - <KafkaTCPTransport [::1:9092<-60693]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,181 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:17:06,186 - ERROR - <KafkaTCPTransport [::1:9092<-55070]>: socket disconnected
+2026-06-19 18:17:06,186 - ERROR - <KafkaTCPTransport [::1:9092<-55070]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,186 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,187 - ERROR - Metadata refresh: failed KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,187 - ERROR - KafkaConnectionError: socket disconnected
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 127, in _refresh_loop
+    await self.refresh_metadata()
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 156, in refresh_metadata
+    await self._do_refresh_metadata(node_id)
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 175, in _do_refresh_metadata
+    response = await self._manager.send(request, node_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\future.py", line 165, in __await__
+    raise self.exception
+kafka.errors.KafkaConnectionError: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,228 - ERROR - <KafkaTCPTransport [::1:9092<-55071]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,247 - ERROR - <KafkaTCPTransport [::1:9092<-55071]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,248 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,255 - ERROR - <KafkaTCPTransport [::1:9092<-61347]>: socket disconnected
+2026-06-19 18:17:06,255 - ERROR - <KafkaTCPTransport [::1:9092<-61347]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,256 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,261 - ERROR - <KafkaTCPTransport [::1:9092<-63862]>: socket disconnected
+2026-06-19 18:17:06,261 - ERROR - <KafkaTCPTransport [::1:9092<-63862]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,262 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,290 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:17:06,290 - ERROR - <KafkaTCPTransport [::1:9092<-63863]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,291 - ERROR - <KafkaTCPTransport [::1:9092<-63863]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,291 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,292 - ERROR - Metadata refresh: failed KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,292 - ERROR - KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 127, in _refresh_loop
+    await self.refresh_metadata()
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 156, in refresh_metadata
+    await self._do_refresh_metadata(node_id)
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 175, in _do_refresh_metadata
+    response = await self._manager.send(request, node_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\future.py", line 165, in __await__
+    raise self.exception
+kafka.errors.KafkaConnectionError: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,297 - ERROR - <KafkaTCPTransport [::1:9092<-63865]>: socket disconnected
+2026-06-19 18:17:06,297 - ERROR - <KafkaTCPTransport [::1:9092<-63865]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,298 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,303 - ERROR - <KafkaTCPTransport [::1:9092<-63866]>: socket disconnected
+2026-06-19 18:17:06,303 - ERROR - <KafkaTCPTransport [::1:9092<-63866]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,303 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,308 - ERROR - <KafkaTCPTransport [::1:9092<-63867]>: socket disconnected
+2026-06-19 18:17:06,308 - ERROR - <KafkaTCPTransport [::1:9092<-63867]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,309 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,314 - ERROR - <KafkaTCPTransport [::1:9092<-63868]>: socket disconnected
+2026-06-19 18:17:06,314 - ERROR - <KafkaTCPTransport [::1:9092<-63868]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,314 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,336 - ERROR - <KafkaTCPTransport [::1:9092<-63869]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,337 - ERROR - <KafkaTCPTransport [::1:9092<-63869]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,337 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,341 - ERROR - <KafkaTCPTransport [::1:9092<-63870]>: socket disconnected
+2026-06-19 18:17:06,341 - ERROR - <KafkaTCPTransport [::1:9092<-63870]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,341 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,344 - ERROR - <KafkaTCPTransport [::1:9092<-63871]>: socket disconnected
+2026-06-19 18:17:06,345 - ERROR - <KafkaTCPTransport [::1:9092<-63871]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,345 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,349 - ERROR - <KafkaTCPTransport [::1:9092<-63872]>: socket disconnected
+2026-06-19 18:17:06,349 - ERROR - <KafkaTCPTransport [::1:9092<-63872]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,349 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,353 - ERROR - <KafkaTCPTransport [::1:9092<-63873]>: socket disconnected
+2026-06-19 18:17:06,354 - ERROR - <KafkaTCPTransport [::1:9092<-63873]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,354 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,364 - ERROR - <KafkaTCPTransport [::1:9092<-63874]>: socket disconnected
+2026-06-19 18:17:06,364 - ERROR - <KafkaTCPTransport [::1:9092<-63874]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,365 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,369 - ERROR - <KafkaTCPTransport [::1:9092<-63875]>: socket disconnected
+2026-06-19 18:17:06,369 - ERROR - <KafkaTCPTransport [::1:9092<-63875]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,369 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,373 - ERROR - <KafkaTCPTransport [::1:9092<-63876]>: socket disconnected
+2026-06-19 18:17:06,374 - ERROR - <KafkaTCPTransport [::1:9092<-63876]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,374 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,378 - ERROR - <KafkaTCPTransport [::1:9092<-63877]>: socket disconnected
+2026-06-19 18:17:06,378 - ERROR - <KafkaTCPTransport [::1:9092<-63877]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,378 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,383 - ERROR - <KafkaTCPTransport [::1:9092<-63878]>: socket disconnected
+2026-06-19 18:17:06,384 - ERROR - <KafkaTCPTransport [::1:9092<-63878]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,384 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,389 - ERROR - <KafkaTCPTransport [::1:9092<-63879]>: socket disconnected
+2026-06-19 18:17:06,389 - ERROR - <KafkaTCPTransport [::1:9092<-63879]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,389 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,392 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:17:06,394 - ERROR - <KafkaTCPTransport [::1:9092<-63880]>: socket disconnected
+2026-06-19 18:17:06,394 - ERROR - <KafkaTCPTransport [::1:9092<-63880]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,394 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,394 - ERROR - Metadata refresh: failed KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,395 - ERROR - KafkaConnectionError: socket disconnected
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 127, in _refresh_loop
+    await self.refresh_metadata()
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 156, in refresh_metadata
+    await self._do_refresh_metadata(node_id)
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 175, in _do_refresh_metadata
+    response = await self._manager.send(request, node_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\future.py", line 165, in __await__
+    raise self.exception
+kafka.errors.KafkaConnectionError: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,399 - ERROR - <KafkaTCPTransport [::1:9092<-63881]>: socket disconnected
+2026-06-19 18:17:06,400 - ERROR - <KafkaTCPTransport [::1:9092<-63881]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,400 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,404 - ERROR - <KafkaTCPTransport [::1:9092<-63882]>: socket disconnected
+2026-06-19 18:17:06,404 - ERROR - <KafkaTCPTransport [::1:9092<-63882]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,405 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,408 - ERROR - <KafkaTCPTransport [::1:9092<-63883]>: socket disconnected
+2026-06-19 18:17:06,408 - ERROR - <KafkaTCPTransport [::1:9092<-63883]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,409 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,412 - ERROR - <KafkaTCPTransport [::1:9092<-63884]>: socket disconnected
+2026-06-19 18:17:06,413 - ERROR - <KafkaTCPTransport [::1:9092<-63884]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,413 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,418 - ERROR - <KafkaTCPTransport [::1:9092<-63885]>: socket disconnected
+2026-06-19 18:17:06,418 - ERROR - <KafkaTCPTransport [::1:9092<-63885]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,418 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,422 - ERROR - <KafkaTCPTransport [::1:9092<-63887]>: socket disconnected
+2026-06-19 18:17:06,422 - ERROR - <KafkaTCPTransport [::1:9092<-63887]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,422 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,426 - ERROR - <KafkaTCPTransport [::1:9092<-63888]>: socket disconnected
+2026-06-19 18:17:06,426 - ERROR - <KafkaTCPTransport [::1:9092<-63888]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,426 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,430 - ERROR - <KafkaTCPTransport [::1:9092<-63889]>: socket disconnected
+2026-06-19 18:17:06,431 - ERROR - <KafkaTCPTransport [::1:9092<-63889]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,431 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,435 - ERROR - <KafkaTCPTransport [::1:9092<-63890]>: socket disconnected
+2026-06-19 18:17:06,435 - ERROR - <KafkaTCPTransport [::1:9092<-63890]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,435 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,439 - ERROR - <KafkaTCPTransport [::1:9092<-63891]>: socket disconnected
+2026-06-19 18:17:06,439 - ERROR - <KafkaTCPTransport [::1:9092<-63891]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,439 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,443 - ERROR - <KafkaTCPTransport [::1:9092<-63892]>: socket disconnected
+2026-06-19 18:17:06,443 - ERROR - <KafkaTCPTransport [::1:9092<-63892]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,444 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,448 - ERROR - <KafkaTCPTransport [::1:9092<-63893]>: socket disconnected
+2026-06-19 18:17:06,448 - ERROR - <KafkaTCPTransport [::1:9092<-63893]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,448 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,452 - ERROR - <KafkaTCPTransport [::1:9092<-63894]>: socket disconnected
+2026-06-19 18:17:06,452 - ERROR - <KafkaTCPTransport [::1:9092<-63894]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,453 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,456 - ERROR - <KafkaTCPTransport [::1:9092<-63895]>: socket disconnected
+2026-06-19 18:17:06,456 - ERROR - <KafkaTCPTransport [::1:9092<-63895]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,456 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,460 - ERROR - <KafkaTCPTransport [::1:9092<-63896]>: socket disconnected
+2026-06-19 18:17:06,460 - ERROR - <KafkaTCPTransport [::1:9092<-63896]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,461 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,465 - ERROR - <KafkaTCPTransport [::1:9092<-63897]>: socket disconnected
+2026-06-19 18:17:06,465 - ERROR - <KafkaTCPTransport [::1:9092<-63897]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,465 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,469 - ERROR - <KafkaTCPTransport [::1:9092<-63898]>: socket disconnected
+2026-06-19 18:17:06,469 - ERROR - <KafkaTCPTransport [::1:9092<-63898]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,469 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,473 - ERROR - <KafkaTCPTransport [::1:9092<-63899]>: socket disconnected
+2026-06-19 18:17:06,473 - ERROR - <KafkaTCPTransport [::1:9092<-63899]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,474 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,478 - ERROR - <KafkaTCPTransport [::1:9092<-63900]>: socket disconnected
+2026-06-19 18:17:06,478 - ERROR - <KafkaTCPTransport [::1:9092<-63900]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,478 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,482 - ERROR - <KafkaTCPTransport [::1:9092<-63901]>: socket disconnected
+2026-06-19 18:17:06,483 - ERROR - <KafkaTCPTransport [::1:9092<-63901]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,483 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,488 - ERROR - <KafkaTCPTransport [::1:9092<-63902]>: socket disconnected
+2026-06-19 18:17:06,488 - ERROR - <KafkaTCPTransport [::1:9092<-63902]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,489 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,509 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:17:06,509 - ERROR - <KafkaTCPTransport [::1:9092<-63903]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,509 - ERROR - <KafkaTCPTransport [::1:9092<-63903]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,510 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,510 - ERROR - Metadata refresh: failed KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,510 - ERROR - KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 127, in _refresh_loop
+    await self.refresh_metadata()
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 156, in refresh_metadata
+    await self._do_refresh_metadata(node_id)
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 175, in _do_refresh_metadata
+    response = await self._manager.send(request, node_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\future.py", line 165, in __await__
+    raise self.exception
+kafka.errors.KafkaConnectionError: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,514 - ERROR - <KafkaTCPTransport [::1:9092<-63904]>: socket disconnected
+2026-06-19 18:17:06,515 - ERROR - <KafkaTCPTransport [::1:9092<-63904]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,515 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,520 - ERROR - <KafkaTCPTransport [::1:9092<-63905]>: socket disconnected
+2026-06-19 18:17:06,520 - ERROR - <KafkaTCPTransport [::1:9092<-63905]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,520 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,525 - ERROR - <KafkaTCPTransport [::1:9092<-63906]>: socket disconnected
+2026-06-19 18:17:06,525 - ERROR - <KafkaTCPTransport [::1:9092<-63906]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,525 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,530 - ERROR - <KafkaTCPTransport [::1:9092<-63908]>: socket disconnected
+2026-06-19 18:17:06,530 - ERROR - <KafkaTCPTransport [::1:9092<-63908]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,530 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,535 - ERROR - <KafkaTCPTransport [::1:9092<-63909]>: socket disconnected
+2026-06-19 18:17:06,535 - ERROR - <KafkaTCPTransport [::1:9092<-63909]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,535 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,555 - ERROR - <KafkaTCPTransport [::1:9092<-63910]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,555 - ERROR - <KafkaTCPTransport [::1:9092<-63910]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,556 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,571 - ERROR - <KafkaTCPTransport [::1:9092<-63912]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,571 - ERROR - <KafkaTCPTransport [::1:9092<-63912]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,572 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,586 - ERROR - <KafkaTCPTransport [::1:9092<-63913]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,587 - ERROR - <KafkaTCPTransport [::1:9092<-63913]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,587 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,592 - ERROR - <KafkaTCPTransport [::1:9092<-63914]>: socket disconnected
+2026-06-19 18:17:06,592 - ERROR - <KafkaTCPTransport [::1:9092<-63914]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,593 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,597 - ERROR - <KafkaTCPTransport [::1:9092<-63915]>: socket disconnected
+2026-06-19 18:17:06,597 - ERROR - <KafkaTCPTransport [::1:9092<-63915]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,598 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,603 - ERROR - <KafkaTCPTransport [::1:9092<-63916]>: socket disconnected
+2026-06-19 18:17:06,603 - ERROR - <KafkaTCPTransport [::1:9092<-63916]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,603 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,607 - ERROR - <KafkaTCPTransport [::1:9092<-63917]>: socket disconnected
+2026-06-19 18:17:06,607 - ERROR - <KafkaTCPTransport [::1:9092<-63917]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,608 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,631 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:17:06,632 - ERROR - <KafkaTCPTransport [::1:9092<-63918]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,632 - ERROR - <KafkaTCPTransport [::1:9092<-63918]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,632 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,633 - ERROR - Metadata refresh: failed KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,633 - ERROR - KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 127, in _refresh_loop
+    await self.refresh_metadata()
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 156, in refresh_metadata
+    await self._do_refresh_metadata(node_id)
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 175, in _do_refresh_metadata
+    response = await self._manager.send(request, node_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\future.py", line 165, in __await__
+    raise self.exception
+kafka.errors.KafkaConnectionError: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,641 - ERROR - <KafkaTCPTransport [::1:9092<-63920]>: socket disconnected
+2026-06-19 18:17:06,641 - ERROR - <KafkaTCPTransport [::1:9092<-63920]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,641 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,645 - ERROR - <KafkaTCPTransport [::1:9092<-63921]>: socket disconnected
+2026-06-19 18:17:06,645 - ERROR - <KafkaTCPTransport [::1:9092<-63921]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,646 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,650 - ERROR - <KafkaTCPTransport [::1:9092<-63922]>: socket disconnected
+2026-06-19 18:17:06,650 - ERROR - <KafkaTCPTransport [::1:9092<-63922]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,650 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,654 - ERROR - <KafkaTCPTransport [::1:9092<-63923]>: socket disconnected
+2026-06-19 18:17:06,655 - ERROR - <KafkaTCPTransport [::1:9092<-63923]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,655 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,659 - ERROR - <KafkaTCPTransport [::1:9092<-63924]>: socket disconnected
+2026-06-19 18:17:06,659 - ERROR - <KafkaTCPTransport [::1:9092<-63924]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,659 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,663 - ERROR - <KafkaTCPTransport [::1:9092<-63925]>: socket disconnected
+2026-06-19 18:17:06,664 - ERROR - <KafkaTCPTransport [::1:9092<-63925]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,664 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,668 - ERROR - <KafkaTCPTransport [::1:9092<-63926]>: socket disconnected
+2026-06-19 18:17:06,668 - ERROR - <KafkaTCPTransport [::1:9092<-63926]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,668 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,672 - ERROR - <KafkaTCPTransport [::1:9092<-63927]>: socket disconnected
+2026-06-19 18:17:06,672 - ERROR - <KafkaTCPTransport [::1:9092<-63927]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,672 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,675 - ERROR - <KafkaTCPTransport [::1:9092<-63928]>: socket disconnected
+2026-06-19 18:17:06,676 - ERROR - <KafkaTCPTransport [::1:9092<-63928]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,676 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,679 - ERROR - <KafkaTCPTransport [::1:9092<-63929]>: socket disconnected
+2026-06-19 18:17:06,680 - ERROR - <KafkaTCPTransport [::1:9092<-63929]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,680 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,684 - ERROR - <KafkaTCPTransport [::1:9092<-63930]>: socket disconnected
+2026-06-19 18:17:06,684 - ERROR - <KafkaTCPTransport [::1:9092<-63930]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,684 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,688 - ERROR - <KafkaTCPTransport [::1:9092<-63931]>: socket disconnected
+2026-06-19 18:17:06,688 - ERROR - <KafkaTCPTransport [::1:9092<-63931]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,689 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,692 - ERROR - <KafkaTCPTransport [::1:9092<-63932]>: socket disconnected
+2026-06-19 18:17:06,692 - ERROR - <KafkaTCPTransport [::1:9092<-63932]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,692 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,696 - ERROR - <KafkaTCPTransport [::1:9092<-63933]>: socket disconnected
+2026-06-19 18:17:06,697 - ERROR - <KafkaTCPTransport [::1:9092<-63933]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,697 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,702 - ERROR - <KafkaTCPTransport [::1:9092<-63934]>: socket disconnected
+2026-06-19 18:17:06,702 - ERROR - <KafkaTCPTransport [::1:9092<-63934]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,702 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,705 - ERROR - <KafkaTCPTransport [::1:9092<-63935]>: socket disconnected
+2026-06-19 18:17:06,705 - ERROR - <KafkaTCPTransport [::1:9092<-63935]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,706 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,709 - ERROR - <KafkaTCPTransport [::1:9092<-63936]>: socket disconnected
+2026-06-19 18:17:06,710 - ERROR - <KafkaTCPTransport [::1:9092<-63936]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,710 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,713 - ERROR - <KafkaTCPTransport [::1:9092<-63937]>: socket disconnected
+2026-06-19 18:17:06,713 - ERROR - <KafkaTCPTransport [::1:9092<-63937]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,713 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,717 - ERROR - <KafkaTCPTransport [::1:9092<-63938]>: socket disconnected
+2026-06-19 18:17:06,717 - ERROR - <KafkaTCPTransport [::1:9092<-63938]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,717 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,720 - ERROR - <KafkaTCPTransport [::1:9092<-63939]>: socket disconnected
+2026-06-19 18:17:06,721 - ERROR - <KafkaTCPTransport [::1:9092<-63939]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,721 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,724 - ERROR - <KafkaTCPTransport [::1:9092<-63940]>: socket disconnected
+2026-06-19 18:17:06,724 - ERROR - <KafkaTCPTransport [::1:9092<-63940]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,724 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,728 - ERROR - <KafkaTCPTransport [::1:9092<-63941]>: socket disconnected
+2026-06-19 18:17:06,728 - ERROR - <KafkaTCPTransport [::1:9092<-63941]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,728 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,731 - ERROR - <KafkaTCPTransport [::1:9092<-63942]>: socket disconnected
+2026-06-19 18:17:06,731 - ERROR - <KafkaTCPTransport [::1:9092<-63942]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,731 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,733 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:17:06,735 - ERROR - <KafkaTCPTransport [::1:9092<-63943]>: socket disconnected
+2026-06-19 18:17:06,735 - ERROR - <KafkaTCPTransport [::1:9092<-63943]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,735 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,735 - ERROR - Metadata refresh: failed KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,735 - ERROR - KafkaConnectionError: socket disconnected
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 127, in _refresh_loop
+    await self.refresh_metadata()
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 156, in refresh_metadata
+    await self._do_refresh_metadata(node_id)
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 175, in _do_refresh_metadata
+    response = await self._manager.send(request, node_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\future.py", line 165, in __await__
+    raise self.exception
+kafka.errors.KafkaConnectionError: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,756 - ERROR - <KafkaTCPTransport [::1:9092<-63944]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,756 - ERROR - <KafkaTCPTransport [::1:9092<-63944]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,756 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,759 - ERROR - <KafkaTCPTransport [::1:9092<-63946]>: socket disconnected
+2026-06-19 18:17:06,759 - ERROR - <KafkaTCPTransport [::1:9092<-63946]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,759 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,771 - ERROR - <KafkaTCPTransport [::1:9092<-63947]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,772 - ERROR - <KafkaTCPTransport [::1:9092<-63947]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,773 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,777 - ERROR - <KafkaTCPTransport [::1:9092<-63948]>: socket disconnected
+2026-06-19 18:17:06,778 - ERROR - <KafkaTCPTransport [::1:9092<-63948]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,778 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,783 - ERROR - <KafkaTCPTransport [::1:9092<-63949]>: socket disconnected
+2026-06-19 18:17:06,783 - ERROR - <KafkaTCPTransport [::1:9092<-63949]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,783 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,791 - ERROR - <KafkaTCPTransport [::1:9092<-63950]>: socket disconnected
+2026-06-19 18:17:06,792 - ERROR - <KafkaTCPTransport [::1:9092<-63950]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,792 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,796 - ERROR - <KafkaTCPTransport [::1:9092<-63951]>: socket disconnected
+2026-06-19 18:17:06,796 - ERROR - <KafkaTCPTransport [::1:9092<-63951]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,796 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,800 - ERROR - <KafkaTCPTransport [::1:9092<-63952]>: socket disconnected
+2026-06-19 18:17:06,800 - ERROR - <KafkaTCPTransport [::1:9092<-63952]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,800 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,804 - ERROR - <KafkaTCPTransport [::1:9092<-63953]>: socket disconnected
+2026-06-19 18:17:06,804 - ERROR - <KafkaTCPTransport [::1:9092<-63953]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,804 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,808 - ERROR - <KafkaTCPTransport [::1:9092<-63954]>: socket disconnected
+2026-06-19 18:17:06,808 - ERROR - <KafkaTCPTransport [::1:9092<-63954]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,808 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,832 - ERROR - <KafkaTCPTransport [::1:9092<-63955]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,833 - ERROR - <KafkaTCPTransport [::1:9092<-63955]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,833 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,848 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:17:06,848 - ERROR - <KafkaTCPTransport [::1:9092<-63957]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,849 - ERROR - <KafkaTCPTransport [::1:9092<-63957]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,849 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,849 - ERROR - Metadata refresh: failed KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,850 - ERROR - KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 127, in _refresh_loop
+    await self.refresh_metadata()
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 156, in refresh_metadata
+    await self._do_refresh_metadata(node_id)
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 175, in _do_refresh_metadata
+    response = await self._manager.send(request, node_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\future.py", line 165, in __await__
+    raise self.exception
+kafka.errors.KafkaConnectionError: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,854 - ERROR - <KafkaTCPTransport [::1:9092<-63958]>: socket disconnected
+2026-06-19 18:17:06,854 - ERROR - <KafkaTCPTransport [::1:9092<-63958]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,854 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,880 - ERROR - <KafkaTCPTransport [::1:9092<-63959]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,880 - ERROR - <KafkaTCPTransport [::1:9092<-63959]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,880 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,895 - ERROR - <KafkaTCPTransport [::1:9092<-63961]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,895 - ERROR - <KafkaTCPTransport [::1:9092<-63961]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,895 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,910 - ERROR - <KafkaTCPTransport [::1:9092<-63962]>: Error receiving network data closing socket
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\net\transport.py", line 107, in _sock_recv
+    data = self._sock.recv(4096)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,911 - ERROR - <KafkaTCPTransport [::1:9092<-63962]>: Abort (KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine)
+2026-06-19 18:17:06,911 - ERROR - Fetch to node 1 failed: KafkaConnectionError: [WinError 10053] An established connection was aborted by the software in your host machine
+2026-06-19 18:17:06,913 - ERROR - <KafkaTCPTransport [::1:9092<-63963]>: socket disconnected
+2026-06-19 18:17:06,913 - ERROR - <KafkaTCPTransport [::1:9092<-63963]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,914 - ERROR - Error sending HeartbeatRequest to node coordinator-1 [KafkaConnectionError: socket disconnected]
+2026-06-19 18:17:06,914 - WARNING - Marking the coordinator dead (node coordinator-1) for group sensor-group: KafkaConnectionError: socket disconnected.
+2026-06-19 18:17:06,915 - ERROR - <KafkaTCPTransport [::1:9092<-63964]>: socket disconnected
+2026-06-19 18:17:06,916 - ERROR - <KafkaTCPTransport [::1:9092<-63964]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,916 - ERROR - Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,917 - ERROR - Error sending FindCoordinatorRequest to node 1 [KafkaConnectionError: socket disconnected]
+2026-06-19 18:17:06,921 - ERROR - <KafkaTCPTransport [::1:9092<-63965]>: socket disconnected
+2026-06-19 18:17:06,921 - ERROR - <KafkaTCPTransport [::1:9092<-63965]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,921 - ERROR - Error sending FindCoordinatorRequest to node 1 [KafkaConnectionError: socket disconnected]
+2026-06-19 18:17:06,955 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:17:06,959 - ERROR - <KafkaTCPTransport [::1:9092<-63966]>: socket disconnected
+2026-06-19 18:17:06,960 - ERROR - <KafkaTCPTransport [::1:9092<-63966]>: Abort (KafkaConnectionError: socket disconnected)
+2026-06-19 18:17:06,960 - ERROR - Metadata refresh: failed KafkaConnectionError: socket disconnected
+2026-06-19 18:17:06,960 - ERROR - KafkaConnectionError: socket disconnected
+Traceback (most recent call last):
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 127, in _refresh_loop
+    await self.refresh_metadata()
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 156, in refresh_metadata
+    await self._do_refresh_metadata(node_id)
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\cluster.py", line 175, in _do_refresh_metadata
+    response = await self._manager.send(request, node_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\monis\OneDrive\Documents\IntelliStream\venv\Lib\site-packages\kafka\future.py", line 165, in __await__
+    raise self.exception
+kafka.errors.KafkaConnectionError: KafkaConnectionError: socket disconnected
+2026-06-19 18:28:50,089 - WARNING - socks5_proxy is deprecated, use proxy_url instead
+2026-06-19 18:28:50,091 - INFO - IO loop starting (client_id=kafka-python-3.0.0)
+2026-06-19 18:28:50,109 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-53569] broker_version=unknown (initializing)>: Broker version identified as 3.5
+2026-06-19 18:28:50,109 - INFO - Metadata refresh (node_id=bootstrap-0)
+2026-06-19 18:28:50,116 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-19 18:28:50,116 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-19 18:28:50,116 - INFO - <KafkaTCPTransport [::1:9092<-53569]>: Closing transport
+2026-06-19 18:28:50,117 - INFO - Starting metadata refresh loop
+2026-06-19 18:28:50,119 - INFO - Updating subscribed topics to: ('sensor-events',)
+2026-06-19 18:28:50,125 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-53570] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-19 18:28:50,126 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-53570] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-19 18:28:50,216 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:28:50,221 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 0)
+2026-06-19 18:28:51,429 - INFO - Coordinator for GROUP/sensor-group is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-06-19 18:28:51,430 - INFO - Discovered coordinator coordinator-1 for group sensor-group
+2026-06-19 18:28:51,435 - INFO - Revoking previously assigned partitions set() for group sensor-group
+2026-06-19 18:28:51,436 - INFO - (Re-)joining group sensor-group
+2026-06-19 18:28:51,443 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-53962] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-19 18:28:51,445 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-53962] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-19 18:28:51,475 - INFO - Received member id kafka-python-3.0.0-03cb0eb8-9524-4d36-8e71-86b7a0f71d7f for group sensor-group; will retry join-group
+2026-06-19 18:28:51,476 - INFO - (Re-)joining group sensor-group
+2026-06-19 18:28:54,512 - INFO - Successfully joined group sensor-group <Generation 1 (member_id: kafka-python-3.0.0-03cb0eb8-9524-4d36-8e71-86b7a0f71d7f, protocol: range)>
+2026-06-19 18:28:54,513 - INFO - Elected group leader -- performing partition assignments using range
+2026-06-19 18:28:54,521 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:28:54,532 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-19 18:28:54,560 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-events', partition=0)]
+2026-06-19 18:28:54,561 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-events', partition=0)} for group sensor-group
+2026-06-19 18:28:54,646 - INFO - Resetting offset for partition TopicPartition(topic='sensor-events', partition=0) to offset 0.
+2026-06-19 18:58:34,803 - WARNING - socks5_proxy is deprecated, use proxy_url instead
+2026-06-19 18:58:34,805 - INFO - IO loop starting (client_id=kafka-python-3.0.0)
+2026-06-19 18:58:34,820 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-56498] broker_version=unknown (initializing)>: Broker version identified as 3.5
+2026-06-19 18:58:34,821 - INFO - Metadata refresh (node_id=bootstrap-0)
+2026-06-19 18:58:34,826 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-19 18:58:34,826 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-19 18:58:34,826 - INFO - <KafkaTCPTransport [::1:9092<-56498]>: Closing transport
+2026-06-19 18:58:34,827 - INFO - Starting metadata refresh loop
+2026-06-19 18:58:34,828 - INFO - Updating subscribed topics to: ('sensor-events',)
+2026-06-19 18:58:34,835 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-56499] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-19 18:58:34,836 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-56499] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-19 18:58:34,931 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:58:34,934 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 0)
+2026-06-19 18:58:35,997 - INFO - Coordinator for GROUP/sensor-group is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-06-19 18:58:35,997 - INFO - Discovered coordinator coordinator-1 for group sensor-group
+2026-06-19 18:58:36,024 - INFO - Revoking previously assigned partitions set() for group sensor-group
+2026-06-19 18:58:36,025 - INFO - (Re-)joining group sensor-group
+2026-06-19 18:58:36,029 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-56501] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-19 18:58:36,029 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-56501] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-19 18:58:36,051 - INFO - Received member id kafka-python-3.0.0-9c425285-90bf-43a7-bd89-25f035702087 for group sensor-group; will retry join-group
+2026-06-19 18:58:36,051 - INFO - (Re-)joining group sensor-group
+2026-06-19 18:58:39,089 - INFO - Successfully joined group sensor-group <Generation 1 (member_id: kafka-python-3.0.0-9c425285-90bf-43a7-bd89-25f035702087, protocol: range)>
+2026-06-19 18:58:39,089 - INFO - Elected group leader -- performing partition assignments using range
+2026-06-19 18:58:39,094 - INFO - Metadata refresh (node_id=1)
+2026-06-19 18:58:39,099 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-19 18:58:39,142 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-events', partition=0)]
+2026-06-19 18:58:39,142 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-events', partition=0)} for group sensor-group
+2026-06-19 18:58:39,187 - INFO - Resetting offset for partition TopicPartition(topic='sensor-events', partition=0) to offset 0.
+2026-06-19 18:58:39,489 - INFO - Animal=35 Temp=40.16 HeartRate=104 Risk=NORMAL
+2026-06-19 18:58:39,509 - INFO - Animal=1 Temp=40.17 HeartRate=80 Risk=NORMAL
+2026-06-19 18:58:39,530 - INFO - Animal=52 Temp=40.06 HeartRate=120 Risk=HIGH
+2026-06-19 18:58:40,493 - INFO - Animal=48 Temp=40.92 HeartRate=72 Risk=HIGH
+2026-06-19 18:58:42,502 - INFO - Animal=84 Temp=39.2 HeartRate=88 Risk=NORMAL
+2026-06-19 18:58:44,507 - INFO - Animal=15 Temp=39.86 HeartRate=73 Risk=NORMAL
+2026-06-19 18:58:46,522 - INFO - Animal=95 Temp=37.53 HeartRate=123 Risk=NORMAL
+2026-06-19 18:58:48,534 - INFO - Animal=91 Temp=38.89 HeartRate=127 Risk=HIGH
+2026-06-19 18:58:50,527 - INFO - Animal=58 Temp=37.27 HeartRate=123 Risk=HIGH
+2026-06-19 18:58:52,527 - INFO - Animal=93 Temp=39.76 HeartRate=112 Risk=NORMAL
+2026-06-19 18:58:54,534 - INFO - Animal=2 Temp=39.97 HeartRate=83 Risk=NORMAL
+2026-06-19 18:58:56,544 - INFO - Animal=1 Temp=39.61 HeartRate=95 Risk=NORMAL
+2026-06-19 18:58:58,547 - INFO - Animal=36 Temp=40.23 HeartRate=136 Risk=HIGH
+2026-06-19 18:59:00,564 - INFO - Animal=3 Temp=40.91 HeartRate=102 Risk=HIGH
+2026-06-19 18:59:02,629 - INFO - Animal=86 Temp=37.55 HeartRate=115 Risk=NORMAL
+2026-06-19 18:59:04,573 - INFO - Animal=5 Temp=37.27 HeartRate=106 Risk=NORMAL
+2026-06-19 18:59:06,572 - INFO - Animal=47 Temp=40.11 HeartRate=89 Risk=NORMAL
+2026-06-19 18:59:08,576 - INFO - Animal=32 Temp=39.97 HeartRate=111 Risk=NORMAL
+2026-06-19 18:59:10,583 - INFO - Animal=64 Temp=40.77 HeartRate=76 Risk=HIGH
+2026-06-19 18:59:12,605 - INFO - Animal=6 Temp=39.34 HeartRate=112 Risk=NORMAL
+2026-06-19 18:59:14,592 - INFO - Animal=26 Temp=37.81 HeartRate=119 Risk=NORMAL
+2026-06-19 18:59:16,594 - INFO - Animal=93 Temp=38.73 HeartRate=101 Risk=NORMAL
+2026-06-19 18:59:18,601 - INFO - Animal=29 Temp=38.58 HeartRate=107 Risk=NORMAL
+2026-06-19 18:59:20,606 - INFO - Animal=68 Temp=39.59 HeartRate=72 Risk=NORMAL
+2026-06-19 18:59:22,616 - INFO - Animal=63 Temp=41.96 HeartRate=116 Risk=HIGH
+2026-06-19 18:59:24,625 - INFO - Animal=96 Temp=37.48 HeartRate=105 Risk=NORMAL
+2026-06-19 18:59:26,640 - INFO - Animal=100 Temp=40.1 HeartRate=89 Risk=NORMAL
+2026-06-19 18:59:28,649 - INFO - Animal=39 Temp=37.96 HeartRate=71 Risk=NORMAL
+2026-06-19 18:59:30,637 - INFO - Animal=23 Temp=39.65 HeartRate=89 Risk=NORMAL
+2026-06-19 18:59:32,639 - INFO - Animal=77 Temp=38.81 HeartRate=89 Risk=NORMAL
