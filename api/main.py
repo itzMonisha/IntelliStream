@@ -178,6 +178,69 @@ def stats():
         return data
 
 
+@app.get("/analytics")
+def analytics():
+
+    with engine.connect() as conn:
+
+        total_events = conn.execute(
+            text("SELECT COUNT(*) FROM sensor_events")
+        ).scalar()
+
+        high_risk = conn.execute(
+            text("""
+            SELECT COUNT(*)
+            FROM sensor_events
+            WHERE risk_level='HIGH'
+            """)
+        ).scalar()
+
+        avg_temp = conn.execute(
+            text("""
+            SELECT AVG(temperature)
+            FROM sensor_events
+            """)
+        ).scalar()
+
+        avg_hr = conn.execute(
+            text("""
+            SELECT AVG(heart_rate)
+            FROM sensor_events
+            """)
+        ).scalar()
+
+        total_animals = conn.execute(
+            text("""
+            SELECT COUNT(DISTINCT animal_id)
+            FROM sensor_events
+            """)
+        ).scalar()
+
+        high_risk_percent = (
+            (high_risk / total_events) * 100
+            if total_events > 0
+            else 0
+        )
+
+        return {
+            "total_events": total_events,
+            "total_animals": total_animals,
+            "avg_temperature": round(avg_temp, 2) if avg_temp else 0,
+            "avg_heart_rate": round(avg_hr, 2) if avg_hr else 0,
+            "high_risk_percent": round(high_risk_percent, 2)
+        }
+
+
+@app.get("/health")
+def health():
+
+    return {
+        "api": "UP",
+        "database": "UP",
+        "redis": "UP"
+    }
+
+
 @app.get("/latest")
 def latest():
 
