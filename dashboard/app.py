@@ -21,7 +21,7 @@ st.set_page_config(
 
 st.title("🚀 IntelliStream Dashboard")
 
-API_URL = "https://intellistream-dashboard.onrender.com/"
+API_URL = "https://intellistream.onrender.com"
 
 # --------------------------------------------------
 # ANALYTICS
