@@ -1,0 +1,27 @@
+# IntelliStream
+
+Real-Time AI Event Processing Platform
+
+## Features
+
+- Kafka Streaming
+- FastAPI Backend
+- PostgreSQL Database
+- Redis Caching
+- Streamlit Dashboard
+- Real-Time Analytics
+- Risk Prediction Engine
+
+## Tech Stack
+
+Python
+Kafka
+PostgreSQL
+Redis
+FastAPI
+Streamlit
+Docker
+
+## Dashboard
+
+Real-time monitoring of animal sensor events.
