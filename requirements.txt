@@ -10,4 +10,4 @@ kafka-python
 scikit-learn
 numpy
 streamlit-autorefresh
-
+plotly
