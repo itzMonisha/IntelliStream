@@ -1,13 +1,10 @@
+import os
 from streamlit_autorefresh import st_autorefresh
 import streamlit as st
 import requests
 import pandas as pd
 import plotly.express as px
 from streamlit_autorefresh import st_autorefresh
-
-count = st_autorefresh(interval=5000, key="refresh")
-
-st.write("Refresh Count:", count)
 
 st_autorefresh(
     interval=5000,
@@ -26,7 +23,11 @@ st.set_page_config(
 
 st.title("🚀 IntelliStream Dashboard")
 
-API_URL = "http://localhost:8000"
+
+API_URL = os.getenv(
+    "API_URL",
+    "https://intellistream-1.onrender.com"
+)
 
 # --------------------------------------------------
 # ANALYTICS
