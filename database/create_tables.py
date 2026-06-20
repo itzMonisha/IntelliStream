@@ -7,10 +7,10 @@ from sqlalchemy import (
     Float,
     String
 )
-import os
 
 engine = create_engine(
-    os.getenv("DATABASE_URL", "https://intellistream-2.onrender.com"))
+    "postgresql://intellistream_1_postgress_user:dg8iIlWtkRRrAUWN8O2NLz2ThVarmZW6@dpg-d8rbfomgvqtc73ertcv0-a.virginia-postgres.render.com/intellistream_1_postgress"
+)
 
 metadata = MetaData()
 
@@ -26,4 +26,4 @@ sensor_events = Table(
 
 metadata.create_all(engine)
 
-print("Table created successfully.")
+print("Table created successfully")
