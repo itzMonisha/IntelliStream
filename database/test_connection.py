@@ -4,14 +4,14 @@ try:
     print("Trying connection...")
 
     conn = psycopg2.connect(
-        host="127.0.0.1",
+        host="localhost",
         port="5432",
         database="intellistream",
         user="admin",
         password="admin123"
     )
 
-    print("✅ Connected Successfully")
+    print("Connected Successfully")
 
     cur = conn.cursor()
     cur.execute("SELECT current_user;")
@@ -20,4 +20,4 @@ try:
     conn.close()
 
 except Exception as e:
-    print("❌ Error:", e)
+    print("Error:", e)

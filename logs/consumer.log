@@ -1388,3 +1388,1012 @@ kafka.errors.KafkaConnectionError: KafkaConnectionError: socket disconnected
 2026-06-19 21:29:48,803 - INFO - Animal=49 Temp=40.11 HeartRate=85 Risk=NORMAL
 2026-06-19 21:29:50,800 - INFO - Animal=95 Temp=38.29 HeartRate=91 Risk=NORMAL
 2026-06-19 21:29:52,801 - INFO - Animal=16 Temp=39.48 HeartRate=109 Risk=NORMAL
+2026-06-20 19:07:07,176 - WARNING - socks5_proxy is deprecated, use proxy_url instead
+2026-06-20 19:07:07,177 - INFO - IO loop starting (client_id=kafka-python-3.0.0)
+2026-06-20 19:07:37,187 - ERROR - Connection failed: KafkaConnectionError: Connection timed out
+2026-06-20 19:07:37,189 - INFO - Metadata refresh (node_id=bootstrap-0)
+2026-06-20 19:07:37,190 - ERROR - Metadata refresh: failed NodeNotReadyError: bootstrap-0
+2026-06-20 19:07:37,191 - ERROR - Bootstrap attempt to bootstrap-0 failed: NodeNotReadyError: bootstrap-0
+2026-06-20 19:07:37,192 - ERROR - Bootstrap failed: KafkaTimeoutError: Unable to bootstrap from localhost:9092
+2026-06-20 19:10:39,510 - WARNING - socks5_proxy is deprecated, use proxy_url instead
+2026-06-20 19:10:39,511 - INFO - IO loop starting (client_id=kafka-python-3.0.0)
+2026-06-20 19:10:39,528 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-51691] broker_version=unknown (initializing)>: Broker version identified as 3.5
+2026-06-20 19:10:39,528 - INFO - Metadata refresh (node_id=bootstrap-0)
+2026-06-20 19:10:39,534 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-20 19:10:39,535 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-20 19:10:39,535 - INFO - <KafkaTCPTransport [::1:9092<-51691]>: Closing transport
+2026-06-20 19:10:39,535 - INFO - Starting metadata refresh loop
+2026-06-20 19:10:39,537 - INFO - Updating subscribed topics to: ('sensor-events',)
+2026-06-20 19:10:39,559 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-51692] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-20 19:10:39,559 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-51692] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-20 19:10:39,566 - INFO - Coordinator for GROUP/sensor-group is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-06-20 19:10:39,566 - INFO - Discovered coordinator coordinator-1 for group sensor-group
+2026-06-20 19:10:39,588 - INFO - Revoking previously assigned partitions set() for group sensor-group
+2026-06-20 19:10:39,589 - INFO - (Re-)joining group sensor-group
+2026-06-20 19:10:39,592 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-51693] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-20 19:10:39,593 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-51693] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-20 19:10:39,606 - INFO - Received member id kafka-python-3.0.0-e225f986-272d-4990-8822-347ddb55c396 for group sensor-group; will retry join-group
+2026-06-20 19:10:39,606 - INFO - (Re-)joining group sensor-group
+2026-06-20 19:10:39,649 - INFO - Metadata refresh (node_id=1)
+2026-06-20 19:10:39,653 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-20 19:10:42,626 - INFO - Successfully joined group sensor-group <Generation 5 (member_id: kafka-python-3.0.0-e225f986-272d-4990-8822-347ddb55c396, protocol: range)>
+2026-06-20 19:10:42,626 - INFO - Elected group leader -- performing partition assignments using range
+2026-06-20 19:10:42,634 - INFO - Metadata refresh (node_id=1)
+2026-06-20 19:10:42,639 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-20 19:10:42,694 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-events', partition=0)]
+2026-06-20 19:10:42,695 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-events', partition=0)} for group sensor-group
+2026-06-20 19:31:56,324 - WARNING - socks5_proxy is deprecated, use proxy_url instead
+2026-06-20 19:31:56,325 - INFO - IO loop starting (client_id=kafka-python-3.0.0)
+2026-06-20 19:31:56,338 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-58286] broker_version=unknown (initializing)>: Broker version identified as 3.5
+2026-06-20 19:31:56,338 - INFO - Metadata refresh (node_id=bootstrap-0)
+2026-06-20 19:31:56,342 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-20 19:31:56,343 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-20 19:31:56,343 - INFO - <KafkaTCPTransport [::1:9092<-58286]>: Closing transport
+2026-06-20 19:31:56,344 - INFO - Starting metadata refresh loop
+2026-06-20 19:31:56,345 - INFO - Updating subscribed topics to: ('sensor-events',)
+2026-06-20 19:31:56,350 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-58287] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-20 19:31:56,351 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-58287] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-20 19:31:56,452 - INFO - Metadata refresh (node_id=1)
+2026-06-20 19:31:56,455 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 0)
+2026-06-20 19:31:57,269 - INFO - Coordinator for GROUP/sensor-group is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-06-20 19:31:57,269 - INFO - Discovered coordinator coordinator-1 for group sensor-group
+2026-06-20 19:31:57,295 - INFO - Revoking previously assigned partitions set() for group sensor-group
+2026-06-20 19:31:57,295 - INFO - (Re-)joining group sensor-group
+2026-06-20 19:31:57,297 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-58288] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-20 19:31:57,298 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-58288] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-20 19:31:57,321 - INFO - Received member id kafka-python-3.0.0-1fb963ed-6add-4f75-a4dc-6673636bc21e for group sensor-group; will retry join-group
+2026-06-20 19:31:57,322 - INFO - (Re-)joining group sensor-group
+2026-06-20 19:32:00,365 - INFO - Successfully joined group sensor-group <Generation 1 (member_id: kafka-python-3.0.0-1fb963ed-6add-4f75-a4dc-6673636bc21e, protocol: range)>
+2026-06-20 19:32:00,366 - INFO - Elected group leader -- performing partition assignments using range
+2026-06-20 19:32:00,370 - INFO - Metadata refresh (node_id=1)
+2026-06-20 19:32:00,375 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-20 19:32:00,395 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-events', partition=0)]
+2026-06-20 19:32:00,396 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-events', partition=0)} for group sensor-group
+2026-06-20 19:32:00,418 - INFO - Resetting offset for partition TopicPartition(topic='sensor-events', partition=0) to offset 0.
+2026-06-20 20:07:03,846 - WARNING - socks5_proxy is deprecated, use proxy_url instead
+2026-06-20 20:07:03,851 - INFO - IO loop starting (client_id=kafka-python-3.0.0)
+2026-06-20 20:07:03,901 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-62617] broker_version=unknown (initializing)>: Broker version identified as 3.5
+2026-06-20 20:07:03,902 - INFO - Metadata refresh (node_id=bootstrap-0)
+2026-06-20 20:07:03,923 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-20 20:07:03,925 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-20 20:07:03,927 - INFO - <KafkaTCPTransport [::1:9092<-62617]>: Closing transport
+2026-06-20 20:07:03,929 - INFO - Starting metadata refresh loop
+2026-06-20 20:07:03,937 - INFO - Updating subscribed topics to: ('sensor-events',)
+2026-06-20 20:07:03,959 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-62618] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-20 20:07:03,961 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-62618] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-20 20:07:03,981 - INFO - Coordinator for GROUP/sensor-group is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-06-20 20:07:03,983 - INFO - Discovered coordinator coordinator-1 for group sensor-group
+2026-06-20 20:07:03,991 - INFO - Revoking previously assigned partitions set() for group sensor-group
+2026-06-20 20:07:03,993 - INFO - (Re-)joining group sensor-group
+2026-06-20 20:07:03,996 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-62619] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-20 20:07:03,998 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-62619] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-20 20:07:04,018 - INFO - Received member id kafka-python-3.0.0-a7f2582e-ae4f-44a9-bf98-9905832dd24d for group sensor-group; will retry join-group
+2026-06-20 20:07:04,020 - INFO - (Re-)joining group sensor-group
+2026-06-20 20:07:04,030 - INFO - Metadata refresh (node_id=1)
+2026-06-20 20:07:04,035 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-20 20:07:07,031 - INFO - Successfully joined group sensor-group <Generation 1 (member_id: kafka-python-3.0.0-a7f2582e-ae4f-44a9-bf98-9905832dd24d, protocol: range)>
+2026-06-20 20:07:07,032 - INFO - Elected group leader -- performing partition assignments using range
+2026-06-20 20:07:07,038 - INFO - Metadata refresh (node_id=1)
+2026-06-20 20:07:07,042 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-20 20:07:07,047 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-events', partition=0)]
+2026-06-20 20:07:07,048 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-events', partition=0)} for group sensor-group
+2026-06-20 20:07:07,059 - INFO - Resetting offset for partition TopicPartition(topic='sensor-events', partition=0) to offset 0.
+2026-06-20 20:09:56,883 - WARNING - socks5_proxy is deprecated, use proxy_url instead
+2026-06-20 20:09:56,884 - INFO - IO loop starting (client_id=kafka-python-3.0.0)
+2026-06-20 20:09:56,899 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-58538] broker_version=unknown (initializing)>: Broker version identified as 3.5
+2026-06-20 20:09:56,899 - INFO - Metadata refresh (node_id=bootstrap-0)
+2026-06-20 20:09:56,905 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-20 20:09:56,905 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-20 20:09:56,905 - INFO - <KafkaTCPTransport [::1:9092<-58538]>: Closing transport
+2026-06-20 20:09:56,906 - INFO - Starting metadata refresh loop
+2026-06-20 20:09:56,907 - INFO - Updating subscribed topics to: ('sensor-events',)
+2026-06-20 20:09:56,913 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-58539] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-20 20:09:56,913 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-58539] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-20 20:09:56,916 - INFO - Coordinator for GROUP/sensor-group is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-06-20 20:09:56,916 - INFO - Discovered coordinator coordinator-1 for group sensor-group
+2026-06-20 20:09:56,918 - INFO - Revoking previously assigned partitions set() for group sensor-group
+2026-06-20 20:09:56,918 - INFO - (Re-)joining group sensor-group
+2026-06-20 20:09:56,921 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-58540] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-20 20:09:56,921 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-58540] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-20 20:09:56,927 - INFO - Received member id kafka-python-3.0.0-698451eb-07de-4694-a095-3354a3c6ee45 for group sensor-group; will retry join-group
+2026-06-20 20:09:56,927 - INFO - (Re-)joining group sensor-group
+2026-06-20 20:09:57,017 - INFO - Metadata refresh (node_id=1)
+2026-06-20 20:09:57,020 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-20 20:09:59,931 - INFO - Successfully joined group sensor-group <Generation 1 (member_id: kafka-python-3.0.0-698451eb-07de-4694-a095-3354a3c6ee45, protocol: range)>
+2026-06-20 20:09:59,931 - INFO - Elected group leader -- performing partition assignments using range
+2026-06-20 20:09:59,937 - INFO - Metadata refresh (node_id=1)
+2026-06-20 20:09:59,941 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-20 20:09:59,944 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-events', partition=0)]
+2026-06-20 20:09:59,944 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-events', partition=0)} for group sensor-group
+2026-06-20 20:09:59,958 - INFO - Resetting offset for partition TopicPartition(topic='sensor-events', partition=0) to offset 0.
+2026-06-20 20:10:00,119 - INFO - Animal=51 Temp=41.58 HeartRate=65 Risk=HIGH
+2026-06-20 20:10:00,138 - INFO - Animal=31 Temp=39.12 HeartRate=62 Risk=NORMAL
+2026-06-20 20:10:00,154 - INFO - Animal=67 Temp=39.44 HeartRate=62 Risk=NORMAL
+2026-06-20 20:10:00,169 - INFO - Animal=86 Temp=41.72 HeartRate=85 Risk=HIGH
+2026-06-20 20:10:00,183 - INFO - Animal=15 Temp=41.57 HeartRate=78 Risk=HIGH
+2026-06-20 20:10:00,198 - INFO - Animal=45 Temp=41.25 HeartRate=100 Risk=HIGH
+2026-06-20 20:10:00,216 - INFO - Animal=67 Temp=41.68 HeartRate=72 Risk=HIGH
+2026-06-20 20:10:00,232 - INFO - Animal=59 Temp=39.66 HeartRate=77 Risk=NORMAL
+2026-06-20 20:10:00,246 - INFO - Animal=93 Temp=39.31 HeartRate=67 Risk=NORMAL
+2026-06-20 20:10:00,259 - INFO - Animal=7 Temp=37.73 HeartRate=101 Risk=NORMAL
+2026-06-20 20:10:00,273 - INFO - Animal=98 Temp=38.74 HeartRate=73 Risk=NORMAL
+2026-06-20 20:10:00,286 - INFO - Animal=96 Temp=41.72 HeartRate=135 Risk=HIGH
+2026-06-20 20:10:00,303 - INFO - Animal=62 Temp=37.04 HeartRate=114 Risk=NORMAL
+2026-06-20 20:10:00,318 - INFO - Animal=56 Temp=41.86 HeartRate=100 Risk=HIGH
+2026-06-20 20:10:00,334 - INFO - Animal=16 Temp=37.72 HeartRate=62 Risk=NORMAL
+2026-06-20 20:10:00,348 - INFO - Animal=99 Temp=38.43 HeartRate=95 Risk=NORMAL
+2026-06-20 20:10:00,363 - INFO - Animal=52 Temp=39.05 HeartRate=124 Risk=NORMAL
+2026-06-20 20:10:00,377 - INFO - Animal=14 Temp=37.32 HeartRate=125 Risk=HIGH
+2026-06-20 20:10:00,390 - INFO - Animal=3 Temp=41.34 HeartRate=85 Risk=HIGH
+2026-06-20 20:10:00,405 - INFO - Animal=83 Temp=41.79 HeartRate=127 Risk=HIGH
+2026-06-20 20:10:00,419 - INFO - Animal=76 Temp=37.39 HeartRate=100 Risk=NORMAL
+2026-06-20 20:10:00,433 - INFO - Animal=28 Temp=38.51 HeartRate=69 Risk=NORMAL
+2026-06-20 20:10:00,446 - INFO - Animal=20 Temp=40.11 HeartRate=86 Risk=NORMAL
+2026-06-20 20:10:00,460 - INFO - Animal=27 Temp=40.92 HeartRate=104 Risk=HIGH
+2026-06-20 20:10:00,479 - INFO - Animal=36 Temp=37.39 HeartRate=74 Risk=NORMAL
+2026-06-20 20:10:00,491 - INFO - Animal=61 Temp=39.5 HeartRate=62 Risk=NORMAL
+2026-06-20 20:10:00,505 - INFO - Animal=32 Temp=37.19 HeartRate=137 Risk=HIGH
+2026-06-20 20:10:00,519 - INFO - Animal=10 Temp=39.14 HeartRate=94 Risk=NORMAL
+2026-06-20 20:10:00,535 - INFO - Animal=24 Temp=40.21 HeartRate=100 Risk=NORMAL
+2026-06-20 20:10:00,551 - INFO - Animal=7 Temp=38.55 HeartRate=132 Risk=HIGH
+2026-06-20 20:10:00,565 - INFO - Animal=37 Temp=37.63 HeartRate=116 Risk=NORMAL
+2026-06-20 20:10:00,579 - INFO - Animal=89 Temp=38.24 HeartRate=70 Risk=NORMAL
+2026-06-20 20:10:00,594 - INFO - Animal=81 Temp=38.07 HeartRate=84 Risk=NORMAL
+2026-06-20 20:10:00,606 - INFO - Animal=30 Temp=40.79 HeartRate=79 Risk=HIGH
+2026-06-20 20:10:00,620 - INFO - Animal=97 Temp=38.96 HeartRate=111 Risk=NORMAL
+2026-06-20 20:10:00,636 - INFO - Animal=80 Temp=39.46 HeartRate=79 Risk=NORMAL
+2026-06-20 20:10:00,649 - INFO - Animal=50 Temp=39.09 HeartRate=98 Risk=NORMAL
+2026-06-20 20:10:00,664 - INFO - Animal=64 Temp=37.85 HeartRate=110 Risk=NORMAL
+2026-06-20 20:10:00,678 - INFO - Animal=82 Temp=41.08 HeartRate=129 Risk=HIGH
+2026-06-20 20:10:00,695 - INFO - Animal=20 Temp=37.88 HeartRate=96 Risk=NORMAL
+2026-06-20 20:10:00,710 - INFO - Animal=14 Temp=38.36 HeartRate=128 Risk=HIGH
+2026-06-20 20:10:00,722 - INFO - Animal=98 Temp=41.23 HeartRate=107 Risk=HIGH
+2026-06-20 20:10:00,736 - INFO - Animal=17 Temp=41.83 HeartRate=87 Risk=HIGH
+2026-06-20 20:10:00,749 - INFO - Animal=38 Temp=39.13 HeartRate=140 Risk=HIGH
+2026-06-20 20:10:00,766 - INFO - Animal=66 Temp=39.23 HeartRate=98 Risk=NORMAL
+2026-06-20 20:10:00,781 - INFO - Animal=60 Temp=40.5 HeartRate=63 Risk=HIGH
+2026-06-20 20:10:00,796 - INFO - Animal=21 Temp=38.44 HeartRate=86 Risk=NORMAL
+2026-06-20 20:10:00,809 - INFO - Animal=21 Temp=38.41 HeartRate=79 Risk=NORMAL
+2026-06-20 20:10:00,823 - INFO - Animal=50 Temp=40.83 HeartRate=87 Risk=HIGH
+2026-06-20 20:10:00,843 - INFO - Animal=92 Temp=37.28 HeartRate=109 Risk=NORMAL
+2026-06-20 20:10:00,858 - INFO - Animal=89 Temp=39.55 HeartRate=119 Risk=NORMAL
+2026-06-20 20:10:00,873 - INFO - Animal=52 Temp=41.89 HeartRate=106 Risk=HIGH
+2026-06-20 20:10:00,888 - INFO - Animal=29 Temp=38.27 HeartRate=134 Risk=HIGH
+2026-06-20 20:10:00,902 - INFO - Animal=26 Temp=40.5 HeartRate=133 Risk=HIGH
+2026-06-20 20:10:00,916 - INFO - Animal=44 Temp=40.19 HeartRate=69 Risk=HIGH
+2026-06-20 20:10:00,930 - INFO - Animal=76 Temp=40.11 HeartRate=129 Risk=HIGH
+2026-06-20 20:10:00,945 - INFO - Animal=43 Temp=41.03 HeartRate=130 Risk=HIGH
+2026-06-20 20:10:00,959 - INFO - Animal=37 Temp=39.77 HeartRate=107 Risk=NORMAL
+2026-06-20 20:10:00,971 - INFO - Animal=22 Temp=40.82 HeartRate=87 Risk=HIGH
+2026-06-20 20:10:00,984 - INFO - Animal=53 Temp=38.11 HeartRate=102 Risk=NORMAL
+2026-06-20 20:10:00,999 - INFO - Animal=48 Temp=37.16 HeartRate=98 Risk=NORMAL
+2026-06-20 20:10:01,017 - INFO - Animal=37 Temp=40.54 HeartRate=92 Risk=HIGH
+2026-06-20 20:10:01,032 - INFO - Animal=56 Temp=40.36 HeartRate=137 Risk=HIGH
+2026-06-20 20:10:01,049 - INFO - Animal=94 Temp=41.13 HeartRate=61 Risk=HIGH
+2026-06-20 20:10:01,066 - INFO - Animal=5 Temp=39.77 HeartRate=96 Risk=NORMAL
+2026-06-20 20:10:01,083 - INFO - Animal=84 Temp=38.6 HeartRate=85 Risk=NORMAL
+2026-06-20 20:10:01,097 - INFO - Animal=17 Temp=39.8 HeartRate=123 Risk=HIGH
+2026-06-20 20:10:01,113 - INFO - Animal=76 Temp=40.43 HeartRate=133 Risk=HIGH
+2026-06-20 20:10:01,131 - INFO - Animal=41 Temp=37.17 HeartRate=124 Risk=HIGH
+2026-06-20 20:10:01,144 - INFO - Animal=91 Temp=37.79 HeartRate=75 Risk=NORMAL
+2026-06-20 20:10:01,156 - INFO - Animal=16 Temp=40.32 HeartRate=119 Risk=HIGH
+2026-06-20 20:10:01,174 - INFO - Animal=53 Temp=38.09 HeartRate=95 Risk=NORMAL
+2026-06-20 20:10:01,187 - INFO - Animal=61 Temp=40.93 HeartRate=122 Risk=HIGH
+2026-06-20 20:10:01,200 - INFO - Animal=19 Temp=40.5 HeartRate=67 Risk=HIGH
+2026-06-20 20:10:01,217 - INFO - Animal=30 Temp=37.38 HeartRate=76 Risk=NORMAL
+2026-06-20 20:10:01,230 - INFO - Animal=22 Temp=38.55 HeartRate=138 Risk=HIGH
+2026-06-20 20:10:01,244 - INFO - Animal=63 Temp=38.6 HeartRate=77 Risk=NORMAL
+2026-06-20 20:10:01,264 - INFO - Animal=14 Temp=41.69 HeartRate=102 Risk=HIGH
+2026-06-20 20:10:01,278 - INFO - Animal=56 Temp=40.4 HeartRate=96 Risk=HIGH
+2026-06-20 20:10:01,291 - INFO - Animal=56 Temp=39.7 HeartRate=136 Risk=HIGH
+2026-06-20 20:10:01,309 - INFO - Animal=87 Temp=39.33 HeartRate=139 Risk=HIGH
+2026-06-20 20:10:01,324 - INFO - Animal=49 Temp=39.3 HeartRate=124 Risk=NORMAL
+2026-06-20 20:10:01,338 - INFO - Animal=94 Temp=38.44 HeartRate=76 Risk=NORMAL
+2026-06-20 20:10:01,349 - INFO - Animal=74 Temp=41.01 HeartRate=101 Risk=HIGH
+2026-06-20 20:10:01,363 - INFO - Animal=36 Temp=39.91 HeartRate=92 Risk=NORMAL
+2026-06-20 20:10:01,377 - INFO - Animal=81 Temp=40.01 HeartRate=131 Risk=HIGH
+2026-06-20 20:10:01,390 - INFO - Animal=2 Temp=41.69 HeartRate=79 Risk=HIGH
+2026-06-20 20:10:01,406 - INFO - Animal=34 Temp=41.14 HeartRate=91 Risk=HIGH
+2026-06-20 20:10:01,422 - INFO - Animal=54 Temp=38.87 HeartRate=93 Risk=NORMAL
+2026-06-20 20:10:01,436 - INFO - Animal=100 Temp=39.39 HeartRate=74 Risk=NORMAL
+2026-06-20 20:10:01,451 - INFO - Animal=47 Temp=40.69 HeartRate=73 Risk=HIGH
+2026-06-20 20:10:01,464 - INFO - Animal=11 Temp=37.02 HeartRate=64 Risk=HIGH
+2026-06-20 20:10:01,477 - INFO - Animal=70 Temp=41.69 HeartRate=61 Risk=HIGH
+2026-06-20 20:10:01,489 - INFO - Animal=89 Temp=39.02 HeartRate=112 Risk=NORMAL
+2026-06-20 20:10:01,502 - INFO - Animal=67 Temp=40.44 HeartRate=114 Risk=HIGH
+2026-06-20 20:10:01,519 - INFO - Animal=76 Temp=40.79 HeartRate=96 Risk=HIGH
+2026-06-20 20:10:01,534 - INFO - Animal=71 Temp=37.51 HeartRate=65 Risk=NORMAL
+2026-06-20 20:10:01,550 - INFO - Animal=30 Temp=38.06 HeartRate=61 Risk=NORMAL
+2026-06-20 20:10:01,567 - INFO - Animal=94 Temp=40.22 HeartRate=111 Risk=NORMAL
+2026-06-20 20:10:01,583 - INFO - Animal=44 Temp=37.61 HeartRate=138 Risk=HIGH
+2026-06-20 20:10:01,598 - INFO - Animal=44 Temp=38.56 HeartRate=95 Risk=NORMAL
+2026-06-20 20:10:01,612 - INFO - Animal=83 Temp=38.5 HeartRate=106 Risk=NORMAL
+2026-06-20 20:10:01,626 - INFO - Animal=37 Temp=41.02 HeartRate=102 Risk=HIGH
+2026-06-20 20:10:01,640 - INFO - Animal=54 Temp=41.45 HeartRate=74 Risk=HIGH
+2026-06-20 20:10:01,659 - INFO - Animal=61 Temp=39.97 HeartRate=120 Risk=HIGH
+2026-06-20 20:10:01,673 - INFO - Animal=58 Temp=38.19 HeartRate=79 Risk=NORMAL
+2026-06-20 20:10:01,686 - INFO - Animal=57 Temp=38.53 HeartRate=103 Risk=NORMAL
+2026-06-20 20:10:01,702 - INFO - Animal=16 Temp=38.98 HeartRate=111 Risk=NORMAL
+2026-06-20 20:10:01,718 - INFO - Animal=98 Temp=39.52 HeartRate=71 Risk=NORMAL
+2026-06-20 20:10:01,733 - INFO - Animal=86 Temp=40.14 HeartRate=92 Risk=NORMAL
+2026-06-20 20:10:01,748 - INFO - Animal=62 Temp=39.61 HeartRate=74 Risk=NORMAL
+2026-06-20 20:10:01,764 - INFO - Animal=68 Temp=37.03 HeartRate=140 Risk=HIGH
+2026-06-20 20:10:01,778 - INFO - Animal=91 Temp=40.15 HeartRate=95 Risk=NORMAL
+2026-06-20 20:10:01,791 - INFO - Animal=25 Temp=38.35 HeartRate=101 Risk=NORMAL
+2026-06-20 20:10:01,804 - INFO - Animal=14 Temp=38.76 HeartRate=78 Risk=NORMAL
+2026-06-20 20:10:01,816 - INFO - Animal=50 Temp=37.21 HeartRate=121 Risk=HIGH
+2026-06-20 20:10:01,830 - INFO - Animal=48 Temp=38.38 HeartRate=114 Risk=NORMAL
+2026-06-20 20:10:01,842 - INFO - Animal=12 Temp=39.36 HeartRate=105 Risk=NORMAL
+2026-06-20 20:10:01,855 - INFO - Animal=4 Temp=41.9 HeartRate=108 Risk=HIGH
+2026-06-20 20:10:01,869 - INFO - Animal=61 Temp=41.4 HeartRate=67 Risk=HIGH
+2026-06-20 20:10:01,883 - INFO - Animal=91 Temp=37.74 HeartRate=116 Risk=NORMAL
+2026-06-20 20:10:01,896 - INFO - Animal=74 Temp=38.02 HeartRate=61 Risk=NORMAL
+2026-06-20 20:10:01,909 - INFO - Animal=85 Temp=39.72 HeartRate=99 Risk=NORMAL
+2026-06-20 20:10:01,921 - INFO - Animal=42 Temp=40.11 HeartRate=131 Risk=HIGH
+2026-06-20 20:10:01,933 - INFO - Animal=1 Temp=40.47 HeartRate=79 Risk=HIGH
+2026-06-20 20:10:01,950 - INFO - Animal=45 Temp=37.8 HeartRate=73 Risk=NORMAL
+2026-06-20 20:10:01,972 - INFO - Animal=13 Temp=38.14 HeartRate=135 Risk=HIGH
+2026-06-20 20:10:01,989 - INFO - Animal=31 Temp=38.69 HeartRate=107 Risk=NORMAL
+2026-06-20 20:10:02,009 - INFO - Animal=52 Temp=37.82 HeartRate=97 Risk=NORMAL
+2026-06-20 20:10:02,032 - INFO - Animal=75 Temp=39.17 HeartRate=70 Risk=NORMAL
+2026-06-20 20:10:02,055 - INFO - Animal=44 Temp=41.43 HeartRate=63 Risk=HIGH
+2026-06-20 20:10:02,076 - INFO - Animal=29 Temp=41.56 HeartRate=123 Risk=HIGH
+2026-06-20 20:10:02,094 - INFO - Animal=46 Temp=38.41 HeartRate=70 Risk=NORMAL
+2026-06-20 20:10:02,114 - INFO - Animal=89 Temp=38.07 HeartRate=103 Risk=NORMAL
+2026-06-20 20:10:02,134 - INFO - Animal=95 Temp=38.61 HeartRate=75 Risk=NORMAL
+2026-06-20 20:10:02,159 - INFO - Animal=17 Temp=41.15 HeartRate=99 Risk=HIGH
+2026-06-20 20:10:02,181 - INFO - Animal=33 Temp=41.36 HeartRate=112 Risk=HIGH
+2026-06-20 20:10:02,199 - INFO - Animal=86 Temp=41.16 HeartRate=119 Risk=HIGH
+2026-06-20 20:10:02,217 - INFO - Animal=93 Temp=39.32 HeartRate=140 Risk=HIGH
+2026-06-20 20:10:02,233 - INFO - Animal=30 Temp=40.98 HeartRate=108 Risk=HIGH
+2026-06-20 20:10:02,248 - INFO - Animal=75 Temp=39.39 HeartRate=132 Risk=HIGH
+2026-06-20 20:10:02,264 - INFO - Animal=87 Temp=40.02 HeartRate=125 Risk=HIGH
+2026-06-20 20:10:02,280 - INFO - Animal=56 Temp=41.11 HeartRate=116 Risk=HIGH
+2026-06-20 20:10:02,295 - INFO - Animal=30 Temp=39.49 HeartRate=96 Risk=NORMAL
+2026-06-20 20:10:02,310 - INFO - Animal=8 Temp=39.98 HeartRate=70 Risk=NORMAL
+2026-06-20 20:10:02,324 - INFO - Animal=10 Temp=38.48 HeartRate=103 Risk=NORMAL
+2026-06-20 20:10:02,339 - INFO - Animal=34 Temp=37.19 HeartRate=97 Risk=NORMAL
+2026-06-20 20:10:02,354 - INFO - Animal=73 Temp=37.75 HeartRate=67 Risk=NORMAL
+2026-06-20 20:10:02,369 - INFO - Animal=29 Temp=41.45 HeartRate=86 Risk=HIGH
+2026-06-20 20:10:02,383 - INFO - Animal=64 Temp=37.79 HeartRate=60 Risk=NORMAL
+2026-06-20 20:10:02,397 - INFO - Animal=44 Temp=39.65 HeartRate=131 Risk=HIGH
+2026-06-20 20:10:02,412 - INFO - Animal=83 Temp=37.71 HeartRate=99 Risk=NORMAL
+2026-06-20 20:10:02,427 - INFO - Animal=58 Temp=41.5 HeartRate=122 Risk=HIGH
+2026-06-20 20:10:02,441 - INFO - Animal=34 Temp=40.39 HeartRate=134 Risk=HIGH
+2026-06-20 20:10:02,456 - INFO - Animal=60 Temp=41.0 HeartRate=96 Risk=HIGH
+2026-06-20 20:10:02,472 - INFO - Animal=49 Temp=39.04 HeartRate=129 Risk=HIGH
+2026-06-20 20:10:02,490 - INFO - Animal=84 Temp=38.21 HeartRate=106 Risk=NORMAL
+2026-06-20 20:10:02,503 - INFO - Animal=75 Temp=41.37 HeartRate=134 Risk=HIGH
+2026-06-20 20:10:02,516 - INFO - Animal=29 Temp=39.0 HeartRate=113 Risk=NORMAL
+2026-06-20 20:10:02,533 - INFO - Animal=6 Temp=40.75 HeartRate=138 Risk=HIGH
+2026-06-20 20:10:02,549 - INFO - Animal=1 Temp=41.7 HeartRate=138 Risk=HIGH
+2026-06-20 20:10:02,564 - INFO - Animal=29 Temp=37.08 HeartRate=133 Risk=HIGH
+2026-06-20 20:10:02,578 - INFO - Animal=4 Temp=40.02 HeartRate=138 Risk=HIGH
+2026-06-20 20:10:02,592 - INFO - Animal=8 Temp=38.26 HeartRate=81 Risk=NORMAL
+2026-06-20 20:10:02,606 - INFO - Animal=82 Temp=39.6 HeartRate=80 Risk=NORMAL
+2026-06-20 20:10:02,619 - INFO - Animal=62 Temp=39.04 HeartRate=85 Risk=NORMAL
+2026-06-20 20:10:02,636 - INFO - Animal=54 Temp=40.89 HeartRate=137 Risk=HIGH
+2026-06-20 20:10:02,655 - INFO - Animal=100 Temp=40.75 HeartRate=100 Risk=HIGH
+2026-06-20 20:10:02,670 - INFO - Animal=98 Temp=40.85 HeartRate=65 Risk=HIGH
+2026-06-20 20:10:02,688 - INFO - Animal=81 Temp=37.79 HeartRate=82 Risk=NORMAL
+2026-06-20 20:10:02,703 - INFO - Animal=42 Temp=37.3 HeartRate=121 Risk=NORMAL
+2026-06-20 20:10:02,717 - INFO - Animal=7 Temp=38.98 HeartRate=81 Risk=NORMAL
+2026-06-20 20:10:02,731 - INFO - Animal=56 Temp=39.48 HeartRate=137 Risk=HIGH
+2026-06-20 20:10:02,745 - INFO - Animal=1 Temp=37.42 HeartRate=130 Risk=HIGH
+2026-06-20 20:10:02,761 - INFO - Animal=48 Temp=37.97 HeartRate=102 Risk=NORMAL
+2026-06-20 20:10:02,780 - INFO - Animal=1 Temp=37.85 HeartRate=125 Risk=NORMAL
+2026-06-20 20:10:02,794 - INFO - Animal=74 Temp=37.81 HeartRate=73 Risk=NORMAL
+2026-06-20 20:10:02,810 - INFO - Animal=94 Temp=41.17 HeartRate=83 Risk=HIGH
+2026-06-20 20:10:02,825 - INFO - Animal=67 Temp=38.47 HeartRate=119 Risk=NORMAL
+2026-06-20 20:10:02,838 - INFO - Animal=90 Temp=38.7 HeartRate=121 Risk=NORMAL
+2026-06-20 20:10:02,851 - INFO - Animal=18 Temp=41.16 HeartRate=98 Risk=HIGH
+2026-06-20 20:10:02,867 - INFO - Animal=60 Temp=38.96 HeartRate=67 Risk=NORMAL
+2026-06-20 20:10:02,884 - INFO - Animal=91 Temp=40.98 HeartRate=77 Risk=HIGH
+2026-06-20 20:10:02,899 - INFO - Animal=67 Temp=37.37 HeartRate=137 Risk=HIGH
+2026-06-20 20:10:02,913 - INFO - Animal=32 Temp=37.69 HeartRate=70 Risk=NORMAL
+2026-06-20 20:10:02,927 - INFO - Animal=29 Temp=40.58 HeartRate=132 Risk=HIGH
+2026-06-20 20:10:02,940 - INFO - Animal=17 Temp=41.75 HeartRate=119 Risk=HIGH
+2026-06-20 20:10:02,954 - INFO - Animal=41 Temp=40.59 HeartRate=63 Risk=HIGH
+2026-06-20 20:10:02,969 - INFO - Animal=4 Temp=37.94 HeartRate=92 Risk=NORMAL
+2026-06-20 20:10:02,984 - INFO - Animal=32 Temp=38.7 HeartRate=73 Risk=NORMAL
+2026-06-20 20:10:03,000 - INFO - Animal=38 Temp=40.43 HeartRate=105 Risk=HIGH
+2026-06-20 20:10:03,019 - INFO - Animal=73 Temp=40.37 HeartRate=120 Risk=HIGH
+2026-06-20 20:10:03,034 - INFO - Animal=32 Temp=40.3 HeartRate=103 Risk=NORMAL
+2026-06-20 20:10:03,048 - INFO - Animal=71 Temp=39.05 HeartRate=74 Risk=NORMAL
+2026-06-20 20:10:03,063 - INFO - Animal=31 Temp=40.0 HeartRate=66 Risk=NORMAL
+2026-06-20 20:10:03,076 - INFO - Animal=86 Temp=40.17 HeartRate=105 Risk=NORMAL
+2026-06-20 20:10:03,088 - INFO - Animal=51 Temp=40.65 HeartRate=105 Risk=HIGH
+2026-06-20 20:10:03,103 - INFO - Animal=56 Temp=40.7 HeartRate=107 Risk=HIGH
+2026-06-20 20:10:03,116 - INFO - Animal=5 Temp=39.46 HeartRate=77 Risk=NORMAL
+2026-06-20 20:10:03,131 - INFO - Animal=53 Temp=38.14 HeartRate=76 Risk=NORMAL
+2026-06-20 20:10:03,145 - INFO - Animal=99 Temp=40.24 HeartRate=64 Risk=HIGH
+2026-06-20 20:10:03,163 - INFO - Animal=6 Temp=40.61 HeartRate=88 Risk=HIGH
+2026-06-20 20:10:03,184 - INFO - Animal=85 Temp=41.34 HeartRate=124 Risk=HIGH
+2026-06-20 20:10:03,198 - INFO - Animal=37 Temp=39.35 HeartRate=109 Risk=NORMAL
+2026-06-20 20:10:03,212 - INFO - Animal=20 Temp=39.21 HeartRate=90 Risk=NORMAL
+2026-06-20 20:10:03,226 - INFO - Animal=4 Temp=38.29 HeartRate=117 Risk=NORMAL
+2026-06-20 20:10:03,239 - INFO - Animal=17 Temp=37.13 HeartRate=108 Risk=NORMAL
+2026-06-20 20:10:03,254 - INFO - Animal=66 Temp=39.95 HeartRate=123 Risk=HIGH
+2026-06-20 20:10:03,269 - INFO - Animal=8 Temp=39.72 HeartRate=61 Risk=HIGH
+2026-06-20 20:10:03,283 - INFO - Animal=1 Temp=39.64 HeartRate=92 Risk=NORMAL
+2026-06-20 20:10:03,297 - INFO - Animal=69 Temp=40.26 HeartRate=84 Risk=NORMAL
+2026-06-20 20:10:03,312 - INFO - Animal=44 Temp=39.97 HeartRate=66 Risk=NORMAL
+2026-06-20 20:10:03,325 - INFO - Animal=77 Temp=37.97 HeartRate=76 Risk=NORMAL
+2026-06-20 20:10:03,338 - INFO - Animal=8 Temp=37.26 HeartRate=76 Risk=NORMAL
+2026-06-20 20:10:03,354 - INFO - Animal=50 Temp=39.1 HeartRate=123 Risk=NORMAL
+2026-06-20 20:10:03,368 - INFO - Animal=38 Temp=41.54 HeartRate=130 Risk=HIGH
+2026-06-20 20:10:03,383 - INFO - Animal=70 Temp=37.19 HeartRate=61 Risk=HIGH
+2026-06-20 20:10:03,399 - INFO - Animal=20 Temp=39.93 HeartRate=104 Risk=NORMAL
+2026-06-20 20:10:03,414 - INFO - Animal=98 Temp=41.25 HeartRate=72 Risk=HIGH
+2026-06-20 20:10:03,429 - INFO - Animal=33 Temp=38.7 HeartRate=114 Risk=NORMAL
+2026-06-20 20:10:03,444 - INFO - Animal=44 Temp=37.36 HeartRate=64 Risk=NORMAL
+2026-06-20 20:10:03,465 - INFO - Animal=11 Temp=39.33 HeartRate=92 Risk=NORMAL
+2026-06-20 20:10:03,485 - INFO - Animal=78 Temp=41.66 HeartRate=81 Risk=HIGH
+2026-06-20 20:10:03,500 - INFO - Animal=37 Temp=41.83 HeartRate=90 Risk=HIGH
+2026-06-20 20:10:03,515 - INFO - Animal=67 Temp=38.87 HeartRate=76 Risk=NORMAL
+2026-06-20 20:10:03,532 - INFO - Animal=59 Temp=39.23 HeartRate=100 Risk=NORMAL
+2026-06-20 20:10:03,546 - INFO - Animal=33 Temp=40.93 HeartRate=102 Risk=HIGH
+2026-06-20 20:10:03,562 - INFO - Animal=47 Temp=39.02 HeartRate=127 Risk=HIGH
+2026-06-20 20:10:03,579 - INFO - Animal=37 Temp=40.41 HeartRate=87 Risk=NORMAL
+2026-06-20 20:10:03,599 - INFO - Animal=42 Temp=41.63 HeartRate=116 Risk=HIGH
+2026-06-20 20:10:03,615 - INFO - Animal=10 Temp=41.56 HeartRate=107 Risk=HIGH
+2026-06-20 20:10:03,629 - INFO - Animal=12 Temp=41.84 HeartRate=86 Risk=HIGH
+2026-06-20 20:10:03,645 - INFO - Animal=95 Temp=37.36 HeartRate=68 Risk=NORMAL
+2026-06-20 20:10:03,658 - INFO - Animal=75 Temp=41.1 HeartRate=110 Risk=HIGH
+2026-06-20 20:10:03,672 - INFO - Animal=40 Temp=41.65 HeartRate=131 Risk=HIGH
+2026-06-20 20:10:03,687 - INFO - Animal=52 Temp=38.97 HeartRate=93 Risk=NORMAL
+2026-06-20 20:10:03,707 - INFO - Animal=90 Temp=37.52 HeartRate=92 Risk=NORMAL
+2026-06-20 20:10:03,720 - INFO - Animal=60 Temp=40.88 HeartRate=62 Risk=HIGH
+2026-06-20 20:10:03,740 - INFO - Animal=39 Temp=37.19 HeartRate=132 Risk=HIGH
+2026-06-20 20:10:03,753 - INFO - Animal=31 Temp=41.67 HeartRate=84 Risk=HIGH
+2026-06-20 20:10:03,767 - INFO - Animal=33 Temp=39.86 HeartRate=96 Risk=NORMAL
+2026-06-20 20:10:03,781 - INFO - Animal=98 Temp=38.14 HeartRate=106 Risk=NORMAL
+2026-06-20 20:10:03,795 - INFO - Animal=91 Temp=40.93 HeartRate=121 Risk=HIGH
+2026-06-20 20:10:03,809 - INFO - Animal=36 Temp=38.61 HeartRate=140 Risk=HIGH
+2026-06-20 20:10:03,824 - INFO - Animal=12 Temp=37.14 HeartRate=87 Risk=NORMAL
+2026-06-20 20:10:03,838 - INFO - Animal=13 Temp=37.24 HeartRate=88 Risk=NORMAL
+2026-06-20 20:10:03,862 - INFO - Animal=30 Temp=37.15 HeartRate=104 Risk=NORMAL
+2026-06-20 20:10:03,885 - INFO - Animal=13 Temp=38.11 HeartRate=65 Risk=NORMAL
+2026-06-20 20:10:03,907 - INFO - Animal=29 Temp=41.94 HeartRate=80 Risk=HIGH
+2026-06-20 20:10:03,925 - INFO - Animal=68 Temp=40.13 HeartRate=88 Risk=NORMAL
+2026-06-20 20:10:03,938 - INFO - Animal=72 Temp=39.54 HeartRate=68 Risk=NORMAL
+2026-06-20 20:10:03,951 - INFO - Animal=90 Temp=40.82 HeartRate=130 Risk=HIGH
+2026-06-20 20:10:03,967 - INFO - Animal=36 Temp=38.34 HeartRate=97 Risk=NORMAL
+2026-06-20 20:10:03,981 - INFO - Animal=34 Temp=38.85 HeartRate=75 Risk=NORMAL
+2026-06-20 20:10:03,994 - INFO - Animal=20 Temp=40.1 HeartRate=127 Risk=HIGH
+2026-06-20 20:10:04,010 - INFO - Animal=97 Temp=39.2 HeartRate=78 Risk=NORMAL
+2026-06-20 20:10:04,025 - INFO - Animal=47 Temp=37.3 HeartRate=75 Risk=NORMAL
+2026-06-20 20:10:04,038 - INFO - Animal=6 Temp=37.66 HeartRate=110 Risk=NORMAL
+2026-06-20 20:10:04,054 - INFO - Animal=27 Temp=41.09 HeartRate=97 Risk=HIGH
+2026-06-20 20:10:04,069 - INFO - Animal=31 Temp=41.75 HeartRate=79 Risk=HIGH
+2026-06-20 20:10:04,086 - INFO - Animal=52 Temp=37.62 HeartRate=93 Risk=NORMAL
+2026-06-20 20:10:04,110 - INFO - Animal=23 Temp=39.09 HeartRate=83 Risk=NORMAL
+2026-06-20 20:10:04,123 - INFO - Animal=19 Temp=41.63 HeartRate=98 Risk=HIGH
+2026-06-20 20:10:04,137 - INFO - Animal=65 Temp=37.6 HeartRate=89 Risk=NORMAL
+2026-06-20 20:10:04,152 - INFO - Animal=39 Temp=40.35 HeartRate=135 Risk=HIGH
+2026-06-20 20:10:04,167 - INFO - Animal=87 Temp=40.9 HeartRate=139 Risk=HIGH
+2026-06-20 20:10:04,186 - INFO - Animal=62 Temp=38.86 HeartRate=126 Risk=NORMAL
+2026-06-20 20:10:04,207 - INFO - Animal=62 Temp=38.29 HeartRate=109 Risk=NORMAL
+2026-06-20 20:10:04,229 - INFO - Animal=72 Temp=39.22 HeartRate=101 Risk=NORMAL
+2026-06-20 20:10:04,244 - INFO - Animal=92 Temp=37.03 HeartRate=106 Risk=NORMAL
+2026-06-20 20:10:04,257 - INFO - Animal=93 Temp=38.03 HeartRate=67 Risk=NORMAL
+2026-06-20 20:10:04,271 - INFO - Animal=19 Temp=38.03 HeartRate=66 Risk=NORMAL
+2026-06-20 20:10:04,285 - INFO - Animal=85 Temp=37.64 HeartRate=129 Risk=HIGH
+2026-06-20 20:10:04,301 - INFO - Animal=2 Temp=41.71 HeartRate=60 Risk=HIGH
+2026-06-20 20:10:04,318 - INFO - Animal=37 Temp=41.52 HeartRate=136 Risk=HIGH
+2026-06-20 20:10:04,334 - INFO - Animal=42 Temp=38.96 HeartRate=136 Risk=HIGH
+2026-06-20 20:10:04,350 - INFO - Animal=7 Temp=41.36 HeartRate=108 Risk=HIGH
+2026-06-20 20:10:04,368 - INFO - Animal=45 Temp=39.52 HeartRate=74 Risk=NORMAL
+2026-06-20 20:10:04,385 - INFO - Animal=65 Temp=39.63 HeartRate=140 Risk=HIGH
+2026-06-20 20:10:04,405 - INFO - Animal=52 Temp=37.46 HeartRate=87 Risk=NORMAL
+2026-06-20 20:10:04,424 - INFO - Animal=23 Temp=41.59 HeartRate=116 Risk=HIGH
+2026-06-20 20:10:04,440 - INFO - Animal=15 Temp=40.36 HeartRate=74 Risk=HIGH
+2026-06-20 20:10:04,454 - INFO - Animal=19 Temp=40.33 HeartRate=94 Risk=NORMAL
+2026-06-20 20:10:04,471 - INFO - Animal=97 Temp=40.73 HeartRate=115 Risk=HIGH
+2026-06-20 20:10:04,485 - INFO - Animal=41 Temp=37.49 HeartRate=134 Risk=HIGH
+2026-06-20 20:10:04,500 - INFO - Animal=49 Temp=40.28 HeartRate=82 Risk=NORMAL
+2026-06-20 20:10:04,515 - INFO - Animal=96 Temp=39.53 HeartRate=133 Risk=HIGH
+2026-06-20 20:10:04,531 - INFO - Animal=6 Temp=41.16 HeartRate=95 Risk=HIGH
+2026-06-20 20:10:04,545 - INFO - Animal=47 Temp=38.57 HeartRate=84 Risk=NORMAL
+2026-06-20 20:10:04,558 - INFO - Animal=69 Temp=37.05 HeartRate=93 Risk=NORMAL
+2026-06-20 20:10:04,571 - INFO - Animal=32 Temp=40.48 HeartRate=114 Risk=HIGH
+2026-06-20 20:10:04,583 - INFO - Animal=34 Temp=39.06 HeartRate=99 Risk=NORMAL
+2026-06-20 20:10:04,597 - INFO - Animal=89 Temp=39.93 HeartRate=125 Risk=HIGH
+2026-06-20 20:10:04,609 - INFO - Animal=73 Temp=39.85 HeartRate=105 Risk=NORMAL
+2026-06-20 20:10:04,621 - INFO - Animal=15 Temp=38.85 HeartRate=120 Risk=NORMAL
+2026-06-20 20:10:04,633 - INFO - Animal=53 Temp=38.27 HeartRate=113 Risk=NORMAL
+2026-06-20 20:10:04,647 - INFO - Animal=74 Temp=38.6 HeartRate=122 Risk=NORMAL
+2026-06-20 20:10:04,661 - INFO - Animal=56 Temp=38.15 HeartRate=112 Risk=NORMAL
+2026-06-20 20:10:04,672 - INFO - Animal=87 Temp=37.72 HeartRate=64 Risk=NORMAL
+2026-06-20 20:10:04,688 - INFO - Animal=5 Temp=38.24 HeartRate=133 Risk=HIGH
+2026-06-20 20:10:04,704 - INFO - Animal=51 Temp=39.31 HeartRate=91 Risk=NORMAL
+2026-06-20 20:10:04,718 - INFO - Animal=61 Temp=39.42 HeartRate=120 Risk=NORMAL
+2026-06-20 20:10:04,733 - INFO - Animal=55 Temp=41.6 HeartRate=83 Risk=HIGH
+2026-06-20 20:10:04,749 - INFO - Animal=60 Temp=41.42 HeartRate=93 Risk=HIGH
+2026-06-20 20:10:04,765 - INFO - Animal=96 Temp=38.04 HeartRate=140 Risk=HIGH
+2026-06-20 20:10:04,780 - INFO - Animal=71 Temp=37.5 HeartRate=72 Risk=NORMAL
+2026-06-20 20:10:04,797 - INFO - Animal=3 Temp=41.07 HeartRate=64 Risk=HIGH
+2026-06-20 20:10:04,817 - INFO - Animal=47 Temp=39.42 HeartRate=121 Risk=NORMAL
+2026-06-20 20:10:04,834 - INFO - Animal=69 Temp=37.27 HeartRate=133 Risk=HIGH
+2026-06-20 20:10:04,851 - INFO - Animal=100 Temp=41.2 HeartRate=124 Risk=HIGH
+2026-06-20 20:10:04,866 - INFO - Animal=18 Temp=39.51 HeartRate=106 Risk=NORMAL
+2026-06-20 20:10:04,880 - INFO - Animal=57 Temp=39.38 HeartRate=102 Risk=NORMAL
+2026-06-20 20:10:04,898 - INFO - Animal=44 Temp=39.89 HeartRate=111 Risk=NORMAL
+2026-06-20 20:10:04,912 - INFO - Animal=27 Temp=39.89 HeartRate=102 Risk=NORMAL
+2026-06-20 20:10:04,926 - INFO - Animal=25 Temp=38.59 HeartRate=89 Risk=NORMAL
+2026-06-20 20:10:04,942 - INFO - Animal=35 Temp=39.63 HeartRate=111 Risk=NORMAL
+2026-06-20 20:10:04,968 - INFO - Animal=53 Temp=39.65 HeartRate=104 Risk=NORMAL
+2026-06-20 20:10:04,988 - INFO - Animal=26 Temp=38.9 HeartRate=77 Risk=NORMAL
+2026-06-20 20:10:05,006 - INFO - Animal=35 Temp=39.44 HeartRate=64 Risk=NORMAL
+2026-06-20 20:10:05,028 - INFO - Animal=86 Temp=38.36 HeartRate=121 Risk=NORMAL
+2026-06-20 20:10:05,048 - INFO - Animal=43 Temp=39.95 HeartRate=105 Risk=NORMAL
+2026-06-20 20:10:05,067 - INFO - Animal=22 Temp=38.32 HeartRate=95 Risk=NORMAL
+2026-06-20 20:10:05,084 - INFO - Animal=10 Temp=40.49 HeartRate=134 Risk=HIGH
+2026-06-20 20:10:05,101 - INFO - Animal=81 Temp=38.07 HeartRate=85 Risk=NORMAL
+2026-06-20 20:10:05,128 - INFO - Animal=16 Temp=38.6 HeartRate=108 Risk=NORMAL
+2026-06-20 20:10:05,158 - INFO - Animal=75 Temp=39.12 HeartRate=136 Risk=HIGH
+2026-06-20 20:10:05,200 - INFO - Animal=49 Temp=38.71 HeartRate=124 Risk=NORMAL
+2026-06-20 20:10:05,240 - INFO - Animal=61 Temp=39.82 HeartRate=93 Risk=NORMAL
+2026-06-20 20:10:05,298 - INFO - Animal=3 Temp=37.24 HeartRate=121 Risk=HIGH
+2026-06-20 20:10:05,352 - INFO - Animal=92 Temp=41.56 HeartRate=70 Risk=HIGH
+2026-06-20 20:10:05,409 - INFO - Animal=68 Temp=38.64 HeartRate=119 Risk=NORMAL
+2026-06-20 20:10:05,467 - INFO - Animal=15 Temp=37.94 HeartRate=120 Risk=NORMAL
+2026-06-20 20:10:05,523 - INFO - Animal=14 Temp=37.48 HeartRate=76 Risk=NORMAL
+2026-06-20 20:10:05,571 - INFO - Animal=1 Temp=38.04 HeartRate=125 Risk=NORMAL
+2026-06-20 20:10:05,626 - INFO - Animal=47 Temp=37.25 HeartRate=126 Risk=HIGH
+2026-06-20 20:10:05,679 - INFO - Animal=1 Temp=39.41 HeartRate=93 Risk=NORMAL
+2026-06-20 20:10:05,744 - INFO - Animal=21 Temp=39.67 HeartRate=83 Risk=NORMAL
+2026-06-20 20:10:05,807 - INFO - Animal=97 Temp=39.95 HeartRate=80 Risk=NORMAL
+2026-06-20 20:10:05,868 - INFO - Animal=82 Temp=37.1 HeartRate=111 Risk=NORMAL
+2026-06-20 20:10:05,926 - INFO - Animal=11 Temp=38.71 HeartRate=61 Risk=NORMAL
+2026-06-20 20:10:05,994 - INFO - Animal=38 Temp=40.79 HeartRate=129 Risk=HIGH
+2026-06-20 20:10:06,053 - INFO - Animal=63 Temp=39.72 HeartRate=105 Risk=NORMAL
+2026-06-20 20:10:06,113 - INFO - Animal=64 Temp=39.87 HeartRate=98 Risk=NORMAL
+2026-06-20 20:10:06,166 - INFO - Animal=50 Temp=39.8 HeartRate=74 Risk=NORMAL
+2026-06-20 20:10:06,225 - INFO - Animal=67 Temp=37.13 HeartRate=79 Risk=NORMAL
+2026-06-20 20:10:06,283 - INFO - Animal=19 Temp=40.53 HeartRate=131 Risk=HIGH
+2026-06-20 20:10:06,346 - INFO - Animal=4 Temp=40.63 HeartRate=103 Risk=HIGH
+2026-06-20 20:10:06,404 - INFO - Animal=44 Temp=39.4 HeartRate=111 Risk=NORMAL
+2026-06-20 20:10:06,468 - INFO - Animal=22 Temp=39.85 HeartRate=138 Risk=HIGH
+2026-06-20 20:10:06,513 - INFO - Animal=89 Temp=38.31 HeartRate=60 Risk=NORMAL
+2026-06-20 20:10:06,554 - INFO - Animal=84 Temp=41.2 HeartRate=78 Risk=HIGH
+2026-06-20 20:10:06,589 - INFO - Animal=19 Temp=38.48 HeartRate=133 Risk=HIGH
+2026-06-20 20:10:06,631 - INFO - Animal=59 Temp=40.07 HeartRate=71 Risk=NORMAL
+2026-06-20 20:10:06,663 - INFO - Animal=33 Temp=40.79 HeartRate=61 Risk=HIGH
+2026-06-20 20:10:06,694 - INFO - Animal=95 Temp=39.91 HeartRate=95 Risk=NORMAL
+2026-06-20 20:10:06,733 - INFO - Animal=75 Temp=39.46 HeartRate=60 Risk=HIGH
+2026-06-20 20:10:06,762 - INFO - Animal=58 Temp=37.77 HeartRate=91 Risk=NORMAL
+2026-06-20 20:10:06,799 - INFO - Animal=97 Temp=38.93 HeartRate=89 Risk=NORMAL
+2026-06-20 20:10:06,836 - INFO - Animal=77 Temp=41.41 HeartRate=90 Risk=HIGH
+2026-06-20 20:10:06,883 - INFO - Animal=59 Temp=41.72 HeartRate=76 Risk=HIGH
+2026-06-20 20:10:06,944 - INFO - Animal=29 Temp=39.03 HeartRate=134 Risk=HIGH
+2026-06-20 20:10:07,002 - INFO - Animal=80 Temp=39.89 HeartRate=90 Risk=NORMAL
+2026-06-20 20:10:07,058 - INFO - Animal=75 Temp=41.14 HeartRate=84 Risk=HIGH
+2026-06-20 20:10:07,117 - INFO - Animal=30 Temp=38.54 HeartRate=126 Risk=NORMAL
+2026-06-20 20:10:07,168 - INFO - Animal=76 Temp=41.2 HeartRate=89 Risk=HIGH
+2026-06-20 20:10:07,219 - INFO - Animal=94 Temp=39.03 HeartRate=92 Risk=NORMAL
+2026-06-20 20:10:07,275 - INFO - Animal=91 Temp=39.32 HeartRate=103 Risk=NORMAL
+2026-06-20 20:10:07,338 - INFO - Animal=19 Temp=39.2 HeartRate=77 Risk=NORMAL
+2026-06-20 20:10:07,396 - INFO - Animal=9 Temp=40.0 HeartRate=84 Risk=NORMAL
+2026-06-20 20:10:07,456 - INFO - Animal=25 Temp=41.84 HeartRate=70 Risk=HIGH
+2026-06-20 20:10:07,516 - INFO - Animal=57 Temp=38.27 HeartRate=82 Risk=NORMAL
+2026-06-20 20:10:07,580 - INFO - Animal=30 Temp=39.93 HeartRate=65 Risk=NORMAL
+2026-06-20 20:10:07,645 - INFO - Animal=19 Temp=37.31 HeartRate=124 Risk=HIGH
+2026-06-20 20:10:07,708 - INFO - Animal=5 Temp=39.05 HeartRate=138 Risk=HIGH
+2026-06-20 20:10:07,767 - INFO - Animal=31 Temp=40.29 HeartRate=127 Risk=HIGH
+2026-06-20 20:10:07,833 - INFO - Animal=40 Temp=38.8 HeartRate=124 Risk=NORMAL
+2026-06-20 20:10:07,903 - INFO - Animal=16 Temp=40.43 HeartRate=130 Risk=HIGH
+2026-06-20 20:10:07,962 - INFO - Animal=98 Temp=37.33 HeartRate=138 Risk=HIGH
+2026-06-20 20:10:08,007 - INFO - Animal=32 Temp=40.21 HeartRate=70 Risk=HIGH
+2026-06-20 20:10:08,051 - INFO - Animal=73 Temp=41.96 HeartRate=67 Risk=HIGH
+2026-06-20 20:10:08,106 - INFO - Animal=15 Temp=39.71 HeartRate=90 Risk=NORMAL
+2026-06-20 20:10:08,163 - INFO - Animal=49 Temp=40.35 HeartRate=136 Risk=HIGH
+2026-06-20 20:10:08,224 - INFO - Animal=67 Temp=40.83 HeartRate=96 Risk=HIGH
+2026-06-20 20:10:08,280 - INFO - Animal=29 Temp=39.22 HeartRate=96 Risk=NORMAL
+2026-06-20 20:10:08,333 - INFO - Animal=41 Temp=37.49 HeartRate=93 Risk=NORMAL
+2026-06-20 20:10:08,387 - INFO - Animal=65 Temp=40.85 HeartRate=133 Risk=HIGH
+2026-06-20 20:10:08,446 - INFO - Animal=100 Temp=40.11 HeartRate=78 Risk=NORMAL
+2026-06-20 20:10:08,497 - INFO - Animal=40 Temp=40.5 HeartRate=79 Risk=HIGH
+2026-06-20 20:10:08,547 - INFO - Animal=25 Temp=38.94 HeartRate=130 Risk=HIGH
+2026-06-20 20:10:08,604 - INFO - Animal=43 Temp=40.85 HeartRate=78 Risk=HIGH
+2026-06-20 20:10:08,664 - INFO - Animal=80 Temp=38.56 HeartRate=125 Risk=NORMAL
+2026-06-20 20:10:08,722 - INFO - Animal=30 Temp=39.15 HeartRate=80 Risk=NORMAL
+2026-06-20 20:10:08,754 - INFO - Animal=90 Temp=38.52 HeartRate=129 Risk=HIGH
+2026-06-20 20:10:08,788 - INFO - Animal=24 Temp=37.3 HeartRate=67 Risk=NORMAL
+2026-06-20 20:10:08,822 - INFO - Animal=80 Temp=40.35 HeartRate=86 Risk=NORMAL
+2026-06-20 20:10:08,856 - INFO - Animal=18 Temp=37.63 HeartRate=65 Risk=NORMAL
+2026-06-20 20:10:08,900 - INFO - Animal=15 Temp=41.8 HeartRate=78 Risk=HIGH
+2026-06-20 20:10:08,939 - INFO - Animal=19 Temp=39.0 HeartRate=133 Risk=HIGH
+2026-06-20 20:10:08,974 - INFO - Animal=42 Temp=38.22 HeartRate=64 Risk=NORMAL
+2026-06-20 20:10:09,033 - INFO - Animal=83 Temp=41.73 HeartRate=132 Risk=HIGH
+2026-06-20 20:10:09,089 - INFO - Animal=86 Temp=38.9 HeartRate=86 Risk=NORMAL
+2026-06-20 20:10:09,147 - INFO - Animal=61 Temp=39.69 HeartRate=80 Risk=NORMAL
+2026-06-20 20:10:09,212 - INFO - Animal=40 Temp=40.2 HeartRate=113 Risk=HIGH
+2026-06-20 20:10:09,272 - INFO - Animal=87 Temp=39.51 HeartRate=116 Risk=NORMAL
+2026-06-20 20:10:09,335 - INFO - Animal=48 Temp=39.91 HeartRate=109 Risk=NORMAL
+2026-06-20 20:10:09,390 - INFO - Animal=78 Temp=40.19 HeartRate=122 Risk=HIGH
+2026-06-20 20:10:09,449 - INFO - Animal=25 Temp=38.75 HeartRate=96 Risk=NORMAL
+2026-06-20 20:10:09,508 - INFO - Animal=75 Temp=40.58 HeartRate=124 Risk=HIGH
+2026-06-20 20:10:09,564 - INFO - Animal=16 Temp=38.64 HeartRate=132 Risk=HIGH
+2026-06-20 20:10:09,622 - INFO - Animal=1 Temp=41.03 HeartRate=85 Risk=HIGH
+2026-06-20 20:10:09,678 - INFO - Animal=74 Temp=37.74 HeartRate=92 Risk=NORMAL
+2026-06-20 20:10:09,735 - INFO - Animal=79 Temp=39.6 HeartRate=108 Risk=NORMAL
+2026-06-20 20:10:09,790 - INFO - Animal=92 Temp=38.19 HeartRate=117 Risk=NORMAL
+2026-06-20 20:10:09,844 - INFO - Animal=84 Temp=39.11 HeartRate=120 Risk=NORMAL
+2026-06-20 20:10:09,908 - INFO - Animal=98 Temp=39.81 HeartRate=70 Risk=NORMAL
+2026-06-20 20:10:09,968 - INFO - Animal=56 Temp=39.11 HeartRate=124 Risk=NORMAL
+2026-06-20 20:10:10,030 - INFO - Animal=40 Temp=38.87 HeartRate=66 Risk=NORMAL
+2026-06-20 20:10:10,091 - INFO - Animal=3 Temp=39.24 HeartRate=132 Risk=HIGH
+2026-06-20 20:10:10,146 - INFO - Animal=58 Temp=37.31 HeartRate=61 Risk=HIGH
+2026-06-20 20:10:10,204 - INFO - Animal=83 Temp=38.55 HeartRate=105 Risk=NORMAL
+2026-06-20 20:10:10,261 - INFO - Animal=87 Temp=37.87 HeartRate=70 Risk=NORMAL
+2026-06-20 20:10:10,316 - INFO - Animal=92 Temp=38.48 HeartRate=66 Risk=NORMAL
+2026-06-20 20:10:10,378 - INFO - Animal=82 Temp=41.39 HeartRate=107 Risk=HIGH
+2026-06-20 20:10:10,441 - INFO - Animal=74 Temp=37.55 HeartRate=66 Risk=NORMAL
+2026-06-20 20:10:10,498 - INFO - Animal=81 Temp=38.6 HeartRate=73 Risk=NORMAL
+2026-06-20 20:10:10,557 - INFO - Animal=44 Temp=39.09 HeartRate=99 Risk=NORMAL
+2026-06-20 20:10:10,603 - INFO - Animal=7 Temp=41.59 HeartRate=134 Risk=HIGH
+2026-06-20 20:10:10,665 - INFO - Animal=56 Temp=40.3 HeartRate=119 Risk=HIGH
+2026-06-20 20:10:10,727 - INFO - Animal=87 Temp=39.37 HeartRate=126 Risk=HIGH
+2026-06-20 20:10:10,789 - INFO - Animal=44 Temp=40.44 HeartRate=104 Risk=HIGH
+2026-06-20 20:10:10,848 - INFO - Animal=57 Temp=39.15 HeartRate=134 Risk=HIGH
+2026-06-20 20:10:10,908 - INFO - Animal=45 Temp=38.61 HeartRate=125 Risk=NORMAL
+2026-06-20 20:10:10,966 - INFO - Animal=73 Temp=40.34 HeartRate=82 Risk=NORMAL
+2026-06-20 20:10:11,024 - INFO - Animal=77 Temp=39.56 HeartRate=131 Risk=HIGH
+2026-06-20 20:10:11,066 - INFO - Animal=1 Temp=38.72 HeartRate=116 Risk=NORMAL
+2026-06-20 20:10:11,084 - INFO - Animal=71 Temp=39.29 HeartRate=101 Risk=NORMAL
+2026-06-20 20:10:11,102 - INFO - Animal=1 Temp=38.48 HeartRate=104 Risk=NORMAL
+2026-06-20 20:10:11,119 - INFO - Animal=95 Temp=39.67 HeartRate=119 Risk=NORMAL
+2026-06-20 20:10:11,141 - INFO - Animal=30 Temp=40.61 HeartRate=98 Risk=HIGH
+2026-06-20 20:10:11,155 - INFO - Animal=56 Temp=38.06 HeartRate=108 Risk=NORMAL
+2026-06-20 20:10:11,168 - INFO - Animal=24 Temp=37.58 HeartRate=132 Risk=HIGH
+2026-06-20 20:10:11,183 - INFO - Animal=44 Temp=37.84 HeartRate=125 Risk=NORMAL
+2026-06-20 20:10:11,196 - INFO - Animal=36 Temp=38.97 HeartRate=104 Risk=NORMAL
+2026-06-20 20:10:11,212 - INFO - Animal=55 Temp=41.19 HeartRate=123 Risk=HIGH
+2026-06-20 20:10:11,225 - INFO - Animal=14 Temp=41.99 HeartRate=123 Risk=HIGH
+2026-06-20 20:10:11,237 - INFO - Animal=56 Temp=40.39 HeartRate=132 Risk=HIGH
+2026-06-20 20:10:11,253 - INFO - Animal=55 Temp=38.27 HeartRate=79 Risk=NORMAL
+2026-06-20 20:10:11,269 - INFO - Animal=21 Temp=39.9 HeartRate=139 Risk=HIGH
+2026-06-20 20:10:11,284 - INFO - Animal=98 Temp=38.42 HeartRate=91 Risk=NORMAL
+2026-06-20 20:10:11,300 - INFO - Animal=22 Temp=37.9 HeartRate=119 Risk=NORMAL
+2026-06-20 20:10:11,322 - INFO - Animal=15 Temp=41.77 HeartRate=61 Risk=HIGH
+2026-06-20 20:10:11,337 - INFO - Animal=51 Temp=39.66 HeartRate=114 Risk=NORMAL
+2026-06-20 20:10:11,354 - INFO - Animal=59 Temp=38.5 HeartRate=102 Risk=NORMAL
+2026-06-20 20:10:11,369 - INFO - Animal=9 Temp=37.27 HeartRate=71 Risk=NORMAL
+2026-06-20 20:10:11,383 - INFO - Animal=70 Temp=41.66 HeartRate=69 Risk=HIGH
+2026-06-20 20:10:11,404 - INFO - Animal=4 Temp=37.46 HeartRate=95 Risk=NORMAL
+2026-06-20 20:10:11,421 - INFO - Animal=89 Temp=37.71 HeartRate=134 Risk=HIGH
+2026-06-20 20:10:11,437 - INFO - Animal=29 Temp=38.97 HeartRate=121 Risk=NORMAL
+2026-06-20 20:10:11,456 - INFO - Animal=97 Temp=37.14 HeartRate=107 Risk=NORMAL
+2026-06-20 20:10:11,471 - INFO - Animal=31 Temp=39.04 HeartRate=75 Risk=NORMAL
+2026-06-20 20:10:11,487 - INFO - Animal=44 Temp=41.44 HeartRate=124 Risk=HIGH
+2026-06-20 20:10:11,504 - INFO - Animal=36 Temp=37.92 HeartRate=85 Risk=NORMAL
+2026-06-20 20:10:11,522 - INFO - Animal=7 Temp=40.64 HeartRate=66 Risk=HIGH
+2026-06-20 20:10:11,538 - INFO - Animal=10 Temp=40.81 HeartRate=135 Risk=HIGH
+2026-06-20 20:10:11,554 - INFO - Animal=4 Temp=39.71 HeartRate=101 Risk=NORMAL
+2026-06-20 20:10:11,570 - INFO - Animal=11 Temp=37.08 HeartRate=108 Risk=NORMAL
+2026-06-20 20:10:11,587 - INFO - Animal=15 Temp=39.09 HeartRate=132 Risk=HIGH
+2026-06-20 20:10:11,604 - INFO - Animal=80 Temp=40.76 HeartRate=87 Risk=HIGH
+2026-06-20 20:10:11,622 - INFO - Animal=49 Temp=41.84 HeartRate=69 Risk=HIGH
+2026-06-20 20:10:11,638 - INFO - Animal=54 Temp=38.87 HeartRate=117 Risk=NORMAL
+2026-06-20 20:10:11,656 - INFO - Animal=20 Temp=40.26 HeartRate=68 Risk=HIGH
+2026-06-20 20:10:11,673 - INFO - Animal=37 Temp=37.43 HeartRate=115 Risk=NORMAL
+2026-06-20 20:10:11,688 - INFO - Animal=37 Temp=38.88 HeartRate=118 Risk=NORMAL
+2026-06-20 20:10:11,703 - INFO - Animal=14 Temp=38.14 HeartRate=112 Risk=NORMAL
+2026-06-20 20:10:11,717 - INFO - Animal=5 Temp=40.45 HeartRate=66 Risk=HIGH
+2026-06-20 20:10:11,737 - INFO - Animal=77 Temp=41.69 HeartRate=69 Risk=HIGH
+2026-06-20 20:10:11,752 - INFO - Animal=74 Temp=39.01 HeartRate=115 Risk=NORMAL
+2026-06-20 20:10:11,766 - INFO - Animal=93 Temp=41.33 HeartRate=73 Risk=HIGH
+2026-06-20 20:10:11,781 - INFO - Animal=69 Temp=39.5 HeartRate=106 Risk=NORMAL
+2026-06-20 20:10:11,795 - INFO - Animal=47 Temp=41.69 HeartRate=126 Risk=HIGH
+2026-06-20 20:10:11,810 - INFO - Animal=51 Temp=37.73 HeartRate=108 Risk=NORMAL
+2026-06-20 20:10:11,823 - INFO - Animal=35 Temp=41.36 HeartRate=136 Risk=HIGH
+2026-06-20 20:10:11,836 - INFO - Animal=78 Temp=37.55 HeartRate=98 Risk=NORMAL
+2026-06-20 20:10:11,854 - INFO - Animal=100 Temp=41.47 HeartRate=119 Risk=HIGH
+2026-06-20 20:10:11,870 - INFO - Animal=41 Temp=41.83 HeartRate=97 Risk=HIGH
+2026-06-20 20:10:11,889 - INFO - Animal=24 Temp=41.22 HeartRate=67 Risk=HIGH
+2026-06-20 20:10:11,908 - INFO - Animal=6 Temp=39.68 HeartRate=100 Risk=NORMAL
+2026-06-20 20:10:11,922 - INFO - Animal=12 Temp=41.82 HeartRate=83 Risk=HIGH
+2026-06-20 20:10:11,935 - INFO - Animal=97 Temp=37.19 HeartRate=105 Risk=NORMAL
+2026-06-20 20:10:11,948 - INFO - Animal=44 Temp=41.91 HeartRate=130 Risk=HIGH
+2026-06-20 20:10:11,965 - INFO - Animal=84 Temp=41.58 HeartRate=112 Risk=HIGH
+2026-06-20 20:10:11,986 - INFO - Animal=58 Temp=40.65 HeartRate=78 Risk=HIGH
+2026-06-20 20:10:12,009 - INFO - Animal=81 Temp=38.36 HeartRate=87 Risk=NORMAL
+2026-06-20 20:10:12,030 - INFO - Animal=46 Temp=37.83 HeartRate=94 Risk=NORMAL
+2026-06-20 20:10:12,049 - INFO - Animal=48 Temp=37.99 HeartRate=111 Risk=NORMAL
+2026-06-20 20:10:12,076 - INFO - Animal=39 Temp=37.26 HeartRate=108 Risk=NORMAL
+2026-06-20 20:10:12,104 - INFO - Animal=9 Temp=39.79 HeartRate=78 Risk=NORMAL
+2026-06-20 20:10:12,127 - INFO - Animal=38 Temp=38.71 HeartRate=100 Risk=NORMAL
+2026-06-20 20:10:12,146 - INFO - Animal=56 Temp=39.22 HeartRate=125 Risk=NORMAL
+2026-06-20 20:10:12,168 - INFO - Animal=34 Temp=39.69 HeartRate=105 Risk=NORMAL
+2026-06-20 20:10:12,222 - INFO - Animal=45 Temp=41.4 HeartRate=108 Risk=HIGH
+2026-06-20 20:10:12,244 - INFO - Animal=54 Temp=39.89 HeartRate=116 Risk=NORMAL
+2026-06-20 20:10:12,261 - INFO - Animal=8 Temp=38.12 HeartRate=91 Risk=NORMAL
+2026-06-20 20:10:12,276 - INFO - Animal=28 Temp=41.75 HeartRate=67 Risk=HIGH
+2026-06-20 20:10:12,290 - INFO - Animal=10 Temp=37.73 HeartRate=106 Risk=NORMAL
+2026-06-20 20:10:12,304 - INFO - Animal=46 Temp=41.81 HeartRate=126 Risk=HIGH
+2026-06-20 20:10:12,319 - INFO - Animal=6 Temp=39.04 HeartRate=105 Risk=NORMAL
+2026-06-20 20:10:12,333 - INFO - Animal=21 Temp=38.7 HeartRate=71 Risk=NORMAL
+2026-06-20 20:10:12,347 - INFO - Animal=89 Temp=41.83 HeartRate=129 Risk=HIGH
+2026-06-20 20:10:12,361 - INFO - Animal=13 Temp=37.77 HeartRate=61 Risk=NORMAL
+2026-06-20 20:10:12,374 - INFO - Animal=84 Temp=40.23 HeartRate=72 Risk=HIGH
+2026-06-20 20:10:12,388 - INFO - Animal=99 Temp=37.99 HeartRate=97 Risk=NORMAL
+2026-06-20 20:10:12,402 - INFO - Animal=79 Temp=38.44 HeartRate=118 Risk=NORMAL
+2026-06-20 20:10:12,415 - INFO - Animal=20 Temp=38.8 HeartRate=115 Risk=NORMAL
+2026-06-20 20:10:12,427 - INFO - Animal=51 Temp=40.85 HeartRate=140 Risk=HIGH
+2026-06-20 20:10:12,439 - INFO - Animal=10 Temp=40.53 HeartRate=70 Risk=HIGH
+2026-06-20 20:10:12,452 - INFO - Animal=28 Temp=41.55 HeartRate=132 Risk=HIGH
+2026-06-20 20:10:12,464 - INFO - Animal=31 Temp=38.25 HeartRate=97 Risk=NORMAL
+2026-06-20 20:10:12,484 - INFO - Animal=19 Temp=41.2 HeartRate=68 Risk=HIGH
+2026-06-20 20:10:12,502 - INFO - Animal=19 Temp=41.55 HeartRate=102 Risk=HIGH
+2026-06-20 20:10:12,517 - INFO - Animal=94 Temp=38.67 HeartRate=60 Risk=NORMAL
+2026-06-20 20:10:12,532 - INFO - Animal=52 Temp=41.26 HeartRate=91 Risk=HIGH
+2026-06-20 20:10:12,547 - INFO - Animal=6 Temp=37.3 HeartRate=83 Risk=NORMAL
+2026-06-20 20:10:12,566 - INFO - Animal=96 Temp=38.64 HeartRate=93 Risk=NORMAL
+2026-06-20 20:10:12,581 - INFO - Animal=94 Temp=39.29 HeartRate=130 Risk=HIGH
+2026-06-20 20:10:12,595 - INFO - Animal=85 Temp=40.03 HeartRate=75 Risk=NORMAL
+2026-06-20 20:10:12,610 - INFO - Animal=37 Temp=39.28 HeartRate=119 Risk=NORMAL
+2026-06-20 20:10:12,624 - INFO - Animal=93 Temp=37.66 HeartRate=99 Risk=NORMAL
+2026-06-20 20:10:12,639 - INFO - Animal=97 Temp=37.68 HeartRate=138 Risk=HIGH
+2026-06-20 20:10:12,654 - INFO - Animal=99 Temp=37.67 HeartRate=138 Risk=HIGH
+2026-06-20 20:10:12,671 - INFO - Animal=19 Temp=38.92 HeartRate=90 Risk=NORMAL
+2026-06-20 20:10:12,684 - INFO - Animal=60 Temp=41.65 HeartRate=139 Risk=HIGH
+2026-06-20 20:10:12,701 - INFO - Animal=32 Temp=38.51 HeartRate=139 Risk=HIGH
+2026-06-20 20:10:12,716 - INFO - Animal=17 Temp=39.5 HeartRate=111 Risk=NORMAL
+2026-06-20 20:10:12,729 - INFO - Animal=27 Temp=40.42 HeartRate=119 Risk=HIGH
+2026-06-20 20:10:12,744 - INFO - Animal=57 Temp=39.83 HeartRate=115 Risk=NORMAL
+2026-06-20 20:10:12,757 - INFO - Animal=82 Temp=39.68 HeartRate=124 Risk=HIGH
+2026-06-20 20:10:12,771 - INFO - Animal=2 Temp=39.02 HeartRate=89 Risk=NORMAL
+2026-06-20 20:10:12,786 - INFO - Animal=25 Temp=38.09 HeartRate=130 Risk=HIGH
+2026-06-20 20:10:12,800 - INFO - Animal=91 Temp=41.84 HeartRate=138 Risk=HIGH
+2026-06-20 20:10:12,813 - INFO - Animal=89 Temp=38.84 HeartRate=139 Risk=HIGH
+2026-06-20 20:10:12,827 - INFO - Animal=39 Temp=41.1 HeartRate=74 Risk=HIGH
+2026-06-20 20:10:12,841 - INFO - Animal=48 Temp=39.45 HeartRate=97 Risk=NORMAL
+2026-06-20 20:10:12,854 - INFO - Animal=12 Temp=37.38 HeartRate=106 Risk=NORMAL
+2026-06-20 20:10:12,869 - INFO - Animal=30 Temp=41.41 HeartRate=107 Risk=HIGH
+2026-06-20 20:10:12,884 - INFO - Animal=91 Temp=37.82 HeartRate=88 Risk=NORMAL
+2026-06-20 20:10:12,898 - INFO - Animal=80 Temp=37.44 HeartRate=119 Risk=NORMAL
+2026-06-20 20:10:12,914 - INFO - Animal=78 Temp=41.09 HeartRate=84 Risk=HIGH
+2026-06-20 20:10:12,935 - INFO - Animal=21 Temp=37.02 HeartRate=128 Risk=HIGH
+2026-06-20 20:10:12,950 - INFO - Animal=24 Temp=38.71 HeartRate=112 Risk=NORMAL
+2026-06-20 20:10:12,964 - INFO - Animal=14 Temp=40.51 HeartRate=69 Risk=HIGH
+2026-06-20 20:10:12,983 - INFO - Animal=1 Temp=40.62 HeartRate=113 Risk=HIGH
+2026-06-20 20:10:13,001 - INFO - Animal=24 Temp=38.73 HeartRate=116 Risk=NORMAL
+2026-06-20 20:10:13,019 - INFO - Animal=32 Temp=41.22 HeartRate=80 Risk=HIGH
+2026-06-20 20:10:13,033 - INFO - Animal=25 Temp=41.27 HeartRate=102 Risk=HIGH
+2026-06-20 20:10:13,048 - INFO - Animal=14 Temp=38.45 HeartRate=97 Risk=NORMAL
+2026-06-20 20:10:13,066 - INFO - Animal=76 Temp=39.91 HeartRate=135 Risk=HIGH
+2026-06-20 20:10:13,080 - INFO - Animal=34 Temp=40.28 HeartRate=127 Risk=HIGH
+2026-06-20 20:10:13,094 - INFO - Animal=66 Temp=37.74 HeartRate=135 Risk=HIGH
+2026-06-20 20:10:13,106 - INFO - Animal=27 Temp=39.16 HeartRate=62 Risk=NORMAL
+2026-06-20 20:10:13,120 - INFO - Animal=40 Temp=39.53 HeartRate=140 Risk=HIGH
+2026-06-20 20:10:13,135 - INFO - Animal=49 Temp=40.21 HeartRate=86 Risk=NORMAL
+2026-06-20 20:10:13,151 - INFO - Animal=62 Temp=40.89 HeartRate=116 Risk=HIGH
+2026-06-20 20:10:13,169 - INFO - Animal=46 Temp=41.53 HeartRate=60 Risk=HIGH
+2026-06-20 20:10:13,188 - INFO - Animal=21 Temp=39.43 HeartRate=106 Risk=NORMAL
+2026-06-20 20:10:13,203 - INFO - Animal=57 Temp=40.72 HeartRate=69 Risk=HIGH
+2026-06-20 20:10:13,218 - INFO - Animal=25 Temp=39.87 HeartRate=89 Risk=NORMAL
+2026-06-20 20:10:13,232 - INFO - Animal=47 Temp=41.99 HeartRate=100 Risk=HIGH
+2026-06-20 20:10:13,248 - INFO - Animal=45 Temp=37.98 HeartRate=140 Risk=HIGH
+2026-06-20 20:10:13,266 - INFO - Animal=93 Temp=38.48 HeartRate=128 Risk=HIGH
+2026-06-20 20:10:13,288 - INFO - Animal=67 Temp=38.78 HeartRate=115 Risk=NORMAL
+2026-06-20 20:10:13,309 - INFO - Animal=73 Temp=38.94 HeartRate=63 Risk=NORMAL
+2026-06-20 20:10:13,327 - INFO - Animal=55 Temp=38.73 HeartRate=110 Risk=NORMAL
+2026-06-20 21:00:19,802 - WARNING - socks5_proxy is deprecated, use proxy_url instead
+2026-06-20 21:00:19,806 - INFO - IO loop starting (client_id=kafka-python-3.0.0)
+2026-06-20 21:00:19,835 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-64324] broker_version=unknown (initializing)>: Broker version identified as 3.5
+2026-06-20 21:00:19,836 - INFO - Metadata refresh (node_id=bootstrap-0)
+2026-06-20 21:00:19,844 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-20 21:00:19,844 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-06-20 21:00:19,844 - INFO - <KafkaTCPTransport [::1:9092<-64324]>: Closing transport
+2026-06-20 21:00:19,845 - INFO - Starting metadata refresh loop
+2026-06-20 21:00:19,849 - INFO - Updating subscribed topics to: ('sensor-events',)
+2026-06-20 21:00:19,862 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-64325] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-20 21:00:19,862 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-64325] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-20 21:00:19,953 - INFO - Metadata refresh (node_id=1)
+2026-06-20 21:00:19,958 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 0)
+2026-06-20 21:00:21,770 - INFO - Coordinator for GROUP/sensor-group is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-06-20 21:00:21,770 - INFO - Discovered coordinator coordinator-1 for group sensor-group
+2026-06-20 21:00:21,793 - INFO - Revoking previously assigned partitions set() for group sensor-group
+2026-06-20 21:00:21,793 - INFO - (Re-)joining group sensor-group
+2026-06-20 21:00:21,796 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-64326] broker_version=(3, 5) (initializing)>: Broker version identified as 3.5
+2026-06-20 21:00:21,796 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-64326] broker_version=(3, 5) (initializing)>: Clamping client to user-supplied broker version 3.5
+2026-06-20 21:00:21,827 - INFO - Received member id kafka-python-3.0.0-349dba4b-c668-48dc-bd8d-e4eda122255f for group sensor-group; will retry join-group
+2026-06-20 21:00:21,827 - INFO - (Re-)joining group sensor-group
+2026-06-20 21:00:24,879 - INFO - Successfully joined group sensor-group <Generation 1 (member_id: kafka-python-3.0.0-349dba4b-c668-48dc-bd8d-e4eda122255f, protocol: range)>
+2026-06-20 21:00:24,880 - INFO - Elected group leader -- performing partition assignments using range
+2026-06-20 21:00:24,884 - INFO - Metadata refresh (node_id=1)
+2026-06-20 21:00:24,890 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-20 21:00:24,941 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-events', partition=0)]
+2026-06-20 21:00:24,942 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-events', partition=0)} for group sensor-group
+2026-06-20 21:00:24,994 - INFO - Resetting offset for partition TopicPartition(topic='sensor-events', partition=0) to offset 0.
+2026-06-20 21:00:25,441 - INFO - Animal=19 Temp=40.17 HeartRate=63 Risk=HIGH
+2026-06-20 21:00:25,475 - INFO - Animal=81 Temp=37.34 HeartRate=79 Risk=NORMAL
+2026-06-20 21:00:25,516 - INFO - Animal=26 Temp=38.16 HeartRate=75 Risk=NORMAL
+2026-06-20 21:00:25,561 - INFO - Animal=68 Temp=41.43 HeartRate=63 Risk=HIGH
+2026-06-20 21:00:25,608 - INFO - Animal=86 Temp=40.7 HeartRate=63 Risk=HIGH
+2026-06-20 21:00:25,651 - INFO - Animal=18 Temp=38.32 HeartRate=79 Risk=NORMAL
+2026-06-20 21:00:25,705 - INFO - Animal=63 Temp=37.64 HeartRate=103 Risk=NORMAL
+2026-06-20 21:00:27,687 - INFO - Animal=28 Temp=37.31 HeartRate=70 Risk=NORMAL
+2026-06-20 21:00:29,701 - INFO - Animal=89 Temp=38.26 HeartRate=84 Risk=NORMAL
+2026-06-20 21:00:31,697 - INFO - Animal=73 Temp=39.24 HeartRate=61 Risk=NORMAL
+2026-06-20 21:00:33,668 - INFO - Animal=73 Temp=38.78 HeartRate=89 Risk=NORMAL
+2026-06-20 21:00:35,693 - INFO - Animal=8 Temp=38.17 HeartRate=85 Risk=NORMAL
+2026-06-20 21:00:37,706 - INFO - Animal=56 Temp=39.15 HeartRate=71 Risk=NORMAL
+2026-06-20 21:00:39,692 - INFO - Animal=53 Temp=41.57 HeartRate=93 Risk=HIGH
+2026-06-20 21:00:41,716 - INFO - Animal=42 Temp=38.62 HeartRate=130 Risk=HIGH
+2026-06-20 21:00:43,762 - INFO - Animal=4 Temp=37.03 HeartRate=104 Risk=NORMAL
+2026-06-20 21:00:45,765 - INFO - Animal=8 Temp=41.28 HeartRate=78 Risk=HIGH
+2026-06-20 21:00:47,794 - INFO - Animal=33 Temp=40.96 HeartRate=99 Risk=HIGH
+2026-06-20 21:00:49,780 - INFO - Animal=71 Temp=41.56 HeartRate=95 Risk=HIGH
+2026-06-20 21:00:51,793 - INFO - Animal=28 Temp=41.42 HeartRate=130 Risk=HIGH
+2026-06-20 21:00:53,805 - INFO - Animal=7 Temp=41.97 HeartRate=109 Risk=HIGH
+2026-06-20 21:00:55,839 - INFO - Animal=90 Temp=37.62 HeartRate=132 Risk=HIGH
+2026-06-20 21:00:57,796 - INFO - Animal=17 Temp=41.43 HeartRate=103 Risk=HIGH
+2026-06-20 21:00:59,803 - INFO - Animal=99 Temp=41.05 HeartRate=73 Risk=HIGH
+2026-06-20 21:01:01,811 - INFO - Animal=51 Temp=37.8 HeartRate=80 Risk=NORMAL
+2026-06-20 21:01:03,812 - INFO - Animal=9 Temp=41.87 HeartRate=95 Risk=HIGH
+2026-06-20 21:01:05,864 - INFO - Animal=12 Temp=40.34 HeartRate=76 Risk=HIGH
+2026-06-20 21:01:07,850 - INFO - Animal=53 Temp=39.2 HeartRate=129 Risk=HIGH
+2026-06-20 21:01:09,860 - INFO - Animal=91 Temp=38.65 HeartRate=77 Risk=NORMAL
+2026-06-20 21:01:11,884 - INFO - Animal=76 Temp=40.94 HeartRate=105 Risk=HIGH
+2026-06-20 21:01:13,893 - INFO - Animal=66 Temp=40.65 HeartRate=87 Risk=HIGH
+2026-06-20 21:01:15,930 - INFO - Animal=18 Temp=39.88 HeartRate=66 Risk=NORMAL
+2026-06-20 21:01:17,939 - INFO - Animal=94 Temp=41.65 HeartRate=103 Risk=HIGH
+2026-06-20 21:01:19,953 - INFO - Animal=73 Temp=38.63 HeartRate=109 Risk=NORMAL
+2026-06-20 21:01:21,931 - INFO - Animal=40 Temp=38.68 HeartRate=85 Risk=NORMAL
+2026-06-20 21:01:23,972 - INFO - Animal=24 Temp=38.77 HeartRate=126 Risk=NORMAL
+2026-06-20 21:01:25,909 - INFO - Animal=10 Temp=40.03 HeartRate=110 Risk=NORMAL
+2026-06-20 21:01:27,950 - INFO - Animal=48 Temp=40.25 HeartRate=71 Risk=HIGH
+2026-06-20 21:01:29,955 - INFO - Animal=25 Temp=37.28 HeartRate=98 Risk=NORMAL
+2026-06-20 21:01:31,963 - INFO - Animal=80 Temp=38.76 HeartRate=67 Risk=NORMAL
+2026-06-20 21:01:34,012 - INFO - Animal=17 Temp=37.89 HeartRate=76 Risk=NORMAL
+2026-06-20 21:01:35,993 - INFO - Animal=42 Temp=39.04 HeartRate=130 Risk=HIGH
+2026-06-20 21:01:38,011 - INFO - Animal=35 Temp=39.92 HeartRate=124 Risk=HIGH
+2026-06-20 21:01:40,021 - INFO - Animal=76 Temp=38.39 HeartRate=103 Risk=NORMAL
+2026-06-20 21:01:42,045 - INFO - Animal=30 Temp=38.48 HeartRate=90 Risk=NORMAL
+2026-06-20 21:01:44,026 - INFO - Animal=26 Temp=39.14 HeartRate=87 Risk=NORMAL
+2026-06-20 21:01:46,061 - INFO - Animal=6 Temp=40.78 HeartRate=92 Risk=HIGH
+2026-06-20 21:01:48,073 - INFO - Animal=97 Temp=41.84 HeartRate=133 Risk=HIGH
+2026-06-20 21:01:50,090 - INFO - Animal=88 Temp=41.22 HeartRate=70 Risk=HIGH
+2026-06-20 21:01:52,059 - INFO - Animal=83 Temp=40.73 HeartRate=107 Risk=HIGH
+2026-06-20 21:01:54,098 - INFO - Animal=68 Temp=39.46 HeartRate=72 Risk=NORMAL
+2026-06-20 21:01:56,076 - INFO - Animal=43 Temp=38.87 HeartRate=111 Risk=NORMAL
+2026-06-20 21:01:58,111 - INFO - Animal=7 Temp=40.5 HeartRate=68 Risk=HIGH
+2026-06-20 21:02:00,080 - INFO - Animal=30 Temp=40.82 HeartRate=122 Risk=HIGH
+2026-06-20 21:02:02,116 - INFO - Animal=84 Temp=37.22 HeartRate=98 Risk=NORMAL
+2026-06-20 21:02:04,319 - INFO - Animal=33 Temp=40.17 HeartRate=72 Risk=NORMAL
+2026-06-20 21:02:06,148 - INFO - Animal=25 Temp=37.29 HeartRate=98 Risk=NORMAL
+2026-06-20 21:02:08,133 - INFO - Animal=99 Temp=40.29 HeartRate=115 Risk=HIGH
+2026-06-20 21:02:10,150 - INFO - Animal=22 Temp=41.87 HeartRate=122 Risk=HIGH
+2026-06-20 21:02:12,155 - INFO - Animal=45 Temp=38.76 HeartRate=135 Risk=HIGH
+2026-06-20 21:02:14,195 - INFO - Animal=65 Temp=40.39 HeartRate=99 Risk=NORMAL
+2026-06-20 21:02:16,204 - INFO - Animal=27 Temp=37.7 HeartRate=129 Risk=HIGH
+2026-06-20 21:02:18,216 - INFO - Animal=53 Temp=41.03 HeartRate=138 Risk=HIGH
+2026-06-20 21:02:20,164 - INFO - Animal=65 Temp=37.54 HeartRate=68 Risk=NORMAL
+2026-06-20 21:02:22,226 - INFO - Animal=11 Temp=40.98 HeartRate=110 Risk=HIGH
+2026-06-20 21:02:24,215 - INFO - Animal=95 Temp=40.66 HeartRate=74 Risk=HIGH
+2026-06-20 21:02:26,243 - INFO - Animal=23 Temp=40.39 HeartRate=79 Risk=NORMAL
+2026-06-20 21:02:28,229 - INFO - Animal=70 Temp=39.93 HeartRate=75 Risk=NORMAL
+2026-06-20 21:02:30,266 - INFO - Animal=52 Temp=38.96 HeartRate=138 Risk=HIGH
+2026-06-20 21:02:32,267 - INFO - Animal=85 Temp=37.18 HeartRate=113 Risk=NORMAL
+2026-06-20 21:02:34,251 - INFO - Animal=80 Temp=41.01 HeartRate=85 Risk=HIGH
+2026-06-20 21:02:36,299 - INFO - Animal=20 Temp=39.76 HeartRate=100 Risk=NORMAL
+2026-06-20 21:02:38,307 - INFO - Animal=81 Temp=37.96 HeartRate=129 Risk=HIGH
+2026-06-20 21:02:40,319 - INFO - Animal=50 Temp=40.46 HeartRate=119 Risk=HIGH
+2026-06-20 21:02:42,343 - INFO - Animal=38 Temp=39.02 HeartRate=112 Risk=NORMAL
+2026-06-20 21:02:44,338 - INFO - Animal=23 Temp=41.48 HeartRate=84 Risk=HIGH
+2026-06-20 21:02:46,356 - INFO - Animal=44 Temp=39.18 HeartRate=139 Risk=HIGH
+2026-06-20 21:02:48,365 - INFO - Animal=11 Temp=37.14 HeartRate=123 Risk=HIGH
+2026-06-20 21:02:50,370 - INFO - Animal=12 Temp=39.33 HeartRate=72 Risk=NORMAL
+2026-06-20 21:02:52,360 - INFO - Animal=42 Temp=39.55 HeartRate=105 Risk=NORMAL
+2026-06-20 21:02:54,398 - INFO - Animal=51 Temp=41.52 HeartRate=112 Risk=HIGH
+2026-06-20 21:02:56,395 - INFO - Animal=73 Temp=41.04 HeartRate=121 Risk=HIGH
+2026-06-20 21:02:58,419 - INFO - Animal=95 Temp=41.89 HeartRate=102 Risk=HIGH
+2026-06-20 21:03:00,432 - INFO - Animal=41 Temp=38.92 HeartRate=61 Risk=NORMAL
+2026-06-20 21:03:02,408 - INFO - Animal=90 Temp=41.87 HeartRate=122 Risk=HIGH
+2026-06-20 21:03:04,427 - INFO - Animal=18 Temp=39.22 HeartRate=124 Risk=NORMAL
+2026-06-20 21:03:06,455 - INFO - Animal=8 Temp=38.59 HeartRate=98 Risk=NORMAL
+2026-06-20 21:03:08,431 - INFO - Animal=84 Temp=37.94 HeartRate=130 Risk=HIGH
+2026-06-20 21:03:10,451 - INFO - Animal=58 Temp=37.04 HeartRate=64 Risk=HIGH
+2026-06-20 21:03:12,490 - INFO - Animal=12 Temp=38.71 HeartRate=93 Risk=NORMAL
+2026-06-20 21:03:14,495 - INFO - Animal=19 Temp=40.34 HeartRate=101 Risk=NORMAL
+2026-06-20 21:03:16,505 - INFO - Animal=79 Temp=40.19 HeartRate=122 Risk=HIGH
+2026-06-20 21:03:18,481 - INFO - Animal=97 Temp=39.7 HeartRate=107 Risk=NORMAL
+2026-06-20 21:03:20,523 - INFO - Animal=91 Temp=42.0 HeartRate=63 Risk=HIGH
+2026-06-20 21:03:22,517 - INFO - Animal=22 Temp=41.5 HeartRate=132 Risk=HIGH
+2026-06-20 21:03:24,540 - INFO - Animal=88 Temp=41.44 HeartRate=107 Risk=HIGH
+2026-06-20 21:03:26,558 - INFO - Animal=60 Temp=37.88 HeartRate=119 Risk=NORMAL
+2026-06-20 21:03:28,568 - INFO - Animal=13 Temp=41.27 HeartRate=131 Risk=HIGH
+2026-06-20 21:03:30,547 - INFO - Animal=96 Temp=38.49 HeartRate=89 Risk=NORMAL
+2026-06-20 21:03:32,584 - INFO - Animal=41 Temp=37.35 HeartRate=95 Risk=NORMAL
+2026-06-20 21:03:34,566 - INFO - Animal=88 Temp=38.34 HeartRate=95 Risk=NORMAL
+2026-06-20 21:03:36,602 - INFO - Animal=37 Temp=40.8 HeartRate=73 Risk=HIGH
+2026-06-20 21:03:38,616 - INFO - Animal=79 Temp=38.33 HeartRate=111 Risk=NORMAL
+2026-06-20 21:03:40,623 - INFO - Animal=10 Temp=38.66 HeartRate=134 Risk=HIGH
+2026-06-20 21:03:42,635 - INFO - Animal=72 Temp=39.49 HeartRate=82 Risk=NORMAL
+2026-06-20 21:03:44,640 - INFO - Animal=60 Temp=37.17 HeartRate=99 Risk=NORMAL
+2026-06-20 21:03:46,639 - INFO - Animal=46 Temp=37.26 HeartRate=84 Risk=NORMAL
+2026-06-20 21:03:48,667 - INFO - Animal=35 Temp=39.69 HeartRate=127 Risk=HIGH
+2026-06-20 21:03:50,643 - INFO - Animal=75 Temp=41.6 HeartRate=101 Risk=HIGH
+2026-06-20 21:03:52,657 - INFO - Animal=87 Temp=41.02 HeartRate=63 Risk=HIGH
+2026-06-20 21:03:54,690 - INFO - Animal=7 Temp=41.65 HeartRate=124 Risk=HIGH
+2026-06-20 21:03:56,712 - INFO - Animal=65 Temp=40.49 HeartRate=124 Risk=HIGH
+2026-06-20 21:03:58,716 - INFO - Animal=19 Temp=38.57 HeartRate=123 Risk=NORMAL
+2026-06-20 21:04:00,722 - INFO - Animal=27 Temp=38.48 HeartRate=95 Risk=NORMAL
+2026-06-20 21:04:02,697 - INFO - Animal=43 Temp=39.72 HeartRate=118 Risk=NORMAL
+2026-06-20 21:04:04,759 - INFO - Animal=16 Temp=38.04 HeartRate=97 Risk=NORMAL
+2026-06-20 21:04:06,723 - INFO - Animal=94 Temp=40.19 HeartRate=110 Risk=NORMAL
+2026-06-20 21:04:08,730 - INFO - Animal=66 Temp=38.36 HeartRate=109 Risk=NORMAL
+2026-06-20 21:04:10,774 - INFO - Animal=73 Temp=37.7 HeartRate=70 Risk=NORMAL
+2026-06-20 21:04:12,754 - INFO - Animal=34 Temp=39.03 HeartRate=67 Risk=NORMAL
+2026-06-20 21:04:14,742 - INFO - Animal=98 Temp=39.39 HeartRate=122 Risk=NORMAL
+2026-06-20 21:04:16,777 - INFO - Animal=57 Temp=39.53 HeartRate=94 Risk=NORMAL
+2026-06-20 21:04:18,755 - INFO - Animal=73 Temp=40.16 HeartRate=121 Risk=HIGH
+2026-06-20 21:04:20,809 - INFO - Animal=12 Temp=39.09 HeartRate=123 Risk=NORMAL
+2026-06-20 21:04:22,828 - INFO - Animal=87 Temp=38.8 HeartRate=75 Risk=NORMAL
+2026-06-20 21:04:24,803 - INFO - Animal=39 Temp=37.99 HeartRate=99 Risk=NORMAL
+2026-06-20 21:04:26,814 - INFO - Animal=82 Temp=38.44 HeartRate=73 Risk=NORMAL
+2026-06-20 21:04:28,860 - INFO - Animal=22 Temp=40.52 HeartRate=77 Risk=HIGH
+2026-06-20 21:04:30,843 - INFO - Animal=49 Temp=41.56 HeartRate=86 Risk=HIGH
+2026-06-20 21:04:32,865 - INFO - Animal=37 Temp=39.38 HeartRate=135 Risk=HIGH
+2026-06-20 21:04:34,886 - INFO - Animal=30 Temp=41.98 HeartRate=93 Risk=HIGH
+2026-06-20 21:04:36,858 - INFO - Animal=37 Temp=37.49 HeartRate=86 Risk=NORMAL
+2026-06-20 21:04:38,896 - INFO - Animal=11 Temp=37.69 HeartRate=101 Risk=NORMAL
+2026-06-20 21:04:40,893 - INFO - Animal=46 Temp=38.91 HeartRate=133 Risk=HIGH
+2026-06-20 21:04:42,924 - INFO - Animal=38 Temp=38.99 HeartRate=107 Risk=NORMAL
+2026-06-20 21:04:44,934 - INFO - Animal=42 Temp=38.4 HeartRate=136 Risk=HIGH
+2026-06-20 21:04:46,910 - INFO - Animal=57 Temp=37.24 HeartRate=102 Risk=NORMAL
+2026-06-20 21:04:48,958 - INFO - Animal=25 Temp=39.29 HeartRate=111 Risk=NORMAL
+2026-06-20 21:04:50,932 - INFO - Animal=30 Temp=39.06 HeartRate=66 Risk=NORMAL
+2026-06-20 21:04:52,939 - INFO - Animal=95 Temp=40.91 HeartRate=126 Risk=HIGH
+2026-06-20 21:04:54,936 - INFO - Animal=45 Temp=38.81 HeartRate=88 Risk=NORMAL
+2026-06-20 21:04:56,931 - INFO - Animal=65 Temp=37.18 HeartRate=122 Risk=HIGH
+2026-06-20 21:04:58,930 - INFO - Animal=56 Temp=38.71 HeartRate=74 Risk=NORMAL
+2026-06-20 21:05:00,927 - INFO - Animal=78 Temp=40.39 HeartRate=123 Risk=HIGH
+2026-06-20 21:05:02,973 - INFO - Animal=11 Temp=39.18 HeartRate=137 Risk=HIGH
+2026-06-20 21:05:04,983 - INFO - Animal=85 Temp=38.72 HeartRate=98 Risk=NORMAL
+2026-06-20 21:05:06,957 - INFO - Animal=97 Temp=40.68 HeartRate=61 Risk=HIGH
+2026-06-20 21:05:08,958 - INFO - Animal=96 Temp=39.39 HeartRate=128 Risk=HIGH
+2026-06-20 21:05:11,005 - INFO - Animal=30 Temp=41.03 HeartRate=62 Risk=HIGH
+2026-06-20 21:05:12,981 - INFO - Animal=1 Temp=41.39 HeartRate=115 Risk=HIGH
+2026-06-20 21:05:15,012 - INFO - Animal=13 Temp=41.25 HeartRate=127 Risk=HIGH
+2026-06-20 21:05:16,996 - INFO - Animal=38 Temp=39.29 HeartRate=86 Risk=NORMAL
+2026-06-20 21:05:19,043 - INFO - Animal=80 Temp=38.78 HeartRate=68 Risk=NORMAL
+2026-06-20 21:05:21,004 - INFO - Animal=56 Temp=39.73 HeartRate=75 Risk=NORMAL
+2026-06-20 21:05:23,049 - INFO - Animal=47 Temp=41.31 HeartRate=83 Risk=HIGH
+2026-06-20 21:05:24,895 - INFO - Metadata refresh (node_id=1)
+2026-06-20 21:05:25,012 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-06-20 21:05:25,018 - INFO - Animal=34 Temp=38.88 HeartRate=90 Risk=NORMAL
+2026-06-20 21:05:27,038 - INFO - Animal=62 Temp=37.22 HeartRate=136 Risk=HIGH
+2026-06-20 21:05:29,104 - INFO - Animal=92 Temp=41.49 HeartRate=115 Risk=HIGH
+2026-06-20 21:05:31,123 - INFO - Animal=16 Temp=40.41 HeartRate=116 Risk=HIGH
+2026-06-20 21:05:33,129 - INFO - Animal=58 Temp=40.74 HeartRate=76 Risk=HIGH
+2026-06-20 21:05:35,104 - INFO - Animal=88 Temp=39.46 HeartRate=80 Risk=NORMAL
+2026-06-20 21:05:37,090 - INFO - Animal=10 Temp=38.42 HeartRate=98 Risk=NORMAL
+2026-06-20 21:05:39,160 - INFO - Animal=88 Temp=40.06 HeartRate=111 Risk=NORMAL
+2026-06-20 21:05:41,145 - INFO - Animal=80 Temp=38.6 HeartRate=133 Risk=HIGH
+2026-06-20 21:05:43,164 - INFO - Animal=39 Temp=41.07 HeartRate=111 Risk=HIGH
+2026-06-20 21:05:45,139 - INFO - Animal=17 Temp=41.27 HeartRate=109 Risk=HIGH
+2026-06-20 21:05:47,186 - INFO - Animal=11 Temp=41.56 HeartRate=77 Risk=HIGH
+2026-06-20 21:05:49,200 - INFO - Animal=79 Temp=37.84 HeartRate=64 Risk=NORMAL
+2026-06-20 21:05:51,199 - INFO - Animal=20 Temp=41.77 HeartRate=62 Risk=HIGH
+2026-06-20 21:05:53,205 - INFO - Animal=26 Temp=40.08 HeartRate=77 Risk=NORMAL
+2026-06-20 21:05:55,214 - INFO - Animal=63 Temp=37.63 HeartRate=133 Risk=HIGH
+2026-06-20 21:05:57,193 - INFO - Animal=1 Temp=39.16 HeartRate=103 Risk=NORMAL
+2026-06-20 21:05:59,229 - INFO - Animal=23 Temp=39.49 HeartRate=61 Risk=NORMAL
+2026-06-20 21:06:01,261 - INFO - Animal=63 Temp=40.92 HeartRate=63 Risk=HIGH
+2026-06-20 21:06:03,238 - INFO - Animal=93 Temp=37.53 HeartRate=89 Risk=NORMAL
+2026-06-20 21:06:05,286 - INFO - Animal=39 Temp=37.38 HeartRate=130 Risk=HIGH
+2026-06-20 21:06:07,279 - INFO - Animal=48 Temp=38.1 HeartRate=65 Risk=NORMAL
+2026-06-20 21:06:09,264 - INFO - Animal=12 Temp=38.24 HeartRate=127 Risk=HIGH
+2026-06-20 21:06:11,312 - INFO - Animal=70 Temp=38.01 HeartRate=69 Risk=NORMAL
+2026-06-20 21:06:13,328 - INFO - Animal=23 Temp=41.3 HeartRate=91 Risk=HIGH
+2026-06-20 21:06:15,301 - INFO - Animal=42 Temp=37.05 HeartRate=138 Risk=HIGH
+2026-06-20 21:06:17,319 - INFO - Animal=73 Temp=38.35 HeartRate=105 Risk=NORMAL
+2026-06-20 21:06:19,326 - INFO - Animal=16 Temp=37.01 HeartRate=124 Risk=HIGH
+2026-06-20 21:06:21,314 - INFO - Animal=5 Temp=37.43 HeartRate=125 Risk=HIGH
+2026-06-20 21:06:23,353 - INFO - Animal=90 Temp=39.34 HeartRate=111 Risk=NORMAL
+2026-06-20 21:06:25,364 - INFO - Animal=59 Temp=38.17 HeartRate=63 Risk=NORMAL
+2026-06-20 21:06:27,364 - INFO - Animal=48 Temp=39.97 HeartRate=110 Risk=NORMAL
+2026-06-20 21:06:29,371 - INFO - Animal=90 Temp=38.52 HeartRate=72 Risk=NORMAL
+2026-06-20 21:06:31,361 - INFO - Animal=69 Temp=38.06 HeartRate=60 Risk=NORMAL
+2026-06-20 21:06:33,372 - INFO - Animal=91 Temp=38.97 HeartRate=63 Risk=NORMAL
+2026-06-20 21:06:35,399 - INFO - Animal=88 Temp=38.41 HeartRate=66 Risk=NORMAL
+2026-06-20 21:06:37,407 - INFO - Animal=73 Temp=41.25 HeartRate=79 Risk=HIGH
+2026-06-20 21:06:39,383 - INFO - Animal=6 Temp=39.34 HeartRate=139 Risk=HIGH
+2026-06-20 21:06:41,382 - INFO - Animal=8 Temp=37.1 HeartRate=97 Risk=NORMAL
+2026-06-20 21:06:43,396 - INFO - Animal=99 Temp=37.83 HeartRate=66 Risk=NORMAL
+2026-06-20 21:06:45,434 - INFO - Animal=15 Temp=39.21 HeartRate=101 Risk=NORMAL
+2026-06-20 21:06:47,460 - INFO - Animal=66 Temp=38.38 HeartRate=65 Risk=NORMAL
+2026-06-20 21:06:49,448 - INFO - Animal=78 Temp=41.02 HeartRate=81 Risk=HIGH
+2026-06-20 21:06:51,453 - INFO - Animal=26 Temp=39.83 HeartRate=97 Risk=NORMAL
+2026-06-20 21:06:53,461 - INFO - Animal=22 Temp=38.49 HeartRate=95 Risk=NORMAL
+2026-06-20 21:06:55,448 - INFO - Animal=5 Temp=39.5 HeartRate=102 Risk=NORMAL
+2026-06-20 21:06:57,492 - INFO - Animal=77 Temp=37.84 HeartRate=100 Risk=NORMAL
+2026-06-20 21:06:59,523 - INFO - Animal=51 Temp=39.11 HeartRate=128 Risk=HIGH
+2026-06-20 21:07:01,535 - INFO - Animal=17 Temp=38.09 HeartRate=87 Risk=NORMAL
+2026-06-20 21:07:03,546 - INFO - Animal=88 Temp=41.08 HeartRate=109 Risk=HIGH
+2026-06-20 21:07:05,540 - INFO - Animal=41 Temp=41.23 HeartRate=102 Risk=HIGH
+2026-06-20 21:07:07,529 - INFO - Animal=55 Temp=37.53 HeartRate=69 Risk=NORMAL
+2026-06-20 21:07:09,571 - INFO - Animal=36 Temp=41.65 HeartRate=135 Risk=HIGH
+2026-06-20 21:07:11,551 - INFO - Animal=16 Temp=39.54 HeartRate=132 Risk=HIGH
+2026-06-20 21:07:13,545 - INFO - Animal=42 Temp=41.64 HeartRate=130 Risk=HIGH
+2026-06-20 21:07:15,546 - INFO - Animal=17 Temp=38.09 HeartRate=76 Risk=NORMAL
+2026-06-20 21:07:17,551 - INFO - Animal=12 Temp=41.81 HeartRate=92 Risk=HIGH
+2026-06-20 21:07:19,523 - INFO - Animal=1 Temp=41.42 HeartRate=98 Risk=HIGH
+2026-06-20 21:07:21,532 - INFO - Animal=51 Temp=41.41 HeartRate=63 Risk=HIGH
+2026-06-20 21:07:23,541 - INFO - Animal=17 Temp=39.37 HeartRate=112 Risk=NORMAL
+2026-06-20 21:07:25,575 - INFO - Animal=13 Temp=37.41 HeartRate=114 Risk=NORMAL
+2026-06-20 21:07:27,551 - INFO - Animal=35 Temp=38.3 HeartRate=90 Risk=NORMAL
+2026-06-20 21:07:29,566 - INFO - Animal=37 Temp=37.13 HeartRate=139 Risk=HIGH
+2026-06-20 21:07:31,594 - INFO - Animal=80 Temp=39.25 HeartRate=69 Risk=NORMAL
+2026-06-20 21:07:33,648 - INFO - Animal=82 Temp=40.58 HeartRate=137 Risk=HIGH
+2026-06-20 21:07:35,669 - INFO - Animal=16 Temp=38.72 HeartRate=116 Risk=NORMAL
+2026-06-20 21:07:37,672 - INFO - Animal=48 Temp=40.14 HeartRate=134 Risk=HIGH
+2026-06-20 21:07:39,674 - INFO - Animal=25 Temp=39.93 HeartRate=66 Risk=NORMAL
+2026-06-20 21:07:41,670 - INFO - Animal=84 Temp=41.65 HeartRate=86 Risk=HIGH
+2026-06-20 21:07:43,705 - INFO - Animal=95 Temp=40.87 HeartRate=107 Risk=HIGH
+2026-06-20 21:07:45,696 - INFO - Animal=63 Temp=39.14 HeartRate=68 Risk=NORMAL
+2026-06-20 21:07:47,728 - INFO - Animal=33 Temp=41.47 HeartRate=134 Risk=HIGH
+2026-06-20 21:07:49,677 - INFO - Animal=87 Temp=37.6 HeartRate=102 Risk=NORMAL
+2026-06-20 21:07:51,689 - INFO - Animal=94 Temp=39.96 HeartRate=86 Risk=NORMAL
+2026-06-20 21:07:53,706 - INFO - Animal=60 Temp=38.67 HeartRate=133 Risk=HIGH
+2026-06-20 21:07:55,718 - INFO - Animal=66 Temp=41.56 HeartRate=62 Risk=HIGH
+2026-06-20 21:07:57,711 - INFO - Animal=32 Temp=41.07 HeartRate=75 Risk=HIGH
+2026-06-20 21:07:59,718 - INFO - Animal=64 Temp=38.44 HeartRate=72 Risk=NORMAL
+2026-06-20 21:08:01,740 - INFO - Animal=64 Temp=38.21 HeartRate=75 Risk=NORMAL
+2026-06-20 21:08:03,787 - INFO - Animal=47 Temp=41.47 HeartRate=124 Risk=HIGH
+2026-06-20 21:08:05,740 - INFO - Animal=25 Temp=40.54 HeartRate=70 Risk=HIGH
+2026-06-20 21:08:07,741 - INFO - Animal=1 Temp=38.34 HeartRate=126 Risk=HIGH
+2026-06-20 21:08:09,771 - INFO - Animal=97 Temp=38.31 HeartRate=91 Risk=NORMAL
+2026-06-20 21:08:11,746 - INFO - Animal=6 Temp=41.44 HeartRate=78 Risk=HIGH
+2026-06-20 21:08:13,774 - INFO - Animal=13 Temp=38.62 HeartRate=82 Risk=NORMAL
+2026-06-20 21:08:15,791 - INFO - Animal=40 Temp=40.41 HeartRate=68 Risk=HIGH
+2026-06-20 21:08:17,763 - INFO - Animal=5 Temp=38.06 HeartRate=99 Risk=NORMAL
+2026-06-20 21:08:19,774 - INFO - Animal=85 Temp=37.83 HeartRate=62 Risk=NORMAL
+2026-06-20 21:08:21,791 - INFO - Animal=34 Temp=39.05 HeartRate=66 Risk=NORMAL
+2026-06-20 21:08:23,788 - INFO - Animal=11 Temp=40.5 HeartRate=132 Risk=HIGH
+2026-06-20 21:08:25,785 - INFO - Animal=86 Temp=41.85 HeartRate=128 Risk=HIGH
+2026-06-20 21:08:27,803 - INFO - Animal=25 Temp=41.74 HeartRate=95 Risk=HIGH
+2026-06-20 21:08:29,807 - INFO - Animal=13 Temp=37.61 HeartRate=124 Risk=NORMAL
+2026-06-20 21:08:31,823 - INFO - Animal=20 Temp=38.66 HeartRate=121 Risk=NORMAL
+2026-06-20 21:08:33,833 - INFO - Animal=97 Temp=38.47 HeartRate=140 Risk=HIGH
+2026-06-20 21:08:35,835 - INFO - Animal=26 Temp=39.59 HeartRate=81 Risk=NORMAL
+2026-06-20 21:08:37,836 - INFO - Animal=10 Temp=37.53 HeartRate=87 Risk=NORMAL
+2026-06-20 21:08:39,873 - INFO - Animal=94 Temp=40.96 HeartRate=65 Risk=HIGH
+2026-06-20 21:08:41,861 - INFO - Animal=47 Temp=37.5 HeartRate=68 Risk=NORMAL
+2026-06-20 21:08:43,868 - INFO - Animal=84 Temp=40.64 HeartRate=74 Risk=HIGH
+2026-06-20 21:08:45,869 - INFO - Animal=29 Temp=40.64 HeartRate=81 Risk=HIGH
+2026-06-20 21:08:47,860 - INFO - Animal=98 Temp=41.28 HeartRate=71 Risk=HIGH
+2026-06-20 21:08:49,891 - INFO - Animal=78 Temp=41.92 HeartRate=95 Risk=HIGH
+2026-06-20 21:08:51,906 - INFO - Animal=50 Temp=37.43 HeartRate=78 Risk=NORMAL
+2026-06-20 21:08:54,015 - INFO - Animal=28 Temp=41.81 HeartRate=125 Risk=HIGH
+2026-06-20 21:08:55,918 - INFO - Animal=24 Temp=40.31 HeartRate=135 Risk=HIGH
+2026-06-20 21:08:57,909 - INFO - Animal=57 Temp=37.49 HeartRate=111 Risk=NORMAL
+2026-06-20 21:08:59,919 - INFO - Animal=91 Temp=37.27 HeartRate=108 Risk=NORMAL
+2026-06-20 21:09:01,931 - INFO - Animal=61 Temp=39.14 HeartRate=101 Risk=NORMAL
+2026-06-20 21:09:03,932 - INFO - Animal=39 Temp=38.97 HeartRate=111 Risk=NORMAL
+2026-06-20 21:09:05,943 - INFO - Animal=91 Temp=38.34 HeartRate=109 Risk=NORMAL
+2026-06-20 21:09:07,965 - INFO - Animal=49 Temp=38.05 HeartRate=66 Risk=NORMAL
+2026-06-20 21:09:09,970 - INFO - Animal=39 Temp=38.93 HeartRate=70 Risk=NORMAL
+2026-06-20 21:09:11,977 - INFO - Animal=1 Temp=40.05 HeartRate=100 Risk=NORMAL
+2026-06-20 21:09:13,978 - INFO - Animal=39 Temp=40.34 HeartRate=133 Risk=HIGH
+2026-06-20 21:09:16,010 - INFO - Animal=62 Temp=39.16 HeartRate=106 Risk=NORMAL
+2026-06-20 21:09:18,020 - INFO - Animal=14 Temp=37.97 HeartRate=136 Risk=HIGH
+2026-06-20 21:09:20,039 - INFO - Animal=42 Temp=39.94 HeartRate=80 Risk=NORMAL
+2026-06-20 21:09:22,021 - INFO - Animal=29 Temp=40.69 HeartRate=70 Risk=HIGH
+2026-06-20 21:09:24,043 - INFO - Animal=23 Temp=41.86 HeartRate=128 Risk=HIGH
+2026-06-20 21:09:26,028 - INFO - Animal=74 Temp=40.13 HeartRate=90 Risk=NORMAL
+2026-06-20 21:09:28,040 - INFO - Animal=40 Temp=40.88 HeartRate=71 Risk=HIGH
+2026-06-20 21:09:30,043 - INFO - Animal=83 Temp=37.73 HeartRate=133 Risk=HIGH
+2026-06-20 21:09:32,062 - INFO - Animal=69 Temp=40.94 HeartRate=122 Risk=HIGH
+2026-06-20 21:09:34,073 - INFO - Animal=59 Temp=39.17 HeartRate=97 Risk=NORMAL
+2026-06-20 21:09:36,088 - INFO - Animal=51 Temp=40.62 HeartRate=77 Risk=HIGH
+2026-06-20 21:09:38,083 - INFO - Animal=25 Temp=38.86 HeartRate=102 Risk=NORMAL
+2026-06-20 21:09:40,104 - INFO - Animal=49 Temp=40.83 HeartRate=60 Risk=HIGH
+2026-06-20 21:09:42,097 - INFO - Animal=89 Temp=38.92 HeartRate=93 Risk=NORMAL
+2026-06-20 21:09:44,105 - INFO - Animal=46 Temp=40.63 HeartRate=119 Risk=HIGH
+2026-06-20 21:09:46,122 - INFO - Animal=41 Temp=41.76 HeartRate=128 Risk=HIGH
+2026-06-20 21:09:48,118 - INFO - Animal=28 Temp=37.59 HeartRate=76 Risk=NORMAL
+2026-06-20 21:09:50,103 - INFO - Animal=69 Temp=37.51 HeartRate=101 Risk=NORMAL
