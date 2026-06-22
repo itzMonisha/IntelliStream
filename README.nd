@@ -21,27 +21,19 @@ https://intellistream-1.onrender.com/health
 
 ## Overview
 
-IntelliStream is a distributed real-time event processing platform that monitors animal health telemetry data and predicts risk levels using Machine Learning.
+IntelliStream – Distributed AI Event Processing Platform
 
-## Features
+• Built a real-time distributed event processing platform using Kafka, FastAPI, PostgreSQL, Redis, Docker and Streamlit.
 
-* Real-time event streaming using Kafka
-* Producer-Consumer architecture
-* Machine Learning based risk prediction
-* PostgreSQL database integration
-* FastAPI REST APIs
-* Streamlit analytics dashboard
-* Docker containerization
-* Cloud deployment on Render
+• Designed producer-consumer architecture with Kafka Consumer Groups and multi-threaded consumers for concurrent event processing.
 
-## Tech Stack
+• Integrated AI-based risk prediction to analyze live animal health telemetry events.
 
-* Python
-* FastAPI
-* Kafka
-* PostgreSQL
-* Redis
-* Docker
-* Streamlit
-* Render
-* Machine Learning
+• Developed REST APIs, monitoring endpoints and interactive dashboards for analytics and visualization.
+
+• Implemented Redis caching, logging, benchmarking and health monitoring to improve system reliability and performance.
+
+• Containerized services using Docker and deployed backend, dashboard and database on Render cloud.
+
+Tech Stack: Python, Kafka, FastAPI, PostgreSQL, Redis, Docker, Streamlit, Render, Machine Learning
+
