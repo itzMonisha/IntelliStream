@@ -36,4 +36,3 @@ IntelliStream – Distributed AI Event Processing Platform
 • Containerized services using Docker and deployed backend, dashboard and database on Render cloud.
 
 Tech Stack: Python, Kafka, FastAPI, PostgreSQL, Redis, Docker, Streamlit, Render, Machine Learning
-
