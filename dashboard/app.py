@@ -83,6 +83,50 @@ except Exception as e:
     )
 
     st.stop()
+
+# --------------------------------------------------
+
+# MONITORING
+
+# --------------------------------------------------
+
+try:
+metrics = requests.get(
+    f"{API_URL}/metrics",
+    timeout=5
+).json()
+
+st.subheader("📈 Monitoring")
+
+m1, m2, m3, m4 = st.columns(4)
+
+m1.metric(
+    "Total Events",
+    metrics["total_events"]
+)
+
+m2.metric(
+    "High Risk",
+    metrics["high_risk_events"]
+)
+
+m3.metric(
+    "Normal",
+    metrics["normal_events"]
+)
+
+m4.metric(
+    "Animals",
+    metrics["total_animals"]
+)
+
+except Exception as e:
+
+st.error(
+    f"Metrics API Error: {e}"
+)
+
+
 # --------------------------------------------------
 # LATEST EVENTS
 # --------------------------------------------------

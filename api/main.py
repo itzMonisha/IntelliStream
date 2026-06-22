@@ -1,11 +1,15 @@
-
 import json
 import logging
+
 from fastapi import FastAPI
 from sqlalchemy import text
 
 from api.database import engine
 from api.cache import redis_client
+
+# ----------------------------------
+# Logging Configuration
+# ----------------------------------
 
 logging.basicConfig(
     filename="logs/api.log",
@@ -14,6 +18,10 @@ logging.basicConfig(
 )
 
 app = FastAPI()
+
+# ----------------------------------
+# Home
+# ----------------------------------
 
 
 @app.get("/")
@@ -26,9 +34,15 @@ def home():
         "status": "running"
     }
 
+# ----------------------------------
+# All Events
+# ----------------------------------
+
 
 @app.get("/events")
 def get_events():
+
+    logging.info("/events endpoint called")
 
     with engine.connect() as conn:
 
@@ -39,6 +53,7 @@ def get_events():
         rows = []
 
         for row in result:
+
             rows.append(
                 {
                     "id": row.id,
@@ -55,9 +70,15 @@ def get_events():
 
         return rows
 
+# ----------------------------------
+# High Risk Events
+# ----------------------------------
+
 
 @app.get("/high-risk")
 def high_risk():
+
+    logging.info("/high-risk endpoint called")
 
     with engine.connect() as conn:
 
@@ -72,6 +93,7 @@ def high_risk():
         rows = []
 
         for row in result:
+
             rows.append(
                 {
                     "id": row.id,
@@ -88,9 +110,17 @@ def high_risk():
 
         return rows
 
+# ----------------------------------
+# Animal History
+# ----------------------------------
+
 
 @app.get("/animal/{animal_id}")
 def animal_history(animal_id: int):
+
+    logging.info(
+        f"/animal/{animal_id} endpoint called"
+    )
 
     with engine.connect() as conn:
 
@@ -107,6 +137,7 @@ def animal_history(animal_id: int):
         rows = []
 
         for row in result:
+
             rows.append(
                 {
                     "id": row.id,
@@ -118,14 +149,20 @@ def animal_history(animal_id: int):
             )
 
         logging.info(
-            f"Animal history requested for Animal ID {animal_id}"
+            f"Returned {len(rows)} records for Animal ID {animal_id}"
         )
 
         return rows
 
+# ----------------------------------
+# Stats (Redis Cache)
+# ----------------------------------
+
 
 @app.get("/stats")
 def stats():
+
+    logging.info("/stats endpoint called")
 
     cached = redis_client.get("stats")
 
@@ -147,7 +184,7 @@ def stats():
             text("""
             SELECT COUNT(*)
             FROM sensor_events
-            WHERE risk_level = 'HIGH'
+            WHERE risk_level='HIGH'
             """)
         ).scalar()
 
@@ -155,7 +192,7 @@ def stats():
             text("""
             SELECT COUNT(*)
             FROM sensor_events
-            WHERE risk_level = 'NORMAL'
+            WHERE risk_level='NORMAL'
             """)
         ).scalar()
 
@@ -177,9 +214,17 @@ def stats():
 
         return data
 
+# ----------------------------------
+# Analytics Dashboard
+# ----------------------------------
+
 
 @app.get("/analytics")
 def analytics():
+
+    logging.info(
+        "/analytics endpoint called"
+    )
 
     with engine.connect() as conn:
 
@@ -222,7 +267,7 @@ def analytics():
             else 0
         )
 
-        return {
+        data = {
             "total_events": total_events,
             "total_animals": total_animals,
             "avg_temperature": round(avg_temp, 2) if avg_temp else 0,
@@ -230,9 +275,23 @@ def analytics():
             "high_risk_percent": round(high_risk_percent, 2)
         }
 
+        logging.info(
+            f"Analytics Generated: {data}"
+        )
+
+        return data
+
+# ----------------------------------
+# Health Check
+# ----------------------------------
+
 
 @app.get("/health")
 def health():
+
+    logging.info(
+        "/health endpoint called"
+    )
 
     return {
         "api": "UP",
@@ -240,9 +299,17 @@ def health():
         "redis": "UP"
     }
 
+# ----------------------------------
+# Latest Events
+# ----------------------------------
+
 
 @app.get("/latest")
 def latest():
+
+    logging.info(
+        "/latest endpoint called"
+    )
 
     with engine.connect() as conn:
 
@@ -258,6 +325,7 @@ def latest():
         rows = []
 
         for row in result:
+
             rows.append(
                 {
                     "id": row.id,
@@ -273,3 +341,68 @@ def latest():
         )
 
         return rows
+
+
+@app.get("/metrics")
+def metrics():
+    logging.info(
+        "/metrics endpoint called"
+    )
+
+    with engine.connect() as conn:
+
+        total_events = conn.execute(
+            text("SELECT COUNT(*) FROM sensor_events")
+        ).scalar()
+
+        high_risk = conn.execute(
+            text("""
+        SELECT COUNT(*)
+        FROM sensor_events
+        WHERE risk_level='HIGH'
+        """)
+        ).scalar()
+
+        normal = conn.execute(
+            text("""
+        SELECT COUNT(*)
+        FROM sensor_events
+        WHERE risk_level='NORMAL'
+        """)
+        ).scalar()
+
+        total_animals = conn.execute(
+            text("""
+        SELECT COUNT(DISTINCT animal_id)
+        FROM sensor_events
+        """)
+        ).scalar()
+
+        avg_temp = conn.execute(
+            text("""
+        SELECT AVG(temperature)
+        FROM sensor_events
+        """)
+        ).scalar()
+
+        avg_hr = conn.execute(
+            text("""
+        SELECT AVG(heart_rate)
+        FROM sensor_events
+        """)
+        ).scalar()
+
+        logging.info(
+            f"Metrics Generated: "
+            f"Events={total_events}, "
+            f"HighRisk={high_risk}"
+        )
+
+        return {
+            "total_events": total_events,
+            "high_risk_events": high_risk,
+            "normal_events": normal,
+            "total_animals": total_animals,
+            "avg_temperature": round(avg_temp, 2) if avg_temp else 0,
+            "avg_heart_rate": round(avg_hr, 2) if avg_hr else 0
+        }

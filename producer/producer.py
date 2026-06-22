@@ -1,23 +1,16 @@
-import logging
 from kafka import KafkaProducer
 import json
 import random
 import time
 
-logging.basicConfig(
-    filename="logs/producer.log",
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
+print("Creating Kafka Producer...")
 
-
-# Create Kafka Producer
 producer = KafkaProducer(
-    bootstrap_servers='localhost:9092',
-    value_serializer=lambda v: json.dumps(v).encode('utf-8')
+    bootstrap_servers="localhost:9092",
+    value_serializer=lambda v: json.dumps(v).encode("utf-8")
 )
 
-print("🚀 Producer Started...")
+print("Kafka Producer Connected")
 
 while True:
 
@@ -27,13 +20,19 @@ while True:
         "heart_rate": random.randint(60, 140)
     }
 
-    # Send event to Kafka topic
-    producer.send("sensor-events", event)
+    print("Before Send")
 
-    # Force immediate delivery during testing
+    future = producer.send(
+        "sensor-events",
+        event
+    )
+
+    print("After Send")
+
     producer.flush()
 
+    print("After Flush")
+
     print("Produced:", event)
-    logging.info(f"Produced Event: {event}")
 
     time.sleep(2)

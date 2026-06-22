@@ -68,3 +68,13 @@
 2026-06-19 21:29:56,270 - INFO - Returned latest 20 events
 2026-06-19 21:30:01,296 - INFO - Returned latest 20 events
 2026-06-20 19:10:53,156 - INFO - Home endpoint accessed
+2026-06-22 20:27:28,391 - INFO - /analytics endpoint called
+2026-06-22 20:27:35,020 - INFO - Analytics Generated: {'total_events': 4, 'total_animals': 4, 'avg_temperature': 40.4, 'avg_heart_rate': Decimal('101.25'), 'high_risk_percent': 50.0}
+2026-06-22 20:27:44,900 - INFO - /latest endpoint called
+2026-06-22 20:27:45,459 - INFO - Returned latest 4 events
+2026-06-22 20:27:56,906 - INFO - /stats endpoint called
+2026-06-22 20:28:28,777 - INFO - /stats endpoint called
+2026-06-22 20:28:40,929 - INFO - /stats endpoint called
+2026-06-22 20:31:22,357 - INFO - /health endpoint called
+2026-06-22 21:00:22,195 - INFO - /metrics endpoint called
+2026-06-22 21:00:30,549 - INFO - Metrics Generated: Events=4, HighRisk=2
